@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head itemscope itemtype="http://schema.org/WPHeader">
+		<title itemprop="headline">COMPAREXO | Личный кабинет</title>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Сравнение товаров - смартфоны, электроника, бытовая техника и др. ">
+		<meta name="keywords" content="Сравнение товаров">
+		<meta name="robots" content="noindex">
+
+		<!-- favicon -->
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#2d89ef">
+		<meta name="theme-color" content="#ffffff">
+		<!-- favicon -->
+
+		<!-- Open Graph  -->
+		<meta property="og:type" content="business.business">
+		<meta property="og:title" content="COMPAREXO | Личный кабинет">
+		<meta property="og:description" content="Сравнение товаров - смартфоны, электроника, бытовая техника и др. ">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="/img/OG.jpg">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="627">
+		<meta property="og:site_name" content="COMPAREXO | Личный кабинет">
+		<meta property="og:locale" content="ru_RU">
+		<!-- Open Graph  -->
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:site" content="@Comparexo">
+		<meta property="twitter:creator" content="@Comparexo-author">
+		<meta property="twitter:image:src" content="preview image">
+		<!-- Twitter -->
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css?_v=20230728011817">
+		<link rel="stylesheet" href="css/reset.min.css?_v=20230728011817">
+		<link rel="stylesheet" href="css/style.min.css?_v=20230728011817">
+	</head>
+
+
+	<body>
+		<div class="wrapper">
+
+			<header class="header">
+				<div class="header-top">
+					<div class="header-top__container">
+						<div class="header-top__lang">
+							<button type="button" aria-label="Открыть выбор языка" class="header-top__lang-btn" aria-expanded="true">
+								<span data-lang class="header-top__lang-item icon-planet">Русский</span>
+								<span data-currency class="header-top__lang-item icon-currency">KZT</span>
+							</button>
+							<div class="header-top__lang-body" aria-hidden="true">
+								<div class="header-top__lang-content">
+									<div class="header-top__lang-section">
+										<div class="header-top__lang-caption">Выберите язык:</div>
+										<div class="header-top__lang-dropdown dropdown icon-earth">
+											<button type="button" class="dropdown__button" aria-expanded="false" aria-haspopup="true">Русский</button>
+											<div class="dropdown__content" aria-hidden="true">
+												<ul class="dropdown__list" role="listbox">
+													<li role="option" data-value="Английский" class="dropdown__list-item">Английский</li>
+													<li role="option" data-value="Русский" aria-checked="true" class="dropdown__list-item dropdown__list-item_active">Русский</li>
+													<li role="option" data-value="Казахский" class="dropdown__list-item">Казахский</li>
+												</ul>
+												<input type="text" name="lang" id="lang" class="dropdown__input hidden" hidden value="Казахский">
+											</div>
+										</div>
+									</div>
+									<div class="header-top__lang-section">
+										<div class="header-top__lang-caption">Выберите валюту:</div>
+										<div class="header-top__lang-dropdown dropdown icon-currency">
+											<button type="button" class="dropdown__button" aria-expanded="false" aria-haspopup="true">KZT(Казахстанский тенге)</button>
+											<div class="dropdown__content">
+												<ul class="dropdown__list" role="listbox">
+													<li role="option" data-value="RUR" class="dropdown__list-item">RUR(Российский рубль)</li>
+													<li role="option" data-value="KZT" aria-checked="true" class="dropdown__list-item dropdown__list-item_active">KZT(Казахстанский тенге)</li>
+													<li role="option" data-value="EUR" class="dropdown__list-item">EUR (Евпропейский евро)</li>
+												</ul>
+												<input type="text" name="currency" id="currency" class="dropdown__input hidden" hidden value="KZT">
+											</div>
+										</div>
+									</div>
+									<div class="header-top__lang-section">
+										<div class="header-top__lang-caption">Ваше местоположение:</div>
+										<div class="header-top__lang-dropdown dropdown icon-geography">
+											<button type="button" class="dropdown__button" aria-expanded="false" aria-haspopup="true">Казахстан</button>
+											<div class="dropdown__content">
+												<form action="#" class="dropdown__form">
+													<input type="text" name="search" placeholder="Найти">
+													<button class="icon-search"></button>
+												</form>
+												<ul class="dropdown__list" role="listbox" data-scrollbar>
+													<li role="option" data-value="KZ" aria-checked="true" class="dropdown__list-item dropdown__list-item_active">Казахстан</li>
+													<li role="option" data-value="RU" class="dropdown__list-item">Россия</li>
+													<li role="option" data-value="1" class="dropdown__list-item">Страна 1</li>
+													<li role="option" data-value="2" class="dropdown__list-item">Страна 2</li>
+													<li role="option" data-value="3" class="dropdown__list-item">Страна 3</li>
+													<li role="option" data-value="4" class="dropdown__list-item">Страна 4</li>
+													<li role="option" data-value="5" class="dropdown__list-item">Страна 5</li>
+													<li role="option" data-value="6" class="dropdown__list-item">Страна 6</li>
+													<li role="option" data-value="7" class="dropdown__list-item">Страна 7</li>
+												</ul>
+												<input type="text" name="geography" class="dropdown__input hidden" hidden value="KZ">
+											</div>
+										</div>
+									</div>
+									<button type="button" class="header-top__lang-save btn btn_primary btn_fullwidth">Сохранить</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-body">
+					<div class="header-body__container">
+						<a href="/" class="header-body__logo">
+							<img src="img/1x1.png" data-src="img/logo.svg" alt="Логотип COMPAREXO">
+						</a>
+						<div class="header-body__menu menu">
+
+							<div class="menu__login">
+								<a href="/person.html" aria-haspopup="true" aria-expanded="false" class="menu__login-link">
+									<span class="menu__login-thumb">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="Аватар">
+										</picture>
+									</span>
+								</a>
+								<div aria-hidden="true" class="menu__login-actions">
+									<div class="menu__login-actions-wrapper">
+										<div class="menu__login-header">
+											<div class="menu__login-thumb">
+												<picture>
+													<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="Аватар">
+												</picture>
+											</div>
+											<div class="menu__login-info">
+												<span class="menu__login-caption">vladzaycev2012</span>
+												<a href="/person.html" class="menu__login-subtitle">Перейти в профиль</a>
+											</div>
+										</div>
+										<ul class="menu__login-list">
+											<li class="menu__login-item icon-star-outline">
+												<a href="" class="menu__login-action">Избранное</a>
+											</li>
+											<li class="menu__login-item icon-comments">
+												<a href="" class="menu__login-action">Мои отзывы</a>
+											</li>
+											<li class="menu__login-item icon-compare">
+												<a href="" class="menu__login-action">Последние сравнения</a>
+											</li>
+										</ul>
+										<ul class="menu__login-list">
+											<li class="menu__login-item icon-planet-outline">
+												<a href="" class="menu__login-action icon-right-alternate">Язык</a>
+											</li>
+											<li class="menu__login-item icon-currency">
+												<a href="" class="menu__login-action icon-right-alternate">Валюта</a>
+											</li>
+										</ul>
+										<ul class="menu__login-list">
+											<li class="menu__login-item icon-logout">
+												<a href="" class="menu__login-action">Выйти</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<a href="/person.html" class="menu__login-content icon-right-alternate">
+									<span class="menu__login-thumb">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="Аватар">
+										</picture>
+									</span>
+									<span class="menu__login-column">
+										<span class="menu__login-caption">vladzaycev2012</span>
+										<span class="menu__login-subtitle">Мой профиль</span>
+									</span>
+								</a>
+							</div>
+
+
+							<div class="menu__catalog catalog">
+								<button type="button" aria-label="Открыть Категории" aria-expanded="false" class="catalog__btn btn btn_primary icon-catalog">Категории</button>
+								<div class="catalog__body" aria-hidden="true">
+									<aside class="catalog__sidebar">
+										<h3 class="catalog__sidebar-caption title title_lg">Категории</h3>
+										<ul class="catalog__sidebar-list">
+											<li data-catalog-section="catalog-mobile" class="catalog__sidebar-item catalog__sidebar-item_active">
+												<a href="" class="catalog__sidebar-link icon-mobile">Мобильные устройства</a>
+											</li>
+											<li data-catalog-section="catalog-watches" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-watches">Часы</a>
+											</li>
+											<li data-catalog-section="catalog-audio" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-audio">Аудио</a>
+											</li>
+											<li data-catalog-section="catalog-pc" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-pc">Комплектующие для ПК</a>
+											</li>
+											<li data-catalog-section="catalog-periphery" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-mouse">Компьютеры и переферия</a>
+											</li>
+											<li data-catalog-section="catalog-print" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-print">Принтеры & Сканеры</a>
+											</li>
+											<li data-catalog-section="catalog-enjoy" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-box">Развлечения</a>
+											</li>
+											<li data-catalog-section="catalog-soft" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-gear">Приложения и софт</a>
+											</li>
+											<li data-catalog-section="catalog-education" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-education">Обучение</a>
+											</li>
+											<li data-catalog-section="catalog-travel" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-travel">Путешевствия</a>
+											</li>
+											<li data-catalog-section="catalog-transport" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-car">Транспорт</a>
+											</li>
+											<li data-catalog-section="catalog-garden" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-garden">Дом и сад</a>
+											</li>
+											<li data-catalog-section="catalog-eat" class="catalog__sidebar-item">
+												<a href="" class="catalog__sidebar-link icon-eat">Продукты питания</a>
+											</li>
+										</ul>
+									</aside>
+									<div class="catalog__content">
+										<button type="button" aria-label="Назад ко всем категориям" class="catalog__content-back">Все категории</button>
+										<div id="catalog-mobile" class="catalog__section catalog__section_visible">
+											<h3 class="catalog__section-caption title">Мобильные устройства</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/01.png" alt="Ноутбуки">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Ноутбуки</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/02.png" alt="Игровые ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Игровые ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/03.png" alt="Универсальные ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Универсальные ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/04.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/04.png" alt="Мониторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Мониторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/05.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/05.png" alt="Маршрутизиторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Маршрутизиторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-watches" class="catalog__section">
+											<h3 class="catalog__section-caption title">Часы</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/01.png" alt="Ноутбуки">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Ноутбуки</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/02.png" alt="Игровые ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Игровые ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/03.png" alt="Универсальные ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Универсальные ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/04.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/04.png" alt="Мониторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Мониторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/05.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/05.png" alt="Маршрутизиторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Маршрутизиторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-audio" class="catalog__section">
+											<h3 class="catalog__section-caption title">Аудио</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/04.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/04.png" alt="Мониторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Мониторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/05.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/05.png" alt="Маршрутизиторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Маршрутизиторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-pc" class="catalog__section">
+											<h3 class="catalog__section-caption title">Комплектующие для ПК</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-periphery" class="catalog__section">
+											<h3 class="catalog__section-caption title">Компьютеры и переферия</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/01.png" alt="Ноутбуки">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Ноутбуки</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/02.png" alt="Игровые ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Игровые ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/03.png" alt="Универсальные ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Универсальные ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/04.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/04.png" alt="Мониторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Мониторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/05.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/05.png" alt="Маршрутизиторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Маршрутизиторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-print" class="catalog__section">
+											<h3 class="catalog__section-caption title">Принтеры & Сканеры</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-enjoy" class="catalog__section">
+											<h3 class="catalog__section-caption title">Развлечения</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/03.png" alt="Универсальные ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Универсальные ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/04.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/04.png" alt="Мониторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Мониторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/05.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/05.png" alt="Маршрутизиторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Маршрутизиторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-soft" class="catalog__section">
+											<h3 class="catalog__section-caption title">Приложения и софт</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/01.png" alt="Ноутбуки">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Ноутбуки</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-education" class="catalog__section">
+											<h3 class="catalog__section-caption title">Обучение</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-travel" class="catalog__section">
+											<h3 class="catalog__section-caption title">Путешевствия</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-transport" class="catalog__section">
+											<h3 class="catalog__section-caption title">Транспорт</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/07.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/07.png" alt="Веб-камеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Веб-камеры</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/08.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/08.png" alt="Графические планшеты">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Графические планшеты</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-garden" class="catalog__section">
+											<h3 class="catalog__section-caption title">Дом и сад</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/01.png" alt="Ноутбуки">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Ноутбуки</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/02.png" alt="Игровые ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Игровые ПК</span>
+													</a>
+												</li>
+
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/05.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/05.png" alt="Маршрутизиторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Маршрутизиторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/06.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/06.png" alt="Компьютерные мыши">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Компьютерные мыши</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div id="catalog-eat" class="catalog__section">
+											<h3 class="catalog__section-caption title">Продукты питания</h3>
+											<ul class="catalog__section-list">
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/01.png" alt="Ноутбуки">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Ноутбуки</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/02.png" alt="Игровые ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Игровые ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/03.png" alt="Универсальные ПК">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Универсальные ПК</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/04.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/04.png" alt="Мониторы">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Мониторы</span>
+													</a>
+												</li>
+												<li class="catalog__section-item">
+													<a href="" class="catalog__section-link">
+														<span class="catalog__section-image">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/catalog/09.webp" type="image/webp"><img src="img/1x1.png" data-src="img/catalog/09.png" alt="Одноплатные компьютеры">
+															</picture>
+														</span>
+														<span class="catalog__section-name">Одноплатные компьютеры</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<nav class="menu__body" aria-label="main navigation">
+								<ul class="menu__list" itemscope itemtype="http://schema.org/SiteNavigationElement">
+									<li class="menu__item"><a href="" class="menu__link" itemprop="url">Смартфоны</a></li>
+									<li class="menu__item"><a href="" class="menu__link" itemprop="url">Видеокарты</a></li>
+									<li class="menu__item"><a href="" class="menu__link" itemprop="url">Беспроводные наушники</a></li>
+									<li class="menu__item"><a href="" class="menu__link" itemprop="url">Новинки</a></li>
+								</ul>
+							</nav>
+							<ul class="menu__info-list">
+								<li class="menu__info-item">
+									<a href="" class="menu__info-link">О нас</a>
+								</li>
+								<li class="menu__info-item">
+									<a href="" class="menu__info-link">Реклама</a>
+								</li>
+								<li class="menu__info-item">
+									<a href="" class="menu__info-link">Обратная связь</a>
+								</li>
+							</ul>
+						</div>
+						<div class="header-body__search">
+							<button class="header-body__search-mobile-btn icon-search" aria-label="Показать поиск"></button>
+							<form action="#" class="header-body__search-content search" role="search">
+								<div class="search__header">
+									<button type="submit" aria-label="Искать" class="search__btn icon-search"></button>
+									<input type="text" autocomplete="off" name="search" class="search__input search__input_blue" role="searchbox" placeholder="Я ищу...">
+									<button type="button" aria-label="Очистить" class="search__clear icon-clear"></button>
+								</div>
+								<div class="search__bar" aria-atomic="true">
+									<div class="search__bar-section">
+										<div class="search__bar-header">
+											<div class="search__bar-caption">История</div>
+											<button type="button" aria-label="Удалить историю" class="search__bar-delete">Очистить все</button>
+										</div>
+										<ul class="search__bar-list">
+											<li class="search__bar-result icon-history">
+												<a href="" class="search__bar-link">Apple MacBook Air (2020) M1</a>
+											</li>
+											<li class="search__bar-result icon-history">
+												<a href="" class="search__bar-link">Apple MacBook Pro 14 (2021)</a>
+											</li>
+											<li class="search__bar-result icon-history">
+												<a href="" class="search__bar-link">Apple MacBook Pro 14 (2023)</a>
+											</li>
+										</ul>
+									</div>
+									<div class="search__bar-section">
+										<div class="search__bar-header">
+											<div class="search__bar-caption">Популярные запросы</div>
+										</div>
+										<ul class="search__bar-labels">
+											<li class="search__bar-label">
+												<a href="" class="search__bar-label-link">Айфон</a>
+											</li>
+											<li class="search__bar-label">
+												<a href="" class="search__bar-label-link">Sony</a>
+											</li>
+											<li class="search__bar-label">
+												<a href="" class="search__bar-label-link">Redmi</a>
+											</li>
+											<li class="search__bar-label">
+												<a href="" class="search__bar-label-link">Игровой ноутбук</a>
+											</li>
+											<li class="search__bar-label">
+												<a href="" class="search__bar-label-link">Huawei</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<button type="button" aria-label="Открыть меню" aria-expanded="false" class="header-body__btn icon-menu">
+							<span></span>
+						</button>
+					</div>
+				</div>
+			</header>
+
+			<main class="page">
+				<nav class="breadcrumbs breadcrumbs_mobile">
+					<div class="breadcrumbs__container">
+						<ul class="breadcrumbs__items" itemscope itemtype="http://schema.org/BreadcrumbList">
+							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<a href="/" class="breadcrumbs__link" itemprop="item">
+									<span itemprop="name">Главная</span>
+								</a>
+								<meta itemprop="position" content="1">
+							</li>
+							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<a href="/" class="breadcrumbs__link" itemprop="item">
+									<span itemprop="name">Мой профиль</span>
+								</a>
+								<meta itemprop="position" content="2">
+							</li>
+							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+								<a class="breadcrumbs__link breadcrumbs__link_active" itemprop="item">
+									<span itemprop="name">Личные данные</span>
+								</a>
+								<meta itemprop="position" content="3">
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<section class="person">
+					<div class="person__container">
+						<aside class="person__side">
+							<div class="person__side-header">
+								<div class="person__side-thumb">
+									<picture>
+										<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="Аватар">
+									</picture>
+								</div>
+								<div class="person__side-info">
+									<div class="person__side-name">
+										vladzaycev2012
+									</div>
+									<div class="person__side-email">
+										vladzaycev@gmail.com
+									</div>
+								</div>
+							</div>
+							<nav class="person__side-menu" aria-label="person navigation">
+								<ul class="person__side-list">
+									<li class="person__side-item">
+										<a href="" class="person__side-link icon-star-outline">Мое избранное</a>
+									</li>
+									<li class="person__side-item">
+										<a href="" class="person__side-link icon-comments">Мои отзывы</a>
+									</li>
+									<li class="person__side-item">
+										<a href="" class="person__side-link icon-compare">Последние сравнения</a>
+									</li>
+									<li class="person__side-item person__side-item_bordered">
+										<a href="" class="person__side-link icon-logout">Выйти</a>
+									</li>
+								</ul>
+							</nav>
+						</aside>
+						<div class="person__content">
+							<h1 class="person__title title title_lg">
+								Личные данные
+							</h1>
+							<div class="person__sections" data-spollers>
+								<div class="person__section">
+									<div class="person__section-header" data-spoller>
+										<span class="icon-person">Личные данные</span>
+									</div>
+									<div class="person__section-body">
+										<ul class="person__section-list">
+											<li class="person__section-item">
+												<div class="person__section-spec">
+													Имя
+												</div>
+												<div class="person__section-value">
+													Влад
+												</div>
+											</li>
+											<li class="person__section-item">
+												<div class="person__section-spec">
+													Фамилия
+												</div>
+												<div class="person__section-value">
+													Зайцев
+												</div>
+											</li>
+											<li class="person__section-item">
+												<div class="person__section-spec">
+													Отчество
+												</div>
+												<div class="person__section-value">
+													Не указано
+												</div>
+											</li>
+											<li class="person__section-item">
+												<div class="person__section-spec">
+													Пол
+												</div>
+												<div class="person__section-value">
+													Мужской
+												</div>
+											</li>
+											<li class="person__section-item">
+												<div class="person__section-spec">
+													Дата рождения
+												</div>
+												<div class="person__section-value">
+													24.07.2002
+												</div>
+											</li>
+										</ul>
+										<div class="person__section-footer">
+											<a href="" class="person__section-btn btn btn_primary">
+												Редактировать
+											</a>
+											<a href="" class="person__section-btn btn btn_white icon-image">
+												Изменить аватар
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="person__section">
+									<div class="person__section-header" data-spoller>
+										<span class="icon-shield">Аккаунт</span>
+									</div>
+									<div class="person__section-body">
+										<ul class="person__section-list">
+											<li class="person__section-item">
+												<div class="person__section-spec">
+													Логин
+												</div>
+												<div class="person__section-value">
+													vladzaycev2012
+												</div>
+											</li>
+											<li class="person__section-item">
+												<div class="person__section-spec">
+													Email
+												</div>
+												<div class="person__section-value">
+													vladzaycev@gmail.com
+												</div>
+											</li>
+										</ul>
+										<div class="person__section-footer">
+											<a href="" class="person__section-btn btn btn_primary">
+												Редактировать
+											</a>
+											<a href="" class="person__section-btn btn btn_white icon-lock">
+												Изменить пароль
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="person__section">
+									<div class="person__section-header" data-spoller>
+										<span class="icon-bell">Уведомления</span>
+									</div>
+									<div class="person__section-body">
+										<div class="person__switcher">
+											<div class="person__switcher-item switcher">
+												<input type="checkbox" name="toggler" id="toggler" class="switcher__input">
+											</div>
+											<div class="person__switcher-text">
+												Я хочу получать Email рассылку
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<form action="#" class="footer__form form">
+						<div class="footer__image">
+							<img src="img/1x1.png" data-src="img/footer-image.svg" alt="Миниатюра">
+							<span class="footer__image-text">Будь в курсе всех выгодных предложений!</span>
+						</div>
+						<div class="form__body">
+							<input type="text" name="name" class="form__input form__input_gray" data-required placeholder="Ваше имя">
+							<input type="email" name="email" class="form__input form__input_gray" data-required placeholder="Email">
+							<button class="btn btn_primary">Подписаться</button>
+						</div>
+					</form>
+					<div class="footer__body">
+						<div class="footer__main">
+							<a href="/" class="footer__logo">
+								<img src="img/1x1.png" data-src="img/logo-white.svg" alt="Логотип COMPAREXO">
+							</a>
+							<div class="footer__desc">
+								<p>Сравнятор - это платформа для сравнения товаров, где каждый может воспользоваться опытом других пользователей при выборе товаров.</p>
+								<p>С 2023 года “Сравнятор” стал новым надежным помощником для множества пользователей!</p>
+							</div>
+						</div>
+						<div class="footer__columns" data-spollers="991.98, max">
+							<div class="footer__column">
+								<div class="footer__column-caption" data-spoller>Каталог товаров</div>
+								<nav class="footer__menu">
+									<ul class="footer__menu-list">
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Смартфоны</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Видеокарты</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Наушники</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Парфюмерия</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Смартфоны</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Видеокарты</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Наушники</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Все категории</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer__column">
+								<div class="footer__column-caption" data-spoller>Пользователю</div>
+								<nav class="footer__menu">
+									<ul class="footer__menu-list">
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Личный кабинет</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Избранное</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Мои отзывы</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Добавить</a></li>
+									</ul>
+								</nav>
+							</div>
+							<div class="footer__column">
+								<div class="footer__column-caption" data-spoller>Сравнятор</div>
+								<nav class="footer__menu">
+									<ul class="footer__menu-list">
+										<li class="footer__menu-item"><a href="/about.html" class="footer__menu-link">О нас</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Реклама</a></li>
+										<li class="footer__menu-item"><a href="" class="footer__menu-link">Обратная связь</a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<div class="footer__copy">Copyright 2023 Сравнятор International</div>
+						<div class="footer__socials">
+							<a href="" class="footer__social icon-facebook"></a>
+							<a href="" class="footer__social icon-twitter"></a>
+							<a href="" class="footer__social icon-linkedin"></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- INPUT MODALS -->
+
+		<!-- INITIAL MODAL -->
+
+		<div id="login-modal" class="popup" role="dialog" aria-hidden="true" aria-modal="true">
+			<div class="popup__content">
+				<div class="popup__body login">
+					<button type="button" data-close-modal class="popup__close icon-clear" aria-label="Закрыть модальное окно"></button>
+					<div class="login__main">
+						<div class="login__header">
+							<button type="button" class="login__back" data-close-modal></button>
+							<h3 class="login__title title title_sm">Добро пожаловать!</h3>
+						</div>
+						<div class="login__body">
+							<div class="login__subtitle">Войдите в систему, чтобы иметь возможность комментировать и оценивать товары на сайте.</div>
+							<div class="login__btns">
+								<a href="" class="login__btn btn btn_google btn_fullwidth">
+									<img src="img/1x1.png" data-src="img/icons/gmail.svg" alt="иконка google">
+									<span>Продолжить с Google</span>
+								</a>
+								<a href="" class="login__btn btn btn_facebook btn_fullwidth">
+									<img src="img/1x1.png" data-src="img/icons/facebook.svg" alt="иконка facebook">
+									<span>Продолжить с Facebook</span>
+								</a>
+								<a href="" class="login__btn btn btn_apple btn_fullwidth">
+									<img src="img/1x1.png" data-src="img/icons/apple.svg" alt="иконка Apple">
+									<span>Продолжить с Apple</span>
+								</a>
+							</div>
+							<div class="login__footer">
+								<div class="login__footer-separator">
+									или
+								</div>
+								<div class="login__footer-items">
+									<a href="" class="login__footer-item">
+										<img src="img/1x1.png" data-src="img/icons/mail.svg" alt="иконка конверт">
+									</a>
+									<a href="" class="login__footer-item">
+										<img src="img/1x1.png" data-src="img/icons/twitter.svg" alt="иконка twitter">
+									</a>
+									<a href="" class="login__footer-item">
+										<img src="img/1x1.png" data-src="img/icons/vk.svg" alt="иконка vk">
+									</a>
+									<a href="" class="login__footer-item">
+										<img src="img/1x1.png" data-src="img/icons/ok.svg" alt="иконка одноклассники">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="login__image">
+						<img src="img/1x1.png" data-src="img/login.svg" alt="login image">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- INITIAL MODAL -->
+
+		<!-- EMAIL LOGIN -->
+
+		<!-- <div id="login-modal" class="popup" role="dialog" aria-hidden="true" aria-modal="true">
+				<div class="popup__content">
+					<div class="popup__body login">
+						<button type="button" data-close-modal class="popup__close icon-clear" aria-label="Закрыть модальное окно"></button>
+						<form action="#" class="login__main form">
+							<div class="login__header">
+								<button type="button" class="login__back" data-close-modal></button>
+								<h3 class="login__title title title_sm">Добро пожаловать!</h3>
+							</div>
+							<div class="login__body">
+								<div class="form__subtitle">Нет аккаунта? <a href="" class="form__link">Зарегистрироваться</a></div>
+								<div class="form__rows">
+									<div class="form__row">
+										<label class="form__label">
+											<input type="email" name="email" data-required class="form__input">
+											<span class="form__label-text">Email</span>
+										</label>
+									</div>
+									<div class="form__row">
+										<label class="form__label">
+											<input type="password" id="psw" name="psw" data-required class="form__input">
+											<span class="form__label-text">Пароль</span>
+										</label>
+										<button type="button" aria-label="Показать пароль" aria-labelledby="psw" class="form__pass-btn"></button>
+									</div>
+								</div>
+								<div class="form__footer">
+									<button type="submit" class="form__btn btn btn_primary btn_fullwidth">Войти</button>
+									<a href="" class="form__forgot">Забыли пароль?</a>
+								</div>
+							</div>
+						</form>
+						<div class="login__image">
+							<img src="img/1x1.png" data-src="img/login.svg" alt="login image">
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+		<!-- END EMAIL LOGIN -->
+
+		<!-- FORGOT PASSWORD -->
+
+		<!-- <div id="login-modal" class="popup" role="dialog" aria-hidden="true" aria-modal="true">
+				<div class="popup__content">
+					<div class="popup__body login">
+						<button type="button" data-close-modal class="popup__close icon-clear" aria-label="Закрыть модальное окно"></button>
+						<form action="#" class="login__main form">
+							<div class="login__header">
+								<button type="button" class="login__back" data-close-modal></button>
+								<h3 class="login__title title title_sm">Забыли пароль?</h3>
+							</div>
+							<div class="login__body">
+								<div class="form__subtitle"><a href="" class="form__link">Вернуться к авторизации</a></div>
+								<div class="form__subtitle">
+									Мы отправим вам электронное письмо, где вы сможете изменить свой пароль.
+								</div>
+								<div class="form__rows">
+									<div class="form__row">
+										<label class="form__label">
+											<input type="email" name="email" data-required class="form__input">
+											<span class="form__label-text">Введите Email</span>
+										</label>
+									</div>
+								</div>
+								<div data-status="email" class="form__status" aria-live="assertive">
+									Email корректен
+								</div>
+								<div class="form__footer">
+									<button type="submit" class="form__btn btn btn_primary btn_fullwidth">Восстановить пароль</button>
+									<a href="" class="form__forgot">Забыли пароль?</a>
+								</div>
+							</div>
+						</form>
+						<div class="login__image">
+							<img src="img/1x1.png" data-src="img/login.svg" alt="login image">
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+		<!-- FORGOT PASSWORD -->
+
+		<!-- REGISTER EMAIL -->
+
+		<!-- <div id="login-modal" class="popup" role="dialog" aria-hidden="true" aria-modal="true">
+				<div class="popup__content">
+					<div class="popup__body login">
+						<button type="button" data-close-modal class="popup__close icon-clear" aria-label="Закрыть модальное окно"></button>
+						<form action="#" class="login__main form">
+							<div class="login__header">
+								<button type="button" class="login__back" data-close-modal></button>
+								<h3 class="login__title title title_sm">Регистрация</h3>
+							</div>
+							<div class="login__body">
+								<div class="form__subtitle">
+									Есть аккаунт?
+									<a href="" class="form__link">Войти</a>
+								</div>
+								<div class="form__subtitle">
+									Зарегистрированные пользователи могут комментировать, оценивать товары и многое другое!
+								</div>
+								<div class="form__rows">
+									<div class="form__row">
+										<label class="form__label">
+											<input type="email" name="email" data-required class="form__input">
+											<span class="form__label-text">Введите Email</span>
+										</label>
+									</div>
+								</div>
+								<div data-status="email" class="form__status" aria-live="assertive">
+									Email корректен
+								</div>
+								<div class="form__footer">
+									<button type="submit" class="form__btn btn btn_primary btn_fullwidth">Продолжить</button>
+								</div>
+							</div>
+						</form>
+						<div class="login__image">
+							<img src="img/1x1.png" data-src="img/login.svg" alt="login image">
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+		<!-- END REGISTER EMAIL -->
+
+		<!-- REGISTER PASSWORD -->
+
+		<!-- <div id="login-modal" class="popup" role="dialog" aria-hidden="true" aria-modal="true">
+				<div class="popup__content">
+					<div class="popup__body login">
+						<button type="button" data-close-modal class="popup__close icon-clear" aria-label="Закрыть модальное окно"></button>
+						<form action="#" class="login__main form">
+							<div class="login__header">
+								<button type="button" class="login__back" data-close-modal></button>
+								<h3 class="login__title title title_sm">Придумайте пароль</h3>
+							</div>
+							<div class="login__body">
+								<div class="form__subtitle">
+									Есть аккаунт?
+									<a href="" class="form__link">Войти</a>
+								</div>
+								<div class="form__rows">
+									<div class="form__row">
+										<label class="form__label">
+											<input type="password" id="psw" name="register-psw" data-required class="form__input">
+											<span class="form__label-text">Пароль</span>
+										</label>
+										<button type="button" aria-label="Показать пароль" aria-labelledby="psw" class="form__pass-btn"></button>
+									</div>
+									<div class="form__row">
+										<label class="form__label">
+											<input type="password" id="repeat-psw" name="repeat-psw" data-required class="form__input">
+											<span class="form__label-text">Повторите пароль</span>
+										</label>
+										<button type="button" aria-label="Показать пароль" aria-labelledby="repeat-psw" class="form__pass-btn"></button>
+									</div>
+								</div>
+								<div data-status="password-length" class="form__status" aria-live="assertive">
+									Минимум 8 сиволов
+								</div>
+								<div data-status="password-letters" class="form__status" aria-live="assertive">
+									Содержит заглавную и строчную букву (Aa)
+								</div>
+								<div data-status="password-coincidence" class="form__status" aria-live="assertive">
+									Пароли совпадают
+								</div>
+								<div class="form__footer">
+									<button type="submit" class="form__btn btn btn_primary btn_fullwidth">Продолжить</button>
+								</div>
+							</div>
+						</form>
+						<div class="login__image">
+							<img src="img/1x1.png" data-src="img/login.svg" alt="login image">
+						</div>
+					</div>
+				</div>
+			</div> -->
+
+		<!-- END PASSWORD EMAIL -->
+
+		<!-- END INPUT MODALS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230728011817"></script>
+		<script src="js/app.min.js?_v=20230728011817"></script>
+
+	</body>
+
+</html>
