@@ -170,6 +170,14 @@ h6 {
   color: transparent;
 }
 
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+input[type=date] {
+  background: url("../img/icons/calendar.svg") #fff no-repeat 95% 50%;
+}
+
 button,
 [type=button],
 [type=reset],

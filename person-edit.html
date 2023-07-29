@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head itemscope itemtype="http://schema.org/WPHeader">
-	<title itemprop="headline">COMPAREXO | Личный кабинет</title>
+	<title itemprop="headline">COMPAREXO | Личный кабинет | Редактировать информацию</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,13 +22,13 @@
 
 	<!-- Open Graph  -->
 	<meta property="og:type" content="business.business">
-	<meta property="og:title" content="COMPAREXO | Личный кабинет">
+	<meta property="og:title" content="COMPAREXO | Личный кабинет | Редактировать информацию">
 	<meta property="og:description" content="Сравнение товаров - смартфоны, электроника, бытовая техника и др. ">
 	<meta property="og:url" content="">
 	<meta property="og:image" content="/img/OG.jpg">
 	<meta property="og:image:width" content="1200">
 	<meta property="og:image:height" content="627">
-	<meta property="og:site_name" content="COMPAREXO | Личный кабинет">
+	<meta property="og:site_name" content="COMPAREXO | Личный кабинет | Редактировать информацию">
 	<meta property="og:locale" content="ru_RU">
 	<!-- Open Graph  -->
 
@@ -1030,54 +1030,50 @@
                 <div class="person__section-body">
                   <ul class="person__section-list">
                     <li class="person__section-item _tablet-order-1">
-                      <div class="person__section-spec">
-                        Имя
-                      </div>
-                      <div class="person__section-value">
-                        Влад
-                      </div>
+                      <label class="form__label">
+                        <input type="text" name="name" data-required class="form__input" value="Влад">
+                        <span class="form__label-text">Имя</span>
+                      </label>
                     </li>
                     <li class="person__section-item _tablet-order-3">
-                      <div class="person__section-spec">
-                        Фамилия
-                      </div>
-                      <div class="person__section-value">
-                        Зайцев
-                      </div>
+                      <label class="form__label">
+                        <input type="text" name="surname" data-required class="form__input" value="Зайцев">
+                        <span class="form__label-text">Фамилия</span>
+                      </label>
                     </li>
                     <li class="person__section-item _tablet-order-5">
-                      <div class="person__section-spec">
-                        Отчество
-                      </div>
-                      <div class="person__section-value">
-                        Не указано
-                      </div>
-                    </li>
-                    <li class="person__section-item _tablet-order-2">
-                      <div class="person__section-spec">
-                        Пол
-                      </div>
-                      <div class="person__section-value">
-                        Мужской
-                      </div>
+                      <label class="form__label">
+                        <input type="text" name="surname" data-required class="form__input" value="" placeholder="Укажите отчество">
+                        <span class="form__label-text">Отчество</span>
+                      </label>
                     </li>
                     <li class="person__section-item _tablet-order-4">
-                      <div class="person__section-spec">
-                        Дата рождения
-                      </div>
-                      <div class="person__section-value">
-                        24.07.2002
+                      <label class="form__label">
+                        <input type="date" name="surname" data-required class="form__input" value="2002-07-24">
+                        <span class="form__label-text">Дата рождения</span>
+                      </label>
+                    </li>
+                    <li class="person__section-item _tablet-order-2">
+                      <div class="person__section-dropdown dropdown">
+                        <button type="button" class="dropdown__button" aria-expanded="false" aria-haspopup="true">Мужской</button>
+                        <div class="dropdown__content" aria-hidden="true">
+                          <ul class="dropdown__list" role="listbox">
+                            <li role="option" data-value="Женский" class="dropdown__list-item">Женский</li>
+                            <li role="option" data-value="Мужской" aria-checked="true" class="dropdown__list-item dropdown__list-item_active">Мужской</li>
+                          </ul>
+                          <input type="text" name="sex" id="sex" class="dropdown__input hidden" hidden value="Мужской">
+                        </div>
+                        <span class="dropdown__label">Пол</span>
                       </div>
                     </li>
                   </ul>
                   <div class="person__section-footer">
                     <a href="" class="person__section-btn btn btn_primary">
-                      Редактировать
+                      Сохранить
                     </a>
-                    <label class="person__section-btn btn btn_white icon-image">
-                      <input type="file" name="avatar" class="hidden" hidden>
-                      Изменить аватар
-                    </label>
+                    <a href="" class="person__section-btn btn btn_white">
+                      Отменить
+                    </a>
                   </div>
                 </div>
               </div>
