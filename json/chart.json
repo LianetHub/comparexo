@@ -36,168 +36,77 @@
         ]
     },
     {
-        "id": "chart-2",
-        "type": "bar",
+        "id": "survey",
+        "type": "radar",
         "data": [
             {
-                "mouth": "Январь",
-                "min": "1946",
-                "middle": "208",
-                "max": "609"
+                "label": "Apple Iphone 13 Pro Max",
+                "data": [
+                    10,
+                    9.5,
+                    9.2,
+                    8,
+                    6,
+                    9.8,
+                    9,
+                    9.4
+                ],
+                "backgroundColor": "rgba(255, 199, 2, 0.2)",
+                "pointBackgroundColor": "#fff",
+                "pointBorderColor": "rgba(255, 199, 2)",
+                "borderColor": "rgba(255, 199, 2)"
             },
             {
-                "mouth": "Февраль",
-                "min": "2553",
-                "middle": "273",
-                "max": "773"
+                "label": "Apple Iphone 12 Pro Max",
+                "data": [
+                    8.5,
+                    8,
+                    9.2,
+                    8,
+                    10,
+                    9.8,
+                    3,
+                    9.4
+                ],
+                "backgroundColor": "rgba(242, 72, 34, 0.2)",
+                "pointBackgroundColor": "#fff",
+                "pointBorderColor": "rgba(242, 72, 34)",
+                "borderColor": "rgba(242, 72, 34)"
             },
             {
-                "mouth": "Март",
-                "min": "2816",
-                "middle": "330",
-                "max": "1027"
+                "label": "Apple Iphone 11 Pro Max",
+                "data": [
+                    9,
+                    3.5,
+                    5.2,
+                    6,
+                    2,
+                    3.8,
+                    10,
+                    8.4
+                ],
+                "backgroundColor": "rgba(34, 167, 242, 0.2)",
+                "pointBackgroundColor": "#fff",
+                "pointBorderColor": "rgba(34, 167, 242)",
+                "borderColor": "rgba(34, 167, 242)"
             },
             {
-                "mouth": "Апрель",
-                "min": "2937",
-                "middle": "427",
-                "max": "1081"
-            },
-            {
-                "mouth": "Май",
-                "min": "1887",
-                "middle": "282",
-                "max": "801"
-            },
-            {
-                "mouth": "Июнь",
-                "min": "2395",
-                "middle": "366",
-                "max": "1107"
-            },
-            {
-                "mouth": "Июль",
-                "min": "1824",
-                "middle": "329",
-                "max": "855"
-            },
-            {
-                "mouth": "Август",
-                "min": "2105",
-                "middle": "405",
-                "max": "1046"
-            },
-            {
-                "mouth": "Сентябрь",
-                "min": "1912",
-                "middle": "379",
-                "max": "1004"
-            },
-            {
-                "mouth": "Октябрь",
-                "min": "1866",
-                "middle": "370",
-                "max": "977"
-            },
-            {
-                "mouth": "Ноябрь",
-                "min": "1671    ",
-                "middle": "370",
-                "max": "982"
-            },
-            {
-                "mouth": "Декабрь",
-                "min": "2197",
-                "middle": "504",
-                "max": "1308"
+                "label": "Apple Iphone 8 Plus",
+                "data": [
+                    7,
+                    6.5,
+                    7.2,
+                    9,
+                    8,
+                    5.8,
+                    8,
+                    7.4
+                ],
+                "backgroundColor": "rgba(23, 160, 54, 0.2)",
+                "pointBackgroundColor": "#fff",
+                "pointBorderColor": "rgba(23, 160, 54)",
+                "borderColor": "rgba(23, 160, 54)"
             }
         ]
-    },
-    {
-        "id": "chart-3",
-        "type": "bar",
-        "data": [
-            {
-                "mouth": "Январь",
-                "min": "1946",
-                "middle": "208",
-                "max": "609"
-            },
-            {
-                "mouth": "Февраль",
-                "min": "2553",
-                "middle": "273",
-                "max": "773"
-            },
-            {
-                "mouth": "Март",
-                "min": "2816",
-                "middle": "330",
-                "max": "1027"
-            },
-            {
-                "mouth": "Апрель",
-                "min": "2937",
-                "middle": "427",
-                "max": "1081"
-            },
-            {
-                "mouth": "Май",
-                "min": "1887",
-                "middle": "282",
-                "max": "801"
-            },
-            {
-                "mouth": "Июнь",
-                "min": "2395",
-                "middle": "366",
-                "max": "1107"
-            },
-            {
-                "mouth": "Июль",
-                "min": "1824",
-                "middle": "329",
-                "max": "855"
-            },
-            {
-                "mouth": "Август",
-                "min": "2105",
-                "middle": "405",
-                "max": "1046"
-            },
-            {
-                "mouth": "Сентябрь",
-                "min": "1912",
-                "middle": "379",
-                "max": "1004"
-            },
-            {
-                "mouth": "Октябрь",
-                "min": "1866",
-                "middle": "370",
-                "max": "977"
-            },
-            {
-                "mouth": "Ноябрь",
-                "min": "1671    ",
-                "middle": "370",
-                "max": "982"
-            },
-            {
-                "mouth": "Декабрь",
-                "min": "2197",
-                "middle": "504",
-                "max": "1308"
-            }
-        ]
-    },
-    {
-        "id": "chart-4",
-        "type": "pie",
-        "data": {
-            "intent": "23527",
-            "observation": "8387",
-            "contest": "10008"
-        }
     }
 ]

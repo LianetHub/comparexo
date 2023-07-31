@@ -2,7 +2,7 @@
 <html lang="ru">
 
 	<head itemscope itemtype="http://schema.org/WPHeader">
-		<title itemprop="headline">COMPAREXO | Главная страница</title>
+		<title itemprop="headline">COMPAREXO | Cтраница товара</title>
 		<meta charset="UTF-8">
 		<meta name="format-detection" content="telephone=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,13 +23,13 @@
 
 		<!-- Open Graph  -->
 		<meta property="og:type" content="business.business">
-		<meta property="og:title" content="COMPAREXO | Главная страница">
+		<meta property="og:title" content="COMPAREXO | Cтраница товара">
 		<meta property="og:description" content="Сравнение товаров - смартфоны, электроника, бытовая техника и др. ">
 		<meta property="og:url" content="">
 		<meta property="og:image" content="/img/OG.jpg">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="627">
-		<meta property="og:site_name" content="COMPAREXO | Главная страница">
+		<meta property="og:site_name" content="COMPAREXO | Cтраница товара">
 		<meta property="og:locale" content="ru_RU">
 		<!-- Open Graph  -->
 
@@ -1064,107 +1064,347 @@
 			</header>
 
 			<main class="page">
-				<section class="main">
-					<div class="main__container">
-						<div class="main__body">
-							<div class="main__content">
-								<h1 class="main__title title title_lg text-center">Сравнение товаров</h1>
-								<p class="main__subtitle text-center">смартфоны, электроника, бытовая техника и др. - лучшие предложения на нашем сервисе</p>
-								<form action="#" class="main__search search" role="search">
-									<div class="search__header">
-										<button type="submit" aria-label="Искать" class="search__btn icon-search"></button>
-										<input type="text" autocomplete="off" name="search" class="search__input" role="searchbox" placeholder="Я ищу...">
-										<button type="button" aria-label="Очистить" class="search__clear icon-clear"></button>
-									</div>
-									<div class="search__bar" aria-atomic="true">
-										<div class="search__bar-section">
-											<div class="search__bar-header">
-												<div class="search__bar-caption">История</div>
-												<button type="button" aria-label="Удалить историю" class="search__bar-delete">Очистить все</button>
-											</div>
-											<ul class="search__bar-list">
-												<li class="search__bar-result icon-history">
-													<a href="" class="search__bar-link">Apple MacBook Air (2020) M1</a>
-												</li>
-												<li class="search__bar-result icon-history">
-													<a href="" class="search__bar-link">Apple MacBook Pro 14 (2021)</a>
-												</li>
-												<li class="search__bar-result icon-history">
-													<a href="" class="search__bar-link">Apple MacBook Pro 14 (2023)</a>
-												</li>
-											</ul>
-										</div>
-										<div class="search__bar-section">
-											<div class="search__bar-header">
-												<div class="search__bar-caption">Популярные запросы</div>
-											</div>
-											<ul class="search__bar-labels">
-												<li class="search__bar-label">
-													<a href="" class="search__bar-label-link">Айфон</a>
-												</li>
-												<li class="search__bar-label">
-													<a href="" class="search__bar-label-link">Sony</a>
-												</li>
-												<li class="search__bar-label">
-													<a href="" class="search__bar-label-link">Redmi</a>
-												</li>
-												<li class="search__bar-label">
-													<a href="" class="search__bar-label-link">Игровой ноутбук</a>
-												</li>
-												<li class="search__bar-label">
-													<a href="" class="search__bar-label-link">Huawei</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</form>
-							</div>
+				<div class="markets">
+					<div class="markets__container">
+						<div class="markets__logo">
+							<img src="img/1x1.png" data-src="img/market.svg" alt="Яндекс маркет">
 						</div>
-					</div>
-				</section>
-				<div class="navigation">
-					<div class="navigation__container">
-						<button type="button" aria-label="Листать влево" class="navigation__prev swiper-button-prev"></button>
-						<nav class="navigation__slider swiper" aria-label="sections navigation">
-							<ul class="navigation__list swiper-wrapper">
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-mobile">Мобильные устройства</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-watches">Часы</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-audio">Аудио</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-pc">Комплектующие для ПК</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-mouse">Компьютеры & Аксессуары</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-print">Принтеры & Сканеры</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-box">Развлечения</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-gear">Название</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-gear">Название</a>
-								</li>
-								<li class="navigation__item swiper-slide">
-									<a href="" class="navigation__slide-link icon-gear">Название</a>
-								</li>
-							</ul>
-						</nav>
-						<button type="button" aria-label="Листать вправо" class="navigation__next swiper-button-next"></button>
+						<div class="markets__filters">
+							<button type="button" class="markets__clear icon-clear"></button>
+							<div class="markets__filters-dropdown dropdown dropdown_gray">
+								<button type="button" class="dropdown__button" aria-expanded="false" aria-haspopup="true">Сначала новые</button>
+								<div class="dropdown__content" aria-hidden="true">
+									<ul class="dropdown__list" role="listbox" data-scrollbar>
+										<li role="option" data-value="popular" class="dropdown__list-item">Сначала популярные</li>
+										<li role="option" data-value="high" class="dropdown__list-item">Сначала с высокой оценкой</li>
+										<li role="option" data-value="low" class="dropdown__list-item">Сначала с низкой оценкой</li>
+										<li role="option" data-value="new" aria-checked="true" class="dropdown__list-item dropdown__list-item_active">Сначала новые</li>
+									</ul>
+									<input type="text" name="sort" class="dropdown__input hidden" hidden value="news">
+								</div>
+							</div>
+
+							<div class="markets__filters-dropdown dropdown dropdown_gray">
+								<button type="button" class="dropdown__button" aria-expanded="false" aria-haspopup="true">Цвет: Deep Purple</button>
+								<div class="dropdown__content" aria-hidden="true">
+									<ul class="dropdown__list" role="listbox" data-scrollbar>
+										<li role="option" data-value="red" class="dropdown__list-item">Цвет: Red</li>
+										<li role="option" data-value="deep" aria-checked="true" class="dropdown__list-item dropdown__list-item_active">Цвет: Deep Purple</li>
+									</ul>
+									<input type="text" name="color" class="dropdown__input hidden" hidden value="deep">
+								</div>
+							</div>
+							<div class="markets__filters-dropdown dropdown dropdown_gray">
+								<button type="button" class="dropdown__button" aria-expanded="false" aria-haspopup="true">128 GB</button>
+								<div class="dropdown__content" aria-hidden="true">
+									<ul class="dropdown__list" role="listbox" data-scrollbar>
+										<li role="option" data-value="64" class="dropdown__list-item">64 GB</li>
+										<li role="option" data-value="128" aria-checked="true" class="dropdown__list-item dropdown__list-item_active">128 GB</li>
+									</ul>
+									<input type="text" name="memory" class="dropdown__input hidden" hidden value="128">
+								</div>
+							</div>
+
+						</div>
+						<ul class="markets__list">
+							<li class="markets__item">
+								<div class="markets__item-thumb">
+									<div class="markets__item-thumb-main">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="iPhone">
+										</picture>
+									</div>
+									<div class="markets__item-thumb-more">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="iPhone">
+										</picture>
+									</div>
+								</div>
+								<div class="markets__item-info">
+									<a href="tennobazar.ru" class="markets__item-shop">Tennobazar.ru</a>
+									<div class="markets__item-info-footer">
+										<div class="markets__item-rate">
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+										</div>
+										<div class="markets__item-info-quantity">
+											633 <span>отзыва</span>
+										</div>
+									</div>
+								</div>
+								<div class="markets__item-delivery">
+									<div class="markets__item-delivery-block icon-delivery">Бесплатно сегодня</div>
+									<div class="markets__item-delivery-block icon-pin">Самовывовоз</div>
+								</div>
+								<div class="markets__item-color">
+									<div class="markets__item-color-title">Цвет:</div>
+									<img src="img/1x1.png" data-src="img/colors/gray.svg" alt="Серый цвет">
+								</div>
+								<div class="markets__item-price">
+									105 990 ₸
+								</div>
+								<a href="" class="markets__item-btn btn btn_yellow">Посмотреть</a>
+							</li>
+							<li class="markets__item">
+								<div class="markets__item-thumb">
+									<div class="markets__item-thumb-main">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="iPhone">
+										</picture>
+									</div>
+									<div class="markets__item-thumb-more">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="iPhone">
+										</picture>
+									</div>
+								</div>
+								<div class="markets__item-info">
+									<a href="tennobazar.ru" class="markets__item-shop">Tennobazar.ru</a>
+									<div class="markets__item-info-footer">
+										<div class="markets__item-rate">
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+										</div>
+										<div class="markets__item-info-quantity">
+											633 <span>отзыва</span>
+										</div>
+									</div>
+								</div>
+								<div class="markets__item-delivery">
+									<div class="markets__item-delivery-block icon-delivery">Бесплатно сегодня</div>
+									<div class="markets__item-delivery-block icon-pin">Самовывовоз</div>
+								</div>
+								<div class="markets__item-color">
+									<div class="markets__item-color-title">Цвет:</div>
+									<img src="img/1x1.png" data-src="img/colors/gray.svg" alt="Серый цвет">
+								</div>
+								<div class="markets__item-price">
+									105 990 ₸
+								</div>
+								<a href="" class="markets__item-btn btn btn_yellow">Посмотреть</a>
+							</li>
+							<li class="markets__item">
+								<div class="markets__item-thumb">
+									<div class="markets__item-thumb-main">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="iPhone">
+										</picture>
+									</div>
+									<div class="markets__item-thumb-more">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="iPhone">
+										</picture>
+									</div>
+								</div>
+								<div class="markets__item-info">
+									<a href="tennobazar.ru" class="markets__item-shop">Tennobazar.ru</a>
+									<div class="markets__item-info-footer">
+										<div class="markets__item-rate">
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+										</div>
+										<div class="markets__item-info-quantity">
+											633 <span>отзыва</span>
+										</div>
+									</div>
+								</div>
+								<div class="markets__item-delivery">
+									<div class="markets__item-delivery-block icon-delivery">Бесплатно сегодня</div>
+									<div class="markets__item-delivery-block icon-pin">Самовывовоз</div>
+								</div>
+								<div class="markets__item-color">
+									<div class="markets__item-color-title">Цвет:</div>
+									<img src="img/1x1.png" data-src="img/colors/gray.svg" alt="Серый цвет">
+								</div>
+								<div class="markets__item-price">
+									105 990 ₸
+								</div>
+								<a href="" class="markets__item-btn btn btn_yellow">Посмотреть</a>
+							</li>
+							<li class="markets__item">
+								<div class="markets__item-thumb">
+									<div class="markets__item-thumb-main">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="iPhone">
+										</picture>
+									</div>
+									<div class="markets__item-thumb-more">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="iPhone">
+										</picture>
+									</div>
+								</div>
+								<div class="markets__item-info">
+									<a href="tennobazar.ru" class="markets__item-shop">Tennobazar.ru</a>
+									<div class="markets__item-info-footer">
+										<div class="markets__item-rate">
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+										</div>
+										<div class="markets__item-info-quantity">
+											633 <span>отзыва</span>
+										</div>
+									</div>
+								</div>
+								<div class="markets__item-delivery">
+									<div class="markets__item-delivery-block icon-delivery">Бесплатно сегодня</div>
+									<div class="markets__item-delivery-block icon-pin">Самовывовоз</div>
+								</div>
+								<div class="markets__item-color">
+									<div class="markets__item-color-title">Цвет:</div>
+									<img src="img/1x1.png" data-src="img/colors/gray.svg" alt="Серый цвет">
+								</div>
+								<div class="markets__item-price">
+									105 990 ₸
+								</div>
+								<a href="" class="markets__item-btn btn btn_yellow">Посмотреть</a>
+							</li>
+							<li class="markets__item">
+								<div class="markets__item-thumb">
+									<div class="markets__item-thumb-main">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="iPhone">
+										</picture>
+									</div>
+									<div class="markets__item-thumb-more">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="iPhone">
+										</picture>
+									</div>
+								</div>
+								<div class="markets__item-info">
+									<a href="tennobazar.ru" class="markets__item-shop">Tennobazar.ru</a>
+									<div class="markets__item-info-footer">
+										<div class="markets__item-rate">
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+										</div>
+										<div class="markets__item-info-quantity">
+											633 <span>отзыва</span>
+										</div>
+									</div>
+								</div>
+								<div class="markets__item-delivery">
+									<div class="markets__item-delivery-block icon-delivery">Бесплатно сегодня</div>
+									<div class="markets__item-delivery-block icon-pin">Самовывовоз</div>
+								</div>
+								<div class="markets__item-color">
+									<div class="markets__item-color-title">Цвет:</div>
+									<img src="img/1x1.png" data-src="img/colors/gray.svg" alt="Серый цвет">
+								</div>
+								<div class="markets__item-price">
+									105 990 ₸
+								</div>
+								<a href="" class="markets__item-btn btn btn_yellow">Посмотреть</a>
+							</li>
+							<li class="markets__item">
+								<div class="markets__item-thumb">
+									<div class="markets__item-thumb-main">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="iPhone">
+										</picture>
+									</div>
+									<div class="markets__item-thumb-more">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="iPhone">
+										</picture>
+									</div>
+								</div>
+								<div class="markets__item-info">
+									<a href="tennobazar.ru" class="markets__item-shop">Tennobazar.ru</a>
+									<div class="markets__item-info-footer">
+										<div class="markets__item-rate">
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+										</div>
+										<div class="markets__item-info-quantity">
+											633 <span>отзыва</span>
+										</div>
+									</div>
+								</div>
+								<div class="markets__item-delivery">
+									<div class="markets__item-delivery-block icon-delivery">Бесплатно сегодня</div>
+									<div class="markets__item-delivery-block icon-pin">Самовывовоз</div>
+								</div>
+								<div class="markets__item-color">
+									<div class="markets__item-color-title">Цвет:</div>
+									<img src="img/1x1.png" data-src="img/colors/gray.svg" alt="Серый цвет">
+								</div>
+								<div class="markets__item-price">
+									105 990 ₸
+								</div>
+								<a href="" class="markets__item-btn btn btn_yellow">Посмотреть</a>
+							</li>
+							<li class="markets__item">
+								<div class="markets__item-thumb">
+									<div class="markets__item-thumb-main">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="iPhone">
+										</picture>
+									</div>
+									<div class="markets__item-thumb-more">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="iPhone">
+										</picture>
+									</div>
+								</div>
+								<div class="markets__item-info">
+									<a href="tennobazar.ru" class="markets__item-shop">Tennobazar.ru</a>
+									<div class="markets__item-info-footer">
+										<div class="markets__item-rate">
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+											<span class="markets__item-rate-block icon-star-fill"></span>
+										</div>
+										<div class="markets__item-info-quantity">
+											633 <span>отзыва</span>
+										</div>
+									</div>
+								</div>
+								<div class="markets__item-delivery">
+									<div class="markets__item-delivery-block icon-delivery">Бесплатно сегодня</div>
+									<div class="markets__item-delivery-block icon-pin">Самовывовоз</div>
+								</div>
+								<div class="markets__item-color">
+									<div class="markets__item-color-title">Цвет:</div>
+									<img src="img/1x1.png" data-src="img/colors/gray.svg" alt="Серый цвет">
+								</div>
+								<div class="markets__item-price">
+									105 990 ₸
+								</div>
+								<a href="" class="markets__item-btn btn btn_yellow">Посмотреть</a>
+							</li>
+						</ul>
+						<div class="markets__footer">
+							<a href="" class="markets__more btn btn_white icon-plus">
+								Показать больше
+							</a>
+						</div>
 					</div>
 				</div>
 				<section class="products products_white-mobile">
 					<div class="products__container">
-						<h2 class="products__title title">Новинки</h2>
+						<h2 class="products__title title">Часто сравнивают с:</h2>
 						<div class="products__body">
 							<button type="button" aria-label="Листать влево" class="products__prev swiper-button-prev"></button>
 							<div class="products__slider swiper">
@@ -1465,398 +1705,1511 @@
 						</div>
 					</div>
 				</section>
-				<section class="videos">
-					<div class="videos__container">
-						<h2 class="videos__title title">Популярные видеообзоры</h2>
-						<div class="videos__body">
-							<button type="button" aria-label="Листать влево" class="videos__prev swiper-button-prev"></button>
-							<div class="videos__slider swiper">
-								<div class="swiper-wrapper">
-									<div class="videos__slide swiper-slide" itemscope itemtype="http://schema.org/VideoObject">
-										<a href="" class="videos__slide-link"></a>
-										<div class="videos__slide-image">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/videos/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/videos/01.jpg" class="cover-image" alt="Cравнение iPhone 14 Pro против Galaxy S23 Ultra!">
-											</picture>
-										</div>
-										<div class="videos__slide-caption">Cравнение iPhone 14 Pro против Galaxy S23 Ultra!</div>
-										<meta itemprop="name" content="Cравнение iPhone 14 Pro против Galaxy S23 Ultra!">
-									</div>
-									<div class="videos__slide swiper-slide" itemscope itemtype="http://schema.org/VideoObject">
-										<a href="" class="videos__slide-link"></a>
-										<div class="videos__slide-image">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/videos/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/videos/02.jpg" class="cover-image" alt="Сравнение Xiaomi 12T vs Xiaomi 12T Pro - какой и почему НЕ БРАТЬ или какой ЛУЧШЕ ВЗЯТЬ?">
-											</picture>
-										</div>
-										<div class="videos__slide-caption">Сравнение Xiaomi 12T vs Xiaomi 12T Pro - какой и почему НЕ БРАТЬ или какой ЛУЧШЕ ВЗЯТЬ?</div>
-										<meta itemprop="name" content="Сравнение Xiaomi 12T vs Xiaomi 12T Pro - какой и почему НЕ БРАТЬ или какой ЛУЧШЕ ВЗЯТЬ?">
-									</div>
-									<div class="videos__slide swiper-slide" itemscope itemtype="http://schema.org/VideoObject">
-										<a href="" class="videos__slide-link"></a>
-										<div class="videos__slide-image">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/videos/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/videos/03.jpg" class="cover-image" alt="Как выбрать дрон DJI? Лучшие модели в 2022!">
-											</picture>
-										</div>
-										<div class="videos__slide-caption">Как выбрать дрон DJI? Лучшие модели в 2022!</div>
-										<meta itemprop="name" content="Как выбрать дрон DJI? Лучшие модели в 2022!">
-									</div>
-									<div class="videos__slide swiper-slide" itemscope itemtype="http://schema.org/VideoObject">
-										<a href="" class="videos__slide-link"></a>
-										<div class="videos__slide-image">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/videos/04.webp" type="image/webp"><img src="img/1x1.png" data-src="img/videos/04.jpg" class="cover-image" alt="Тест 4080, игры, температуры, работа, сравнение с 3080/80Ti, 3090, 4090, 6900XT">
-											</picture>
-										</div>
-										<div class="videos__slide-caption">Тест 4080, игры, температуры, работа, сравнение с 3080/80Ti, 3090, 4090, 6900XT</div>
-										<meta itemprop="name" content="Тест 4080, игры, температуры, работа, сравнение с 3080/80Ti, 3090, 4090, 6900XT">
-									</div>
-									<div class="videos__slide swiper-slide" itemscope itemtype="http://schema.org/VideoObject">
-										<a href="" class="videos__slide-link"></a>
-										<div class="videos__slide-image">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/videos/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/videos/01.jpg" class="cover-image" alt="Cравнение iPhone 14 Pro против Galaxy S23 Ultra!">
-											</picture>
-										</div>
-										<div class="videos__slide-caption">Cравнение iPhone 14 Pro против Galaxy S23 Ultra!</div>
-										<meta itemprop="name" content="Cравнение iPhone 14 Pro против Galaxy S23 Ultra!">
-									</div>
-									<div class="videos__slide swiper-slide" itemscope itemtype="http://schema.org/VideoObject">
-										<a href="" class="videos__slide-link"></a>
-										<div class="videos__slide-image">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/videos/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/videos/02.jpg" class="cover-image" alt="Сравнение Xiaomi 12T vs Xiaomi 12T Pro - какой и почему НЕ БРАТЬ или какой ЛУЧШЕ ВЗЯТЬ?">
-											</picture>
-										</div>
-										<div class="videos__slide-caption">Сравнение Xiaomi 12T vs Xiaomi 12T Pro - какой и почему НЕ БРАТЬ или какой ЛУЧШЕ ВЗЯТЬ?</div>
-										<meta itemprop="name" content="Сравнение Xiaomi 12T vs Xiaomi 12T Pro - какой и почему НЕ БРАТЬ или какой ЛУЧШЕ ВЗЯТЬ?">
-									</div>
-									<div class="videos__slide swiper-slide" itemscope itemtype="http://schema.org/VideoObject">
-										<a href="" class="videos__slide-link"></a>
-										<div class="videos__slide-image">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/videos/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/videos/03.jpg" class="cover-image" alt="Как выбрать дрон DJI? Лучшие модели в 2022!">
-											</picture>
-										</div>
-										<div class="videos__slide-caption">Как выбрать дрон DJI? Лучшие модели в 2022!</div>
-										<meta itemprop="name" content="Как выбрать дрон DJI? Лучшие модели в 2022!">
-									</div>
-									<div class="videos__slide swiper-slide" itemscope itemtype="http://schema.org/VideoObject">
-										<a href="" class="videos__slide-link"></a>
-										<div class="videos__slide-image">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/videos/04.webp" type="image/webp"><img src="img/1x1.png" data-src="img/videos/04.jpg" class="cover-image" alt="Тест 4080, игры, температуры, работа, сравнение с 3080/80Ti, 3090, 4090, 6900XT">
-											</picture>
-										</div>
-										<div class="videos__slide-caption">Тест 4080, игры, температуры, работа, сравнение с 3080/80Ti, 3090, 4090, 6900XT</div>
-										<meta itemprop="name" content="Тест 4080, игры, температуры, работа, сравнение с 3080/80Ti, 3090, 4090, 6900XT">
-									</div>
-								</div>
-							</div>
-							<button type="button" aria-label="Листать вправо" class="videos__next swiper-button-next"></button>
+				<section class="specification specification_white">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-perfomance">Производительность</h2>
+						<div class="specification__grid">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption icon-board">
+												Процессор
+												<div class="table__caption-tooltip tooltip">
+													<button type="button" class="tooltip__btn icon-question"></button>
+													<div class="tooltip__body" role="tooltip">
+														<div class="tooltip__body-wrapper">
+															<dfn>Мобильный процессор </dfn>- это "мозг" смартфона. Он обрабатывает данные, управляет задачами и отображает графику. Чем больше ядер, тем быстрее работает смартфон. Мощные графические возможности обеспечивают качественное отображение игр и видео. Процессоры также энергоэффективны, чтобы батарея держала дольше. В итоге, мобильный процессор определяет производительность и функциональность вашего смартфона.
+														</div>
+														<button type="button" class="tooltip__close icon-clear"></button>
+													</div>
+												</div>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td> Модель</td>
+										<td>A16</td>
+									</tr>
+									<tr>
+										<td>CPU-ядер</td>
+										<td>2840 МГц</td>
+									</tr>
+									<tr>
+										<td>Макс частота</td>
+										<td>8 (1 + 3 + 4)</td>
+									</tr>
+									<tr>
+										<td>Макс частота</td>
+										<td>3.46 GHz</td>
+									</tr>
+									<tr>
+										<td>Частота</td>
+										<td>3.46 GHz</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption icon-benchmark">
+												Бенчмарки
+												<div class="table__caption-tooltip tooltip">
+													<button type="button" class="tooltip__btn icon-question"></button>
+													<div class="tooltip__body" role="tooltip">
+														<div class="tooltip__body-wrapper">
+															<dfn>Бенчмарки </dfn>- это Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+														</div>
+														<button type="button" class="tooltip__close icon-clear"></button>
+													</div>
+												</div>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="2">
+											<div class="table__progress">
+												<dl class="table__progress-header">
+													<dt class="table__progress-title">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/icons/AnTuTu.webp" type="image/webp"><img src="img/1x1.png" data-src="img/icons/AnTuTu.png" alt="AnTuTu logo">
+														</picture> AnTuTu v9
+													</dt>
+													<dd class="table__progress-value">
+														193 539
+														<div class="table__progress-tooltip tooltip_gray tooltip">
+															<button type="button" class="tooltip__btn icon-question"></button>
+															<div class="tooltip__body" role="tooltip">
+																<div class="tooltip__body-wrapper">
+																	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+																</div>
+																<button type="button" class="tooltip__close icon-clear"></button>
+															</div>
+														</div>
+													</dd>
+												</dl>
+												<div class="table__progress-range range">
+													<input type="range" class="range__input" disabled value="193539" max="200000">
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div class="table__progress">
+												<dl class="table__progress-header">
+													<dt class="table__progress-title">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/icons/Geekbench.webp" type="image/webp"><img src="img/1x1.png" data-src="img/icons/Geekbench.png" alt="Geekbench logo">
+														</picture> Geekbench 5 v9
+													</dt>
+													<dd class="table__progress-value">
+														1863
+														<div class="table__progress-tooltip tooltip_gray tooltip">
+															<button type="button" class="tooltip__btn icon-question"></button>
+															<div class="tooltip__body" role="tooltip">
+																<div class="tooltip__body-wrapper">
+																	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+																</div>
+																<button type="button" class="tooltip__close icon-clear"></button>
+															</div>
+														</div>
+													</dd>
+												</dl>
+												<div class="table__progress-range range">
+													<input type="range" class="range__input" disabled value="1863" max="2000">
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2">
+											<div class="table__progress">
+												<dl class="table__progress-header">
+													<dt class="table__progress-title">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/icons/3DMark.webp" type="image/webp"><img src="img/1x1.png" data-src="img/icons/3DMark.png" alt="3DMark logo">
+														</picture> 3DMark Wild Life Performance
+													</dt>
+													<dd class="table__progress-value">
+														9411
+														<div class="table__progress-tooltip tooltip_gray tooltip">
+															<button type="button" class="tooltip__btn icon-question"></button>
+															<div class="tooltip__body" role="tooltip">
+																<div class="tooltip__body-wrapper">
+																	Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+																</div>
+																<button type="button" class="tooltip__close icon-clear"></button>
+															</div>
+														</div>
+													</dd>
+												</dl>
+												<div class="table__progress-range range">
+													<input type="range" class="range__input" disabled value="9411" max="10000">
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</section>
-				<section class="products">
-					<div class="products__container">
-						<h2 class="products__title title icon-mobile">Смартфоны</h2>
-						<ul class="products__grid" itemscope itemtype="http://schema.org/ItemList">
-							<li id="product-grid-smartphone-1" class=" products__grid-item products__grid-item_violet" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Новинка</span>
+				<section class="specification">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-display">Дисплей</h2>
+						<div class="specification__grid">
+							<table class="specification__table table table_md">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Характеристики
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<table class="table table_sm">
+												<tbody>
+													<tr>
+														<td> Тип1</td>
+														<td>A16</td>
+													</tr>
+													<tr>
+														<td>Тачскрин2</td>
+														<td>
+															<div class="table__status table__status_succes">Есть</div>
+														</td>
+													</tr>
+													<tr>
+														<td>Размер3</td>
+														<td>6.1 дюймов</td>
+													</tr>
+													<tr>
+														<td>Разрешение4</td>
+														<td>1170 x 2532</td>
+													</tr>
+													<tr>
+														<td>Частота обновления5</td>
+														<td>60 Гц</td>
+													</tr>
+													<tr>
+														<td>Модель6</td>
+														<td>19.5:9</td>
+													</tr>
+													<tr>
+														<td>Модель7</td>
+														<td>460 точек на дюйм</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table table_sm">
+												<tbody>
+													<tr>
+														<td>Макс. заявленная яркость 9</td>
+														<td>800 нит</td>
+													</tr>
+													<tr>
+														<td>Макс. заявленная яркость в HDR 9</td>
+														<td>1200 нит</td>
+													</tr>
+													<tr>
+														<td>Защита дисплея 10</td>
+														<td>Ceramic Shield</td>
+													</tr>
+													<tr>
+														<td>Соотношение экрана к корпусу11</td>
+														<td>86%</td>
+													</tr>
+													<tr>
+														<td>Особенности12</td>
+														<td>- DCI-P3</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
 
-										<h3 itemprop="name" class="products__grid-item-name">Huawei Nova 11 Pro</h3>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Особенности
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Тачскрин</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Второй экран</td>
+										<td>
+											<div class="table__status table__status_fail">Нет</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Поддержка HDR</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Адаптивная частота обновления</td>
+										<td>
+											<div class="table__status table__status_fail">Нет</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="specification">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-display">3 колонки</h2>
+						<div class="specification__grid specification__grid_lg">
+							<table class="specification__table table table_lg">
+								<thead>
+									<tr>
+										<th colspan="3">
+											<div class="table__caption">
+												Характеристики
+												<div class="table__caption-tooltip tooltip">
+													<button type="button" class="tooltip__btn icon-question"></button>
+													<div class="tooltip__body" role="tooltip">
+														<div class="tooltip__body-wrapper">
+															Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+														</div>
+														<button type="button" class="tooltip__close icon-clear"></button>
+													</div>
+												</div>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<table class="table table_sm">
+												<tbody>
+													<tr>
+														<td> Тип1</td>
+														<td>A16</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="table__row">
+																Тачскрин2
+																<div class="table__tooltip tooltip_gray tooltip">
+																	<button type="button" class="tooltip__btn icon-question"></button>
+																	<div class="tooltip__body" role="tooltip">
+																		<div class="tooltip__body-wrapper">
+																			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+																		</div>
+																		<button type="button" class="tooltip__close icon-clear"></button>
+																	</div>
+																</div>
+															</div>
 
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
+														</td>
+														<td>
+															<div class="table__status table__status_succes">Есть</div>
+														</td>
+													</tr>
+													<tr>
+														<td>Размер3</td>
+														<td>6.1 дюймов</td>
+													</tr>
+													<tr>
+														<td>
+															<div class="table__row">
+																Разрешение4
+																<div class="table__tooltip tooltip_gray tooltip">
+																	<button type="button" class="tooltip__btn icon-question"></button>
+																	<div class="tooltip__body" role="tooltip">
+																		<div class="tooltip__body-wrapper">
+																			Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+																		</div>
+																		<button type="button" class="tooltip__close icon-clear"></button>
+																	</div>
+																</div>
+															</div>
+														</td>
+														<td>1170 x 2532</td>
+													</tr>
+													<tr>
+														<td>Частота обновления5</td>
+														<td>60 Гц</td>
+													</tr>
+													<tr>
+														<td>Модель6</td>
+														<td>19.5:9</td>
+													</tr>
+													<tr>
+														<td>Модель7</td>
+														<td>460 точек на дюйм</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table table_sm">
+												<tbody>
+													<tr>
+														<td>Макс. заявленная яркость 9</td>
+														<td>800 нит</td>
+													</tr>
+													<tr>
+														<td>Макс. заявленная яркость в HDR 9</td>
+														<td>1200 нит</td>
+													</tr>
+													<tr>
+														<td>Защита дисплея 10</td>
+														<td>Ceramic Shield</td>
+													</tr>
+													<tr>
+														<td>Соотношение экрана к корпусу11</td>
+														<td>86%</td>
+													</tr>
+													<tr>
+														<td>Особенности12</td>
+														<td>- DCI-P3</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+										<td>
+											<table class="table table_sm">
+												<tbody>
+													<tr>
+														<td>Макс. заявленная яркость 13</td>
+														<td>800 нит</td>
+													</tr>
+													<tr>
+														<td>Макс. заявленная яркость в HDR 4</td>
+														<td>1200 нит</td>
+													</tr>
+													<tr>
+														<td>Защита дисплея 15</td>
+														<td>Ceramic Shield</td>
+													</tr>
+													<tr>
+														<td>Соотношение экрана к корпусу 16</td>
+														<td>86%</td>
+													</tr>
+													<tr>
+														<td>Особенности17</td>
+														<td>- DCI-P3</td>
+													</tr>
+												</tbody>
+											</table>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="specification">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-memory">Память</h2>
+						<div class="specification__grid">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Накопитель
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Обьем ОЗУ</td>
+										<td>6 ГБ</td>
+									</tr>
+									<tr>
+										<td>Тип памяти</td>
+										<td>LPDDR4X</td>
+									</tr>
+									<tr>
+										<td>Частота памяти</td>
+										<td>2133 МГц</td>
+									</tr>
+									<tr>
+										<td>Количество каналов</td>
+										<td>2</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption icon-ddr">
+												Оперативная память
+												<div class="table__caption-tooltip tooltip">
+													<button type="button" class="tooltip__btn icon-question"></button>
+													<div class="tooltip__body" role="tooltip">
+														<div class="tooltip__body-wrapper">
+															Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+														</div>
+														<button type="button" class="tooltip__close icon-clear"></button>
+													</div>
+												</div>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Обьем ОЗУ</td>
+										<td>6 ГБ</td>
+									</tr>
+									<tr>
+										<td>Тип памяти</td>
+										<td>LPDDR4X</td>
+									</tr>
+									<tr>
+										<td>Частота памяти</td>
+										<td>2133 МГц</td>
+									</tr>
+									<tr>
+										<td>Количество каналов</td>
+										<td>2</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="specification specification_white">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-mobile">Дизайн и корпус</h2>
+						<div class="specification__grid">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Параметры
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Вес</td>
+										<td>233 гр.</td>
+									</tr>
+									<tr>
+										<td>
+											Толщина
+										</td>
+										<td>
+											8.9mm
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Ширина
+										</td>
+										<td>
+											78.1mm
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Высота
+										</td>
+										<td>
+											163.4mm
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Рейтинг защиты от воды и пыли
+										</td>
+										<td>
+											IP67
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Особенности
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											Пыле-водонепроницаемый
+										</td>
+										<td>
+											<div class="table__status table__status_succes">Да</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Можно складывать
+										</td>
+										<td>
+											<div class="table__status table__status_succes">Да</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="specification">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-camera">Камера</h2>
+						<div class="specification__grid specification__grid_md">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Основная камера
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Матрица</td>
+										<td>A16</td>
+									</tr>
+									<tr>
+										<td>Разрешение фото</td>
+										<td>2840 МГц</td>
+									</tr>
+									<tr>
+										<td>Запись 8К видео</td>
+										<td>
+											<div class="table__status table__status_fail">Нет</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Запись 4K видео</td>
+										<td>
+											<div class="table__status table__status_succes">До 60 кадров</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Запись 1080p видео</td>
+										<td>
+											<div class="table__status table__status_succes">До 60 кадров/c</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Замедленная съемка
+										</td>
+										<td>
+											<div class="table__status table__status_succes">240 кадров/c</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Разрешение фото
+										</td>
+										<td>
+											2
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Основной объектив
 
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/phone-1.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/phone-1.png" alt="Huawei Nova 11 Pro">
-										</picture>
-									</span>
+										</td>
+										<td>
+											<ul>
+												<li>12 мегапикселей</li>
+												<li>
+													Апертура: f/1.5
+												</li>
+												<li>
+													Фокусное расстояние: 26 мм
+												</li>
+												<li>
+													Размер пикселя: 1.9 микрон
+												</li>
+												<li>
+													Фазовый автофокус (Dual Pixel)
+												</li>
+												<li>
+													Оптическая стабилизация
+												</li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											Широкоугольный объектив:
 
+										</td>
+										<td>
+											<ul>
+												<li>
+													12 мегапикселей
+												</li>
+												<li>
+													Апертура: f/2.4
+												</li>
+												<li>
+													Фокусное расстояние: 13 мм
+												</li>
+											</ul>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Селфи камера
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Матрица</td>
+										<td>A16</td>
+									</tr>
+									<tr>
+										<td>Разрешение фото</td>
+										<td>2840 МГц</td>
+									</tr>
+									<tr>
+										<td>Апертура</td>
+										<td>f/1.9</td>
+									</tr>
+									<tr>
+										<td>Запись 8К видео</td>
+										<td>
+											<div class="table__status table__status_fail">Нет</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Запись 4K видео</td>
+										<td>
+											<div class="table__status table__status_succes">До 60 кадров</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Запись 1080p видео</td>
+										<td>
+											<div class="table__status table__status_succes">До 60 кадров/c</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="specification">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-battery">Батарея</h2>
+						<div class="specification__grid">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Характеристики
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Объем</td>
+										<td>3279 мАч</td>
+									</tr>
+									<tr>
+										<td>Толщина</td>
+										<td>20 Вт</td>
+									</tr>
+									<tr>
+										<td>Ширина</td>
+										<td>Литий-ионный (Li-Ion)</td>
+									</tr>
+									<tr>
+										<td>Высота</td>
+										<td>163.4mm</td>
+									</tr>
+									<tr>
+										<td>Рейтинг защиты от воды и пыли</td>
+										<td>IP67</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Особенности
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Быстрая зарядка</td>
+										<td>
+											<div class="table__status table__status_succes">67 W</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Беспроводная зарядка</td>
+										<td>
+											<div class="table__status table__status_succes">Да</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Реверсивная зарядка</td>
+										<td>
+											<div class="table__status table__status_fail">Нет</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Съемный</td>
+										<td>
+											<div class="table__status table__status_fail">Нет</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption icon-hand">
+												Тест автономности
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Веб-серфинг</td>
+										<td>15:45 ч.</td>
+									</tr>
+									<tr>
+										<td>Просмотр видео</td>
+										<td>13:35 ч.</td>
+									</tr>
+									<tr>
+										<td>Игры</td>
+										<td>05:04 ч.</td>
+									</tr>
+									<tr>
+										<td>Режим ожидания</td>
+										<td>122 ч.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 
+					</div>
+				</section>
+				<section class="specification specification_white">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-sound">Аудио</h2>
+						<div class="specification__grid">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Параметры
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Объем</td>
+										<td>Стерео</td>
+									</tr>
+									<tr>
+										<td>Толщина</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>Ширина</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Высота</td>
+										<td>
+											<div class="table__status table__status_fail">Нет</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Рейтинг защиты от воды и пыли</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption icon-speakers">
+												Тест динамиков
+												<div class="table__caption-tooltip tooltip">
+													<button type="button" class="tooltip__btn icon-question"></button>
+													<div class="tooltip__body" role="tooltip">
+														<div class="tooltip__body-wrapper">
+															Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+														</div>
+														<button type="button" class="tooltip__close icon-clear"></button>
+													</div>
+												</div>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="2">
+											<div class="table__progress">
+												<dl class="table__progress-header">
+													<dt class="table__progress-title">
+														Максимальная громкость
+													</dt>
+													<dd class="table__progress-value">
+														89.5 дБ
+													</dd>
+												</dl>
+												<div class="table__progress-range range">
+													<input type="range" class="range__input" disabled value="89.5" max="100">
+												</div>
+											</div>
 
-								</a>
-							</li>
-							<li id="product-grid-smartphone-2" class=" products__grid-item products__grid-item_orange" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Новинка</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="specification">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-communications">Коммуникации</h2>
+						<div class="specification__grid">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Характеристики
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Версия Wi-Fi</td>
+										<td>Wi-Fi 6 (802.11 a/b/g/n/ac/ax)</td>
+									</tr>
+									<tr>
+										<td>Версия Bluetooth</td>
+										<td>5.3</td>
+									</tr>
+									<tr>
+										<td>Функции Bluetooth</td>
+										<td>LE</td>
+									</tr>
+									<tr>
+										<td>Разъем</td>
+										<td>Lightning</td>
+									</tr>
+									<tr>
+										<td>Версия USB</td>
+										<td>2</td>
+									</tr>
+									<tr>
+										<td>GPS</td>
+										<td>GPS, GLONASS, Beidou, Galileo, QZSS</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Связь
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Количество SIM</td>
+										<td>3279 мАч</td>
+									</tr>
+									<tr>
+										<td>Тип SIM</td>
+										<td>20 Вт</td>
+									</tr>
+									<tr>
+										<td>Поддержка eSIM</td>
+										<td>Литий-ионный (Li-Ion)</td>
+									</tr>
+									<tr>
+										<td>Поддержка 5G</td>
+										<td>Литий-ионный (Li-Ion)</td>
+									</tr>
+									<tr>
+										<td>Гибридный слот</td>
+										<td>163.4mm</td>
+									</tr>
+									<tr>
+										<td>LTE Cat*</td>
+										<td>IP67</td>
+									</tr>
+									<tr>
+										<td>Поддержка 5G</td>
+										<td>IP67</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption icon-sensors">
+												Сенсоры и датчики
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Распознавание лица</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>NFC</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Гироскоп</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Компас</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Инфракрасный порт</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Акселерометр</td>
+										<td>
+											<div class="table__status table__status_succes">Есть</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Барометр</td>
+										<td>
+											<div class="table__status table__status_fail">Нет</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+				<section class="specification specification_white">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-windows">Другое</h2>
+						<div class="specification__grid excerpt-hidden" id="specification">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
-										<h3 itemprop="name" class="products__grid-item-name">Huawei Nova 11 Pro</h3>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/phone-2.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/phone-2.png" alt="Huawei Nova 11 Pro">
-										</picture>
-									</span>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
-								</a>
-							</li>
-							<li id="product-grid-smartphone-3" class=" products__grid-item products__grid-item_green" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Новинка</span>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
-										<h3 itemprop="name" class="products__grid-item-name">Huawei Nova 11 Pro</h3>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Информация
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Дата выхода</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Дата начала продаж</td>
+										<td>Сентябрь 2022 года</td>
+									</tr>
+									<tr>
+										<td>Наличие на рынке</td>
+										<td>
+											<div class="table__status table__status_succes">Доступен</div>
+										</td>
+									</tr>
+									<tr>
+										<td>Комплект</td>
+										<td>
+											<ul>
+												<li>Смартфон</li>
+												<li>Кабель USB Type-C Lightning</li>
+												<li>Краткое руководство пользователя</li>
+												<li>Скрепка для извлечения SIM-карты</li>
+											</ul>
+										</td>
+									</tr>
 
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/phone-3.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/phone-3.png" alt="Huawei Nova 11 Pro">
-										</picture>
-									</span>
-
-
-
-								</a>
-							</li>
-							<li id="product-grid-smartphone-4" class=" products__grid-item products__grid-item_blue" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label products__grid-item-label_lg">Популярные сравнения</span>
-
-										<h3 class="products__grid-item-compare">
-											<span>Apple iPhone 14 Pro Max</span>
-											<span>vs</span>
-											<span>Samsung Galaxy S23 Ultra</span>
-										</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-
-									<span class="products__grid-versus">
-										<span class="products__grid-versus-item ">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/phone-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/phone-1.png" alt="Apple iPhone 14 Pro Max">
-											</picture>
-										</span>
-										<span class="products__grid-versus-item ">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/phone-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/phone-2.png" alt="Samsung Galaxy S23 Ultra">
-											</picture>
-										</span>
-									</span>
-
-
-								</a>
-							</li>
-							<li id="product-grid-smartphone-5" class=" products__grid-item products__grid-item_pink" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label products__grid-item-label_lg">Популярные сравнения</span>
-
-										<h3 class="products__grid-item-compare">
-											<span>Apple iPhone 14 Pro Max</span>
-											<span>vs</span>
-											<span>Samsung Galaxy S23 Ultra</span>
-										</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-
-									<span class="products__grid-versus">
-										<span class="products__grid-versus-item ">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/phone-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/phone-1.png" alt="Apple iPhone 14 Pro Max">
-											</picture>
-										</span>
-										<span class="products__grid-versus-item ">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/phone-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/phone-2.png" alt="Samsung Galaxy S23 Ultra">
-											</picture>
-										</span>
-									</span>
-
-
-								</a>
-							</li>
-						</ul>
-						<div class="products__columns">
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Популярное</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-23.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/samsung-galaxy-s-23.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-22.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/samsung-galaxy-s-22.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Высокий рейтинг</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-23.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/samsung-galaxy-s-23.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-22.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/samsung-galaxy-s-22.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Новинки</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-23.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/samsung-galaxy-s-23.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-22.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/samsung-galaxy-s-22.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro-max.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-pro-max.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+								</tbody>
+							</table>
+						</div>
+						<div class="specification__more">
+							<button type="button" data-show="specification" class="btn btn_white icon-plus">Показать больше</button>
+						</div>
+					</div>
+				</section>
+				<section class="specification">
+					<div class="specification__container">
+						<h2 class="specification__title title icon-windows">Другое</h2>
+						<div class="specification__grid">
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption icon-speakers">
+												Емкость аккамулятора
+												<div class="table__caption-tooltip tooltip">
+													<button type="button" class="tooltip__btn icon-question"></button>
+													<div class="tooltip__body" role="tooltip">
+														<div class="tooltip__body-wrapper">
+															Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi, rerum vitae blanditiis cum, earum ipsum perferendis molestiae accusantium incidunt maiores perspiciatis voluptatum porro aperiam magni suscipit repellendus. Ullam, molestiae a?.
+														</div>
+														<button type="button" class="tooltip__close icon-clear"></button>
+													</div>
+												</div>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="2">
+											<div class="table__progress">
+												<dl class="table__progress-header">
+													<dt class="table__progress-title">
+														mAh
+													</dt>
+													<dd class="table__progress-value">
+														4500
+													</dd>
+												</dl>
+												<div class="table__progress-range range">
+													<input type="range" class="range__input" disabled value="4500" max="5000">
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Имеет беспроводную зарядку
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="2">
+											<div class="table__status table__status_succes">Apple Iphone 14 Pro</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table class="specification__table table table_sm">
+								<thead>
+									<tr>
+										<th colspan="2">
+											<div class="table__caption">
+												Поддерживает беспроводную зарядку
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="2">
+											<div class="table__status">Apple Iphone 14 Pro</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</section>
@@ -2049,1220 +3402,34 @@
 						</div>
 					</div>
 				</section>
-				<section class="products">
-					<div class="products__container">
-						<h2 class="products__title title icon-headphones">Беспроводные наушники</h2>
-						<ul class="products__grid" itemscope itemtype="http://schema.org/ItemList">
-							<li id="product-grid-headphones-1" class=" products__grid-item products__grid-item_blue" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Наушники года</span>
-										<h3 itemprop="name" class="products__grid-item-name">Apple Air Pods (3rd Gen)</h3>
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/headphones-1.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/headphones-1.png" alt="Apple Air Pods (3rd Gen)">
-										</picture>
-									</span>
-								</a>
-							</li>
-							<li id="product-grid-headphones-2" class=" products__grid-item products__grid-item_violet" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Новинка</span>
-
-										<h3 itemprop="name" class="products__grid-item-name">Huawei FreeBuds Pro 2</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/headphones-2.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/headphones-2.png" alt="Huawei FreeBuds Pro 2">
-										</picture>
-									</span>
-
-
-
-								</a>
-							</li>
-							<li id="product-grid-headphones-3" class=" products__grid-item products__grid-item_orange" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Новинка</span>
-
-										<h3 itemprop="name" class="products__grid-item-name">Sennheiser Momentum True Wireless 3</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/headphones-3.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/headphones-3.png" alt="Sennheiser Momentum True Wireless 3">
-										</picture>
-									</span>
-
-
-
-								</a>
-							</li>
-							<li id="product-grid-headphones-4" class=" products__grid-item products__grid-item_green" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label products__grid-item-label_lg">Популярные сравнения</span>
-
-										<h3 class="products__grid-item-compare">
-											<span>Apple iPhone 14 Pro Max</span>
-											<span>vs</span>
-											<span>Samsung Galaxy S23 Ultra</span>
-										</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-
-									<span class="products__grid-versus">
-										<span class="products__grid-versus-item products__grid-versus-item_sm">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/headphones-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/headphones-1.png" alt="Apple iPhone 14 Pro Max">
-											</picture>
-										</span>
-										<span class="products__grid-versus-item products__grid-versus-item_sm">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/headphones-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/headphones-2.png" alt="Samsung Galaxy S23 Ultra">
-											</picture>
-										</span>
-									</span>
-
-
-								</a>
-							</li>
-							<li id="product-grid-headphones-5" class=" products__grid-item products__grid-item_pink" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label products__grid-item-label_lg">Популярные сравнения</span>
-
-										<h3 class="products__grid-item-compare">
-											<span>Apple iPhone 14 Pro Max</span>
-											<span>vs</span>
-											<span>Samsung Galaxy S23 Ultra</span>
-										</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-
-									<span class="products__grid-versus">
-										<span class="products__grid-versus-item products__grid-versus-item_sm">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/headphones-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/headphones-3.png" alt="Apple iPhone 14 Pro Max">
-											</picture>
-										</span>
-										<span class="products__grid-versus-item products__grid-versus-item_sm">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/headphones-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/headphones-2.png" alt="Samsung Galaxy S23 Ultra">
-											</picture>
-										</span>
-									</span>
-
-
-								</a>
-							</li>
-						</ul>
-						<div class="products__columns">
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Популярное</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-1.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-2.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-3.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-4.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-4.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-5.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-5.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Высокий рейтинг</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-1.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-2.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-3.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-4.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-4.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-5.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-5.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Новинки</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-1.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-2.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-3.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-4.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-4.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/headphones-5.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/headphones-5.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+				<section class="tags">
+					<div class="tags__container">
+						<h2 class="tags__title title">Популярные поиски в этой категории</h2>
+						<div class="tags__items">
+							<a href="" class="tags__item icon-search">Новый айфон</a>
+							<a href="" class="tags__item icon-search">Айфон 11</a>
+							<a href="" class="tags__item icon-search">Xiaomi 13 Pro</a>
+							<a href="" class="tags__item icon-search">Xiaomi 13 Pro</a>
+							<a href="" class="tags__item icon-search">Samsung S20</a>
+							<a href="" class="tags__item icon-search">Oppo Find Pro</a>
+							<a href="" class="tags__item icon-search">Samsung A13</a>
+							<a href="" class="tags__item icon-search">Huawei</a>
+							<a href="" class="tags__item icon-search">Iphone 11</a>
+							<a href="" class="tags__item icon-search">Samsung</a>
+							<a href="" class="tags__item icon-search">Android</a>
+							<a href="" class="tags__item icon-search">Samsung Galaxy S21</a>
+							<a href="" class="tags__item icon-search">Xiaomi Mi 11</a>
+							<a href="" class="tags__item icon-search">Huawei P40</a>
+							<a href="" class="tags__item icon-search">OnePlus 9</a>
+							<a href="" class="tags__item icon-search">Google Pixel</a>
+							<a href="" class="tags__item icon-search">Realme GT</a>
+							<a href="" class="tags__item icon-search">Sony Xperia 1 III</a>
+							<a href="" class="tags__item icon-search">Xiaomi 13 Pro</a>
+							<a href="" class="tags__item icon-search">Xiaomi 13 Pro</a>
+							<a href="" class="tags__item icon-search">Samsung S20</a>
+							<a href="" class="tags__item icon-search">Oppo Find Pro</a>
+							<a href="" class="tags__item icon-search">Samsung A13</a>
 						</div>
-					</div>
-				</section>
-				<section class="compares">
-					<div class="compares__container">
-						<h2 class="compares__title title">Популярные сравнения</h2>
-						<div class="compares__slider">
-							<button type="button" aria-label="Листать влево" class="compares__prev swiper-button-prev"></button>
-							<div class="compares__slider-content swiper">
-								<ul class="swiper-wrapper">
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-7.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-7.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-8.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-8.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-9.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-9.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-10.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-10.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-11.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-11.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-12.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-12.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-13.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-13.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-14.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-14.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-7.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-7.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-8.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-8.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-9.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-9.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-10.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-10.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-11.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-11.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-12.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-12.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-13.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-13.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-14.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-14.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<button type="button" aria-label="Листать вправо" class="compares__next swiper-button-next"></button>
-						</div>
-					</div>
-				</section>
-				<section class="products">
-					<div class="products__container">
-						<h2 class="products__title title icon-watches">Умные часы</h2>
-						<ul class="products__grid" itemscope itemtype="http://schema.org/ItemList">
-							<li id="product-grid-watches-1" class=" products__grid-item products__grid-item_violet" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Часы года</span>
-
-										<h3 itemprop="name" class="products__grid-item-name">Apple Air Pods (3rd Gen)</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/watches-1.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/watches-1.png" alt="Apple Air Pods (3rd Gen)">
-										</picture>
-									</span>
-
-
-
-								</a>
-							</li>
-							<li id="product-grid-watches-2" class=" products__grid-item products__grid-item_green" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Новинка</span>
-
-										<h3 itemprop="name" class="products__grid-item-name">Apple Air Pods (3rd Gen)</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/watches-2.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/watches-2.png" alt="Apple Air Pods (3rd Gen)">
-										</picture>
-									</span>
-
-
-
-								</a>
-							</li>
-							<li id="product-grid-watches-3" class=" products__grid-item products__grid-item_pink" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label ">Новинка</span>
-
-										<h3 itemprop="name" class="products__grid-item-name">Apple Air Pods (3rd Gen)</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-									<span class="products__grid-item-image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/grid/watches-3.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/grid/watches-3.png" alt="Apple Air Pods (3rd Gen)">
-										</picture>
-									</span>
-
-
-
-								</a>
-							</li>
-							<li id="product-grid-watches-4" class=" products__grid-item products__grid-item_blue" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label products__grid-item-label_lg">Популярные сравнения</span>
-
-										<h3 class="products__grid-item-compare">
-											<span>Apple iPhone 14 Pro Max</span>
-											<span>vs</span>
-											<span>Samsung Galaxy S23 Ultra</span>
-										</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-
-									<span class="products__grid-versus">
-										<span class="products__grid-versus-item ">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/watches-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/watches-1.png" alt="Apple iPhone 14 Pro Max">
-											</picture>
-										</span>
-										<span class="products__grid-versus-item ">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/watches-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/watches-2.png" alt="Samsung Galaxy S23 Ultra">
-											</picture>
-										</span>
-									</span>
-
-
-								</a>
-							</li>
-							<li id="product-grid-watches-5" class=" products__grid-item products__grid-item_orange" itemscope itemprop="itemListElement" itemtype="http://schema.org/Product">
-								<a href="" itemprop="url" class="products__grid-item-link">
-									<span class="products__grid-item-content">
-										<span class="products__grid-item-label products__grid-item-label_lg">Популярные сравнения</span>
-
-										<h3 class="products__grid-item-compare">
-											<span>Apple iPhone 14 Pro Max</span>
-											<span>vs</span>
-											<span>Samsung Galaxy S23 Ultra</span>
-										</h3>
-
-										<span class="products__grid-item-more icon-arrow-right">Cмотреть</span>
-									</span>
-
-
-									<span class="products__grid-versus">
-										<span class="products__grid-versus-item ">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/watches-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/watches-1.png" alt="Apple iPhone 14 Pro Max">
-											</picture>
-										</span>
-										<span class="products__grid-versus-item ">
-											<picture>
-												<source srcset="img/1x1.webp" data-srcset="img/grid/watches-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/grid/watches-2.png" alt="Samsung Galaxy S23 Ultra">
-											</picture>
-										</span>
-									</span>
-
-
-								</a>
-							</li>
-						</ul>
-						<div class="products__columns">
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Популярное</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-1.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-2.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-3.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-4.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-4.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-5.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-5.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Высокий рейтинг</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-1.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-2.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-3.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-4.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-4.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-5.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-5.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="products__column">
-								<div class="products__column-content">
-									<div class="products__column-caption">Новинки</div>
-									<ul class="products__column-list">
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-1.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-1.png" alt="Apple Iphone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-2.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy S23 Ultra</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-3.png" alt="Samsung Galaxy A13">
-													</picture>
-												</span>
-												<span class="products__column-name">Samsung Galaxy A13</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-4.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-4.png" alt="Apple Iphone 14 Pro Max3">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple Iphone 14 Pro Max</span>
-											</a>
-										</li>
-										<li class="products__column-item">
-											<a href="" class="products__column-link icon-right">
-												<span class="products__column-thumb">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/watches-5.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/watches-5.png" alt="Apple iPhone 11 Pro Max">
-													</picture>
-												</span>
-												<span class="products__column-name">Apple iPhone 11 Pro Max</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<section class="compares">
-					<div class="compares__container">
-						<h2 class="compares__title title">Популярные сравнения</h2>
-						<div class="compares__slider">
-							<button type="button" aria-label="Листать влево" class="compares__prev swiper-button-prev"></button>
-							<div class="compares__slider-content swiper">
-								<ul class="swiper-wrapper">
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-15.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-15.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-16.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-16.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-17.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-17.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-18.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-18.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-19.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-19.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-20.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-20.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-21.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-21.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-15.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-15.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-15.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-15.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-16.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-16.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-17.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-17.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-18.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-18.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-19.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-19.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-20.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-20.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-									<li class="compares__item swiper-slide">
-										<a href="" class="compares__item-link">
-											<span class="compares__item-body">
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-21.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-21.png" alt="Apple iPhone 14 Pro Max">
-													</picture>
-												</span>
-												<span class="compares__item-separator icon-compare"></span>
-												<span class="compares__item-product">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/products/compare-15.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/compare-15.png" alt="Samsung Galaxy S23 Ultra">
-													</picture>
-												</span>
-											</span>
-											<span class="compares__item-names">
-												<span>Apple iPhone 14 Pro Max</span>
-												<span>vs</span>
-												<span>Samsung Galaxy S23 Ultra</span>
-											</span>
-										</a>
-									</li>
-								</ul>
-							</div>
-							<button type="button" aria-label="Листать вправо" class="compares__next swiper-button-next"></button>
-						</div>
-					</div>
-				</section>
-				<section class="products">
-					<div class="products__container">
-						<h2 class="products__title title">Каталог товаров</h2>
-						<ul class="products__catalog" data-spollers="991.98, max">
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-mobile"></span>
-										Мобильные устройства
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Смартфоны</a>
-										<a href="" class="products__catalog-link">планшеты</a>
-										<a href="" class="products__catalog-link">электронные книги</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-mouse"></span>
-										Компьютеры и аксессуары
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Ноутбуки</a>
-										<a href="" class="products__catalog-link">Игровые ПК</a>
-										<a href="" class="products__catalog-link">Универсальные компьютеры</a>
-										<a href="" class="products__catalog-link">Мониторы</a>
-										<a href="" class="products__catalog-link">Маршрутизаторы</a>
-										<a href="" class="products__catalog-link">Мыши</a>
-										<a href="" class="products__catalog-link">Веб-камеры</a>
-										<a href="" class="products__catalog-link">Графические планшеты</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-pc"></span>
-										Комплектующие для ПК
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Видеокарты</a>
-										<a href="" class="products__catalog-link">Процессоры</a>
-										<a href="" class="products__catalog-link">Корпоративные процессоры</a>
-										<a href="" class="products__catalog-link">Мобильные чипсеты</a>
-										<a href="" class="products__catalog-link">Материнские Платы</a>
-										<a href="" class="products__catalog-link">SSD накопители</a>
-										<a href="" class="products__catalog-link">Жесткие диски</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-print"></span>
-										Принтеры и сканеры
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Лазерные принтеры</a>
-										<a href="" class="products__catalog-link">Струйные принтеры</a>
-										<a href="" class="products__catalog-link">Лазерные МФУ</a>
-										<a href="" class="products__catalog-link">Струйные МФУ</a>
-										<a href="" class="products__catalog-link">Фотопринтеры</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-watches"></span>
-										Часы
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Умные часы</a>
-										<a href="" class="products__catalog-link">Фитнес трекеры</a>
-										<a href="" class="products__catalog-link">Спортивные часы</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-audio"></span>
-										Аудио
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Наушники</a>
-										<a href="" class="products__catalog-link">Беспроводные наушники</a>
-										<a href="" class="products__catalog-link">Компьютерные гарнитуры</a>
-										<a href="" class="products__catalog-link">Bluetooth-гарнитуры</a>
-										<a href="" class="products__catalog-link">Портативные колонки</a>
-										<a href="" class="products__catalog-link">Умные колонки</a>
-										<a href="" class="products__catalog-link">Саундбары</a>
-										<a href="" class="products__catalog-link">Микрофоны</a>
-										<a href="" class="products__catalog-link">Диктофоны</a>
-										<a href="" class="products__catalog-link">DJ-Контроллеры</a>
-										<a href="" class="products__catalog-link">Клавишные контроллеры</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-gear"></span>
-										Приложения и Софт
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Мессенджеры</a>
-										<a href="" class="products__catalog-link">Приложения для знакомств</a>
-										<a href="" class="products__catalog-link">Фитнесс-приложения</a>
-										<a href="" class="products__catalog-link">Приложения для повышения продуктивности</a>
-										<a href="" class="products__catalog-link">Приложения для фотографии</a>
-										<a href="" class="products__catalog-link">Приложения-календари</a>
-										<a href="" class="products__catalog-link">Погодные приложения</a>
-										<a href="" class="products__catalog-link">MV Фреймворк</a>
-										<a href="" class="products__catalog-link">ОС</a>
-										<a href="" class="products__catalog-link">DJ Программа</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-box"></span>
-										Развлечения
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Потоковые Устройства</a>
-										<a href="" class="products__catalog-link">Игровые приставки</a>
-										<a href="" class="products__catalog-link">Шлемы виртуальной реальности</a>
-										<a href="" class="products__catalog-link">Проекторы</a>
-										<a href="" class="products__catalog-link">Телевизоры</a>
-										<a href="" class="products__catalog-link">Дроны</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-perfume"></span>
-										Парфюмерия
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Женская парфюмерия</a>
-										<a href="" class="products__catalog-link">Мужская парфюмерия</a>
-										<a href="" class="products__catalog-link">Унисекс парфюмерия</a>
-										<a href="" class="products__catalog-link">Нишевая парфюмерия</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-education"></span>
-										Обучение
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Университеты</a>
-										<a href="" class="products__catalog-link">Школы искусства дизайна</a>
-										<a href="" class="products__catalog-link">Бизнес-школы</a>
-										<a href="" class="products__catalog-link">Медицинские учебные заведения</a>
-										<a href="" class="products__catalog-link">Юридические школы</a>
-										<a href="" class="products__catalog-link">Технологические и инженерные школы</a>
-										<a href="" class="products__catalog-link">Колледжи и аспирантуры</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-travel"></span>
-										Путешевствия
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Города</a>
-										<a href="" class="products__catalog-link">Страны</a>
-										<a href="" class="products__catalog-link">Горнолыжный курорт</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-garden"></span>
-										Дом и сад
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Аэрогрили</a>
-										<a href="" class="products__catalog-link">Скороварки</a>
-										<a href="" class="products__catalog-link">Пылесосы</a>
-										<a href="" class="products__catalog-link">Роботы-пылесосы</a>
-										<a href="" class="products__catalog-link">Стиральные машины</a>
-										<a href="" class="products__catalog-link">Стиральные машины</a>
-										<a href="" class="products__catalog-link">Сушилки для белья</a>
-										<a href="" class="products__catalog-link">Кофемашины</a>
-										<a href="" class="products__catalog-link">Коммерческие кофемашины</a>
-										<a href="" class="products__catalog-link">Кофемашины</a>
-										<a href="" class="products__catalog-link">Холодильники</a>
-										<a href="" class="products__catalog-link">Посудомоечные машины</a>
-										<a href="" class="products__catalog-link">Газонокосилки-роботы</a>
-										<a href="" class="products__catalog-link">Газонокосилки</a>
-										<a href="" class="products__catalog-link">Портативные кондиционеры</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-eat"></span>
-										Продукты питания
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Потоковые Устройства</a>
-										<a href="" class="products__catalog-link">Игровые приставки</a>
-										<a href="" class="products__catalog-link">Шлемы виртуальной реальности</a>
-										<a href="" class="products__catalog-link">Проекторы</a>
-										<a href="" class="products__catalog-link">Телевизоры</a>
-										<a href="" class="products__catalog-link">Дроны</a>
-									</div>
-								</div>
-							</li>
-							<li class="products__catalog-item">
-								<div class="products__catalog-wrapper">
-									<h3 data-spoller class="products__catalog-header">
-										<span class="products__catalog-icon icon-car"></span>
-										Транспорт
-									</h3>
-									<div class="products__catalog-links">
-										<a href="" class="products__catalog-link">Электрические самокаты</a>
-										<a href="" class="products__catalog-link">Электрыческие велосипеды</a>
-										<a href="" class="products__catalog-link">GPS навигация</a>
-										<a href="" class="products__catalog-link">Велосипедные аксессуары</a>
-										<a href="" class="products__catalog-link">Автомобили</a>
-									</div>
-								</div>
-							</li>
-						</ul>
 					</div>
 				</section>
 			</main>
@@ -3340,228 +3507,6 @@
 			</footer>
 		</div>
 
-		<a href="#compare-modal" aria-expanded="false" aria-haspopup="true" data-modal class="compare">
-			<div class="compare__text icon-compare">
-				<span>Список сравнения</span>
-			</div>
-			<span class="compare__quantity">5</span>
-		</a>
-		<div id="compare-modal" class="popup" role="dialog" aria-hidden="true" aria-modal="true">
-			<div class="popup__content">
-				<div class="popup__body compare-list">
-					<div class="compare-list__header">
-						<h3 class="compare-list__title">Список сравнения</h3>
-						<button type="button" class="compare-list__close icon-clear" data-close-modal aria-label="Закрыть модальное окно"></button>
-					</div>
-					<div class="compare-list__body" data-scrollbar>
-						<button type="button" class="compare-list__btn icon-plus-alternate">
-							Добавить к сравнению
-						</button>
-						<ol class="compare-list__items">
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-							<li class="compare-list__item">
-								<div class="compare-list__item-thumb">
-									<picture>
-										<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-plus.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/iphone-14-plus.png" alt="iphone">
-									</picture>
-								</div>
-								<div class="compare-list__item-content">
-									<div class="compare-list__item-name">
-										Apple Iphone 13 Pro Max
-									</div>
-									<div class="compare-list__item-stats">
-										6 GB / 128 GB
-									</div>
-								</div>
-								<button type="button" aria-label="Удалить товар" class="compare-list__item-delete icon-delete"></button>
-							</li>
-						</ol>
-					</div>
-					<div class="compare-list__footer">
-						<div class="compare-list__footer-text">Выбрано 5/7 элементов</div>
-						<div class="compare-list__footer-actions">
-							<button type="button" class="compare-list__footer-action btn btn_white">Очистить</button>
-							<button type="button" class="compare-list__footer-action btn btn_primary">Сравнить</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- INPUT MODALS -->
 
 		<!-- INITIAL MODAL -->
@@ -3809,6 +3754,7 @@
 
 		<script src="js/libs/swiper.min.js?_v=20230731052913"></script>
 
+		<script src="js/libs/chart.min.js?_v=20230731052913"></script>
 
 		<script src="js/app.min.js?_v=20230731052913"></script>
 
