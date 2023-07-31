@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 	<head itemscope itemtype="http://schema.org/WPHeader">
-		<title itemprop="headline">COMPAREXO | Оставить отзыв</title>
+		<title itemprop="headline">COMPAREXO | Личный кабинет</title>
 		<meta charset="UTF-8">
 		<meta name="format-detection" content="telephone=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,13 +22,13 @@
 
 		<!-- Open Graph  -->
 		<meta property="og:type" content="business.business">
-		<meta property="og:title" content="COMPAREXO | Оставить отзыв">
+		<meta property="og:title" content="COMPAREXO | Личный кабинет">
 		<meta property="og:description" content="Сравнение товаров - смартфоны, электроника, бытовая техника и др. ">
 		<meta property="og:url" content="">
 		<meta property="og:image" content="/img/OG.jpg">
 		<meta property="og:image:width" content="1200">
 		<meta property="og:image:height" content="627">
-		<meta property="og:site_name" content="COMPAREXO | Оставить отзыв">
+		<meta property="og:site_name" content="COMPAREXO | Личный кабинет">
 		<meta property="og:locale" content="ru_RU">
 		<!-- Open Graph  -->
 
@@ -46,7 +45,6 @@
 
 	<body>
 		<div class="wrapper">
-
 			<header class="header">
 				<div class="header-top">
 					<div class="header-top__container">
@@ -146,14 +144,65 @@
 						<div class="header-body__menu menu">
 
 							<div class="menu__login">
-								<a href="#login-modal" data-modal aria-haspopup="true" aria-expanded="false" class="menu__login-link icon-person">Войти</a>
-								<a href="#login-modal" data-modal aria-haspopup="true" aria-expanded="false" class="menu__login-content icon-right-alternate">
+								<a href="/person.html" aria-haspopup="true" aria-expanded="false" class="menu__login-link">
+									<span class="menu__login-thumb">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="Аватар">
+										</picture>
+									</span>
+								</a>
+								<div aria-hidden="true" class="menu__login-actions">
+									<div class="menu__login-actions-wrapper">
+										<div class="menu__login-header">
+											<div class="menu__login-thumb">
+												<picture>
+													<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="Аватар">
+												</picture>
+											</div>
+											<div class="menu__login-info">
+												<span class="menu__login-caption">vladzaycev2012</span>
+												<a href="/person.html" class="menu__login-subtitle">Перейти в профиль</a>
+											</div>
+										</div>
+										<ul class="menu__login-list">
+											<li class="menu__login-item icon-star-outline">
+												<a href="" class="menu__login-action">Избранное</a>
+											</li>
+											<li class="menu__login-item icon-comments">
+												<a href="" class="menu__login-action">Мои отзывы</a>
+											</li>
+											<li class="menu__login-item icon-compare">
+												<a href="" class="menu__login-action">Последние сравнения</a>
+											</li>
+										</ul>
+										<ul class="menu__login-list">
+											<li class="menu__login-item icon-planet-outline">
+												<a href="" class="menu__login-action icon-right-alternate">Язык</a>
+											</li>
+											<li class="menu__login-item icon-currency">
+												<a href="" class="menu__login-action icon-right-alternate">Валюта</a>
+											</li>
+										</ul>
+										<ul class="menu__login-list">
+											<li class="menu__login-item icon-logout">
+												<a href="" class="menu__login-action">Выйти</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<a href="/person.html" class="menu__login-content icon-right-alternate">
+									<span class="menu__login-thumb">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="Аватар">
+										</picture>
+									</span>
 									<span class="menu__login-column">
-										<span class="menu__login-caption">Войдите или зарегестрируйтесь</span>
+										<span class="menu__login-caption">vladzaycev2012</span>
 										<span class="menu__login-subtitle">Мой профиль</span>
 									</span>
 								</a>
 							</div>
+
 
 							<div class="menu__catalog catalog">
 								<button type="button" aria-label="Открыть Категории" aria-expanded="false" class="catalog__btn btn btn_primary icon-catalog">Категории</button>
@@ -1061,9 +1110,8 @@
 					</div>
 				</div>
 			</header>
-
 			<main class="page">
-				<nav class="breadcrumbs">
+				<nav class="breadcrumbs breadcrumbs_mobile">
 					<div class="breadcrumbs__container">
 						<ul class="breadcrumbs__items" itemscope itemtype="http://schema.org/BreadcrumbList">
 							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
@@ -1074,265 +1122,751 @@
 							</li>
 							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
 								<a href="/" class="breadcrumbs__link" itemprop="item">
-									<span itemprop="name">Смартфоны</span>
+									<span itemprop="name">Мой профиль</span>
 								</a>
 								<meta itemprop="position" content="2">
 							</li>
 							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-								<a href="/" class="breadcrumbs__link" itemprop="item">
-									<span itemprop="name">Apple</span>
+								<a class="breadcrumbs__link breadcrumbs__link_active" itemprop="item">
+									<span itemprop="name">Личные данные</span>
 								</a>
 								<meta itemprop="position" content="3">
-							</li>
-							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-								<a href="/" class="breadcrumbs__link" itemprop="item">
-									<span itemprop="name">Iphone 14</span>
-								</a>
-								<meta itemprop="position" content="4">
-							</li>
-							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-								<a class="breadcrumbs__link breadcrumbs__link_active" itemprop="item">
-									<span itemprop="name">Оставить отзыв</span>
-								</a>
-								<meta itemprop="position" content="5">
 							</li>
 						</ul>
 					</div>
 				</nav>
-				<section class="review">
-					<div class="review__container">
-						<h1 class="review__title title title_lg">
-							Оцените Iphone 14 Pro Max
-						</h1>
-						<div class="review__content">
-							<div class="review__body">
-								<div class="review__section">
-									<h2 class="review__caption title title_md">
-										Рейтинг
-									</h2>
-									<div class="review__stats">
-										<div class="review__stat">
-											<div class="review__stat-title">
-												Дисплей
-											</div>
-
-											<div class="review__stat-rate star-rating">
-												<input type="radio" name="display" id="display-5" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="display-5"></label>
-												<input type="radio" name="display" id="display-4" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="display-4"></label>
-												<input type="radio" name="display" id="display-3" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="display-3"></label>
-												<input type="radio" name="display" id="display-2" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="display-2"></label>
-												<input type="radio" name="display" id="display-1" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="display-1"></label>
-											</div>
-
-										</div>
-										<div class="review__stat">
-											<div class="review__stat-title">
-												Дизайн
-											</div>
-
-											<div class="review__stat-rate star-rating">
-												<input type="radio" name="design" id="design-5" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="design-5"></label>
-												<input type="radio" name="design" id="design-4" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="design-4"></label>
-												<input type="radio" name="design" id="design-3" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="design-3"></label>
-												<input type="radio" name="design" id="design-2" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="design-2"></label>
-												<input type="radio" name="design" id="design-1" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="design-1"></label>
-											</div>
-
-										</div>
-										<div class="review__stat">
-											<div class="review__stat-title">
-												Батарея
-											</div>
-
-											<div class="review__stat-rate star-rating">
-												<input type="radio" name="battery" id="battery-5" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="battery-5"></label>
-												<input type="radio" name="battery" id="battery-4" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="battery-4"></label>
-												<input type="radio" name="battery" id="battery-3" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="battery-3"></label>
-												<input type="radio" name="battery" id="battery-2" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="battery-2"></label>
-												<input type="radio" name="battery" id="battery-1" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="battery-1"></label>
-											</div>
-
-										</div>
-										<div class="review__stat">
-											<div class="review__stat-title">
-												Коммуникации
-											</div>
-
-											<div class="review__stat-rate star-rating">
-												<input type="radio" name="communications" id="communications-5" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="communications-5"></label>
-												<input type="radio" name="communications" id="communications-4" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="communications-4"></label>
-												<input type="radio" name="communications" id="communications-3" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="communications-3"></label>
-												<input type="radio" name="communications" id="communications-2" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="communications-2"></label>
-												<input type="radio" name="communications" id="communications-1" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="communications-1"></label>
-											</div>
-
-										</div>
-										<div class="review__stat">
-											<div class="review__stat-title">
-												Производительность
-											</div>
-
-											<div class="review__stat-rate star-rating">
-												<input type="radio" name="performance" id="performance-5" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="performance-5"></label>
-												<input type="radio" name="performance" id="performance-4" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="performance-4"></label>
-												<input type="radio" name="performance" id="performance-3" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="performance-3"></label>
-												<input type="radio" name="performance" id="performance-2" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="performance-2"></label>
-												<input type="radio" name="performance" id="performance-1" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="performance-1"></label>
-											</div>
-
-										</div>
-										<div class="review__stat">
-											<div class="review__stat-title">
-												Камера
-											</div>
-
-											<div class="review__stat-rate star-rating">
-												<input type="radio" name="camera" id="camera-5" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="camera-5"></label>
-												<input type="radio" name="camera" id="camera-4" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="camera-4"></label>
-												<input type="radio" name="camera" id="camera-3" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="camera-3"></label>
-												<input type="radio" name="camera" id="camera-2" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="camera-2"></label>
-												<input type="radio" name="camera" id="camera-1" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="camera-1"></label>
-											</div>
-
-										</div>
-										<div class="review__stat">
-											<div class="review__stat-title">
-												Звук
-											</div>
-
-											<div class="review__stat-rate star-rating">
-												<input type="radio" name="sound" id="sound-5" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="sound-5"></label>
-												<input type="radio" name="sound" id="sound-4" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="sound-4"></label>
-												<input type="radio" name="sound" id="sound-3" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="sound-3"></label>
-												<input type="radio" name="sound" id="sound-2" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="sound-2"></label>
-												<input type="radio" name="sound" id="sound-1" class="star-rating__input hidden" hidden>
-												<label class="star-rating__label" for="sound-1"></label>
-											</div>
-
-										</div>
+				<section class="person">
+					<div class="person__container">
+						<aside class="person__side">
+							<div class="person__side-header">
+								<div class="person__side-thumb">
+									<picture>
+										<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="Аватар">
+									</picture>
+								</div>
+								<div class="person__side-info">
+									<div class="person__side-name">
+										vladzaycev2012
 									</div>
-								</div>
-								<div class="review__section">
-									<h2 class="review__caption title title_md">
-										Итоговый отзыв
-									</h2>
-									<form action="#" id="review" class="review__rows">
-										<div class="review__row">
-											<div class="review__label">
-												Опишите ваше мнение короткой фразой
-											</div>
-											<input type="text" name="review" data-required class="form__input form__input_gray" placeholder="Основные моменты из вашего опыта использования...">
-										</div>
-										<div class="review__row">
-											<div class="review__label">
-												Развернутый отзыв
-											</div>
-											<textarea name="message" data-required class="form__textarea" placeholder="Поделитесь своим мнением об этом устройстве с другими пользователями..."></textarea>
-										</div>
-										<div class="review__row">
-											<div class="review__label">
-												Фотографии (3/6)
-											</div>
-											<div class="review__preview">
-												<div class="review__preview-image">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/reviews/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/01.png" class="cover-image" alt="review">
-													</picture>
-													<button type="button" class="review__preview-image-delete icon-clear"></button>
-												</div>
-												<div class="review__preview-image">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/reviews/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/02.png" class="cover-image" alt="review">
-													</picture>
-													<button type="button" class="review__preview-image-delete icon-clear"></button>
-												</div>
-												<div class="review__preview-image">
-													<picture>
-														<source srcset="img/1x1.webp" data-srcset="img/reviews/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/03.png" class="cover-image" alt="review">
-													</picture>
-													<button type="button" class="review__preview-image-delete icon-clear"></button>
-												</div>
-											</div>
-											<label class="form__file">
-												<input type="file" name="file-name" class="form__file-input hidden" hidden>
-												<span class="form__file-content">
-													<span class="form__file-image">
-														<img src="img/1x1.png" data-src="img/picture.svg" alt="picture">
-													</span>
-													<span class="form__file-section">
-														<span class="form__file-title">
-															Перетащите сюда изображение или нажмите для загрузки
-														</span>
-														<span class="form__file-formats">
-															Формат: JPEG, JPEG2000, PNG
-														</span>
-													</span>
-												</span>
-											</label>
-										</div>
-									</form>
-								</div>
-								<div class="review__btn">
-									<button type="submit" form="review" class="btn btn_primary btn_fullwidth">Опубликовать обзор</button>
+									<div class="person__side-email">
+										vladzaycev@gmail.com
+									</div>
 								</div>
 							</div>
-							<div class="review__rate">
-								<div class="review__rate-header">
-									<div class="review__rate-value">
-										1.4
+							<nav class="person__side-menu" aria-label="person navigation">
+								<ul class="person__side-list">
+									<li class="person__side-item">
+										<a href="" class="person__side-link icon-star-outline">Мое избранное</a>
+									</li>
+									<li class="person__side-item">
+										<a href="" class="person__side-link icon-comments">Мои отзывы</a>
+									</li>
+									<li class="person__side-item">
+										<a href="" class="person__side-link icon-compare">Последние сравнения</a>
+									</li>
+									<li class="person__side-item person__side-item_bordered">
+										<a href="" class="person__side-link icon-logout">Выйти</a>
+									</li>
+								</ul>
+							</nav>
+						</aside>
+						<div class="person__content">
+							<div class="person__header">
+								<h1 class="person__title title title_lg">
+									Избранные
+								</h1>
+								<div class="person__dropdown dropdown dropdown_gray">
+									<button type="button" class="dropdown__button" aria-expanded="false" aria-haspopup="true">Смартфоны</button>
+									<div class="dropdown__content" aria-hidden="true">
+										<ul class="dropdown__list" role="listbox">
+											<li role="option" data-value="all" class="dropdown__list-item">Все категории</li>
+											<li role="option" data-value="mobile" class="dropdown__list-item">Мобильные устройства</li>
+											<li role="option" data-value="pc" class="dropdown__list-item">Компьютеры & Аксессуары</li>
+											<li role="option" data-value="smart" aria-checked="true" class="dropdown__list-item dropdown__list-item_active">Смартфоны</li>
+										</ul>
+										<input type="text" name="sort" class="dropdown__input hidden" hidden value="smart">
 									</div>
-									<div class="review__rate-text title title_md">
-										Ваша оценка
+								</div>
+							</div>
+							<div class="person__favorites">
+								<div class="person__favorites-header">
+									<div class="person__favorites-title">
+										Выбран 1 товар
+									</div>
+									<button class="person__favorites-reset icon-clear">
+										Сбросить <span>выделение</span>
+									</button>
+								</div>
+								<div class="person__favorites-actions">
+									<button type="button" class="person__favorites-action btn btn_primary">
+										Добавить к сравнению
+									</button>
+									<button type="button" class="person__favorites-action btn btn_red icon-delete">
+										Удалить
+									</button>
+								</div>
+							</div>
+							<ul class="person__products" itemscope itemtype="http://schema.org/ItemList">
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product favorites__product" id="product-1">
+
+
+									<div class="product__actions">
+										<label class="product__action checkbox">
+											<input type="checkbox" name="product" value="product-1" class="checkbox__input hidden" hidden>
+											<span class="checkbox__content"></span>
+										</label>
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="Смартфон Apple iPhone 14 Pro (128 Gb)">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Apple iPhone 14 Pro (128 Gb)</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product favorites__product" id="product-2">
+
+
+									<div class="product__actions">
+										<label class="product__action checkbox">
+											<input type="checkbox" name="product" value="product-2" class="checkbox__input hidden" hidden>
+											<span class="checkbox__content"></span>
+										</label>
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="Смартфон Apple iPhone 14">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Apple iPhone 14</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product favorites__product" id="product-3">
+
+
+									<div class="product__actions">
+										<label class="product__action checkbox">
+											<input type="checkbox" name="product" value="product-3" class="checkbox__input hidden" hidden>
+											<span class="checkbox__content"></span>
+										</label>
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/asus-rog-phone-6.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/asus-rog-phone-6.png" alt="Смартфон Asus ROG Phone 6 Pro">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Asus ROG Phone 6 Pro</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product favorites__product" id="product-4">
+
+
+									<div class="product__actions">
+										<label class="product__action checkbox">
+											<input type="checkbox" name="product" value="product-4" class="checkbox__input hidden" hidden>
+											<span class="checkbox__content"></span>
+										</label>
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-20.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/samsung-galaxy-s-20.png" alt="Смартфон Samsung Galaxy S20 Ultra">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Samsung Galaxy S20 Ultra</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product favorites__product" id="product-5">
+
+
+									<div class="product__actions">
+										<label class="product__action checkbox">
+											<input type="checkbox" name="product" value="product-5" class="checkbox__input hidden" hidden>
+											<span class="checkbox__content"></span>
+										</label>
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="Смартфон Apple iPhone 14 Plus">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Apple iPhone 14 Plus</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product favorites__product" id="product-6">
+
+
+									<div class="product__actions">
+										<label class="product__action checkbox">
+											<input type="checkbox" name="product" value="product-6" class="checkbox__input hidden" hidden>
+											<span class="checkbox__content"></span>
+										</label>
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/asus-rog-phone-5.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/asus-rog-phone-5.png" alt="Смартфон Asus ROG Phone 5s Pro">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Asus ROG Phone 5s Pro</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product favorites__product" id="product-7">
+
+
+									<div class="product__actions">
+										<label class="product__action checkbox">
+											<input type="checkbox" name="product" value="product-7" class="checkbox__input hidden" hidden>
+											<span class="checkbox__content"></span>
+										</label>
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/asus-rog-phone-6-ultimate.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/asus-rog-phone-6-ultimate.png" alt="Смартфон Asus ROG Phone 6D Ultimate">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Asus ROG Phone 6D Ultimate</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product favorites__product" id="product-8">
+
+
+									<div class="product__actions">
+										<label class="product__action checkbox">
+											<input type="checkbox" name="product" value="product-8" class="checkbox__input hidden" hidden>
+											<span class="checkbox__content"></span>
+										</label>
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/iphone-14-pro.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/iphone-14-pro.png" alt="Смартфон Apple iPhone 14">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Apple iPhone 14</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="person__more">
+								<a href="" class="person__btn btn btn_white icon-plus">Показать больше</a>
+							</div>
+							<div class="person__reviews reviews">
+								<h2 class="reviews__title title">
+									Мои отзывы
+								</h2>
+								<div class="reviews__stats">
+									<div class="reviews__stat">
+										<div class="reviews__stat-value">
+											2
+										</div>
+										<div class="reviews__stat-desc">
+											Отзыва
+										</div>
+									</div>
+									<div class="reviews__stat">
+										<div class="reviews__stat-value">
+											1
+										</div>
+										<div class="reviews__stat-desc">
+											Лайк
+										</div>
 									</div>
 								</div>
-								<div class="review__rate-benefits">
-									<div class="review__rate-benefit review__rate-benefit_complect icon-display"></div>
-									<div class="review__rate-benefit icon-perfomance"></div>
-									<div class="review__rate-benefit icon-mobile"></div>
-									<div class="review__rate-benefit icon-camera"></div>
-									<div class="review__rate-benefit icon-battery"></div>
-									<div class="review__rate-benefit icon-sound"></div>
-									<div class="review__rate-benefit icon-communications"></div>
-								</div>
-								<div class="review__rate-footer">
-									<div class="review__rate-footer-item icon-plus-alternate">Проставьте оценки</div>
-									<div class="review__rate-footer-item icon-plus-alternate">Напишите короткий заголовок</div>
-									<div class="review__rate-footer-item icon-plus-alternate">Напишите ваш комментарий</div>
-								</div>
+								<ul class="reviews__list">
+									<li class="reviews__list-item comment" id="comment-favorite-1">
+										<div class="comment__header">
+											<div class="comment__product">
+												<div class="comment__product-thumb">
+													<picture>
+														<source srcset="img/1x1.webp" data-srcset="img/products/product.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/product.png" alt="product">
+													</picture>
+												</div>
+												<div class="comment__product-name">
+													Смартфон Apple Iphone 14 Pro
+												</div>
+											</div>
+											<button type="button" class="comment__info icon-dotts tooltip-btn">
+												<span class="tooltip-btn__text">
+													Поделиться
+												</span>
+											</button>
+										</div>
+									</li>
+									<li class="reviews__list-item comment" id="comment-favorite-2">
+										<div class="comment__header">
+											<div class="comment__thumb">
+												<picture>
+													<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="avatar">
+												</picture>
+											</div>
+											<div class="comment__person">
+												<div class="comment__person-name">vladzaycev2012 (я)</div>
+												<div class="comment__person-time">23 января 2023 г.</div>
+											</div>
+
+
+											<button type="button" class="comment__info icon-dotts tooltip-btn">
+												<span class="tooltip-btn__text">
+													Поделиться
+												</span>
+											</button>
+
+										</div>
+										<div class="comment__stats">
+											<div class="comment__rate">
+												<div class="comment__rate-value">
+													<span>9.8</span>/10
+												</div>
+												<progress value="9.8" max="10" class="comment__rate-progress"></progress>
+											</div>
+											<ul class="comment__stats-list">
+												<li class="comment__stat comment__stat_green icon-display"></li>
+												<li class="comment__stat comment__stat_green icon-perfomance"></li>
+												<li class="comment__stat comment__stat_yellow icon-mobile"></li>
+												<li class="comment__stat comment__stat_green icon-camera"></li>
+												<li class="comment__stat comment__stat_red icon-battery"></li>
+												<li class="comment__stat comment__stat_red icon-sound"></li>
+												<li class="comment__stat comment__stat_yellow icon-communications"></li>
+											</ul>
+										</div>
+										<div class="comment__body">
+											<div class="comment__body-caption">
+												Данная модель превзошла свои ожидания!
+											</div>
+
+											<blockquote class="comment__body-quote">
+												Нету смысла брать дорогие телефоны, на повседневный образ жизни, данная модель Xiaomi все сделала, чтобы им можно было пользоваться, не знаю как в глобальной версии, но в оригинале он очень хорош. Поставить хорошее стекло и бампер, все будет отлично, не нужно будет переживать что он упадет и разобьётся, при нормальном его использовании, он прослужит очень долго, как и прошлые модели not. Лижбы в глобальной версии все было нормально, а цены не ах*евали !
+											</blockquote>
+											<a href="" class="comment__body-more">Читать дальше</a>
+											<div class="comment__body-photos">
+												<div class="comment__body-caption">
+													Фотографии:
+												</div>
+												<ul class="comment__body-photos-list">
+													<li class="comment__body-photos-item">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/reviews/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/01.png" class="cover-image" alt="Отзыв">
+														</picture>
+													</li>
+													<li class="comment__body-photos-item">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/reviews/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/02.png" class="cover-image" alt="Отзыв">
+														</picture>
+													</li>
+													<li class="comment__body-photos-item">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/reviews/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/03.png" class="cover-image" alt="Отзыв">
+														</picture>
+													</li>
+												</ul>
+												<a href="" class="comment__body-original">Показать оригинальный текст</a>
+											</div>
+										</div>
+										<div class="comment__footer">
+											<button type="button" class="comment__action icon-heart">14</button>
+											<button type="button" data-comment="form-favorite-2" class="comment__action icon-comments">Ответить</button>
+											<button type="button" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
+										</div>
+										<form action="#" class="comment__form" id="form-favorite-2">
+											<div class="comment__form-content">
+												<div class="comment__thumb">
+													<picture>
+														<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="avatar">
+													</picture>
+												</div>
+												<div class="comment__form-body">
+													<textarea name="message" class="form__textarea" placeholder="Написать ответ"></textarea>
+													<div class="comment__form-footer">
+														<button type="button" class="comment__form-btn">Отмена</button>
+														<button type="submit" class="comment__form-btn btn btn_primary">Ответить</button>
+													</div>
+												</div>
+											</div>
+										</form>
+
+										<div class="comment__discussion" data-spollers>
+											<button class="comment__discussion-btn" data-spoller>2 ответа</button>
+											<div class="comment__answers">
+												<div class="comment__answers-item">
+													<div class="comment__header">
+														<div class="comment__thumb">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/thumb-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb-3.png" class="cover-image" alt="avatar">
+															</picture>
+														</div>
+														<div class="comment__person">
+															<div class="comment__person-name">Евгений М.</div>
+															<div class="comment__person-time">23 января 2023 г.</div>
+														</div>
+														<button type="button" class="comment__info icon">!</button>
+													</div>
+													<blockquote class="comment__body-quote">
+														<a href="">@vladzaycev2012,</a>
+														Увидел твой отзыв и взял нераздумывая. Спасибо Влад)
+													</blockquote>
+													<div class="comment__footer">
+														<button type="button" class="comment__action icon-heart">1</button>
+														<button type="button" class="comment__action icon-comments">Ответить</button>
+													</div>
+													<div class="comment__discussion">
+														<button class="comment__discussion-btn" data-spoller>1 ответ</button>
+														<div class="comment__answers">
+															<div class="comment__answers-item">
+																<div class="comment__header">
+																	<div class="comment__thumb">
+																		<picture>
+																			<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="avatar">
+																		</picture>
+																	</div>
+																	<div class="comment__person">
+																		<div class="comment__person-name">vladzaycev2012 (я)</div>
+																		<div class="comment__person-time">23 января 2023 г.</div>
+																	</div>
+																	<button type="button" class="comment__info icon">!</button>
+																</div>
+																<blockquote class="comment__body-quote">
+																	<a href="">@Вячеслав Вячеслав,</a>
+																	Спасибо за доверие! :)
+																</blockquote>
+																<div class="comment__footer">
+																	<button type="button" class="comment__action icon-heart">1</button>
+																	<button type="button" class="comment__action icon-comments">Ответить</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="comment__answers-item">
+													<div class="comment__header">
+														<div class="comment__thumb">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/thumb-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb-2.png" class="cover-image" alt="avatar">
+															</picture>
+														</div>
+														<div class="comment__person">
+															<div class="comment__person-name">19.ioparenko</div>
+															<div class="comment__person-time">23 января 2023 г.</div>
+														</div>
+														<button type="button" class="comment__info icon">!</button>
+													</div>
+													<blockquote class="comment__body-quote">
+														Вопрос: а что значит "оперативная память может быть расширена до 6 ГБ?" Каким образом?
+													</blockquote>
+													<div class="comment__footer">
+														<button type="button" class="comment__action icon-heart">0</button>
+														<button type="button" class="comment__action icon-comments">Ответить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</li>
+									<li class="reviews__list-item comment" id="comment-favorite-3">
+										<div class="comment__header">
+											<div class="comment__product">
+												<div class="comment__product-thumb">
+													<picture>
+														<source srcset="img/1x1.webp" data-srcset="img/products/product.webp" type="image/webp"><img src="img/1x1.png" data-src="img/products/product.png" alt="product">
+													</picture>
+												</div>
+												<div class="comment__product-name">
+													Смартфон Apple Iphone 14 Pro
+												</div>
+											</div>
+											<button type="button" class="comment__info icon-dotts tooltip-btn">
+												<span class="tooltip-btn__text">
+													Поделиться
+												</span>
+											</button>
+										</div>
+									</li>
+									<li class="reviews__list-item comment" id="comment-favorite-4">
+										<div class="comment__header">
+											<div class="comment__thumb">
+												<picture>
+													<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="avatar">
+												</picture>
+											</div>
+											<div class="comment__person">
+												<div class="comment__person-name">vladzaycev2012 (я)</div>
+												<div class="comment__person-time">23 января 2023 г.</div>
+											</div>
+
+
+											<button type="button" class="comment__info icon-dotts tooltip-btn">
+												<span class="tooltip-btn__text">
+													Поделиться
+												</span>
+											</button>
+
+										</div>
+										<div class="comment__stats">
+											<div class="comment__rate">
+												<div class="comment__rate-value">
+													<span>9.8</span>/10
+												</div>
+												<progress value="9.8" max="10" class="comment__rate-progress"></progress>
+											</div>
+											<ul class="comment__stats-list">
+												<li class="comment__stat comment__stat_green icon-display"></li>
+												<li class="comment__stat comment__stat_green icon-perfomance"></li>
+												<li class="comment__stat comment__stat_yellow icon-mobile"></li>
+												<li class="comment__stat comment__stat_green icon-camera"></li>
+												<li class="comment__stat comment__stat_red icon-battery"></li>
+												<li class="comment__stat comment__stat_red icon-sound"></li>
+												<li class="comment__stat comment__stat_yellow icon-communications"></li>
+											</ul>
+										</div>
+										<div class="comment__body">
+											<div class="comment__body-caption">
+												Данная модель превзошла свои ожидания!
+											</div>
+
+											<blockquote class="comment__body-quote">
+												Нету смысла брать дорогие телефоны, на повседневный образ жизни, данная модель Xiaomi все сделала, чтобы им можно было пользоваться, не знаю как в глобальной версии, но в оригинале он очень хорош. Поставить хорошее стекло и бампер, все будет отлично, не нужно будет переживать что он упадет и разобьётся, при нормальном его использовании, он прослужит очень долго, как и прошлые модели not. Лижбы в глобальной версии все было нормально, а цены не ах*евали !
+											</blockquote>
+											<a href="" class="comment__body-more">Читать дальше</a>
+											<div class="comment__body-photos">
+												<div class="comment__body-caption">
+													Фотографии:
+												</div>
+												<ul class="comment__body-photos-list">
+													<li class="comment__body-photos-item">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/reviews/01.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/01.png" class="cover-image" alt="Отзыв">
+														</picture>
+													</li>
+													<li class="comment__body-photos-item">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/reviews/02.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/02.png" class="cover-image" alt="Отзыв">
+														</picture>
+													</li>
+													<li class="comment__body-photos-item">
+														<picture>
+															<source srcset="img/1x1.webp" data-srcset="img/reviews/03.webp" type="image/webp"><img src="img/1x1.png" data-src="img/reviews/03.png" class="cover-image" alt="Отзыв">
+														</picture>
+													</li>
+												</ul>
+												<a href="" class="comment__body-original">Показать оригинальный текст</a>
+											</div>
+										</div>
+										<div class="comment__footer">
+											<button type="button" class="comment__action icon-heart">14</button>
+											<button type="button" data-comment="form-favorite-4" class="comment__action icon-comments">Ответить</button>
+											<button type="button" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
+										</div>
+										<form action="#" class="comment__form" id="form-favorite-4">
+											<div class="comment__form-content">
+												<div class="comment__thumb">
+													<picture>
+														<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="avatar">
+													</picture>
+												</div>
+												<div class="comment__form-body">
+													<textarea name="message" class="form__textarea" placeholder="Написать ответ"></textarea>
+													<div class="comment__form-footer">
+														<button type="button" class="comment__form-btn">Отмена</button>
+														<button type="submit" class="comment__form-btn btn btn_primary">Ответить</button>
+													</div>
+												</div>
+											</div>
+										</form>
+
+										<div class="comment__discussion" data-spollers>
+											<button class="comment__discussion-btn" data-spoller>2 ответа</button>
+											<div class="comment__answers">
+												<div class="comment__answers-item">
+													<div class="comment__header">
+														<div class="comment__thumb">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/thumb-3.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb-3.png" class="cover-image" alt="avatar">
+															</picture>
+														</div>
+														<div class="comment__person">
+															<div class="comment__person-name">Евгений М.</div>
+															<div class="comment__person-time">23 января 2023 г.</div>
+														</div>
+														<button type="button" class="comment__info icon">!</button>
+													</div>
+													<blockquote class="comment__body-quote">
+														<a href="">@vladzaycev2012,</a>
+														Увидел твой отзыв и взял нераздумывая. Спасибо Влад)
+													</blockquote>
+													<div class="comment__footer">
+														<button type="button" class="comment__action icon-heart">1</button>
+														<button type="button" class="comment__action icon-comments">Ответить</button>
+													</div>
+													<div class="comment__discussion">
+														<button class="comment__discussion-btn" data-spoller>1 ответ</button>
+														<div class="comment__answers">
+															<div class="comment__answers-item">
+																<div class="comment__header">
+																	<div class="comment__thumb">
+																		<picture>
+																			<source srcset="img/1x1.webp" data-srcset="img/thumb.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb.png" class="cover-image" alt="avatar">
+																		</picture>
+																	</div>
+																	<div class="comment__person">
+																		<div class="comment__person-name">vladzaycev2012 (я)</div>
+																		<div class="comment__person-time">23 января 2023 г.</div>
+																	</div>
+																	<button type="button" class="comment__info icon">!</button>
+																</div>
+																<blockquote class="comment__body-quote">
+																	<a href="">@Вячеслав Вячеслав,</a>
+																	Спасибо за доверие! :)
+																</blockquote>
+																<div class="comment__footer">
+																	<button type="button" class="comment__action icon-heart">1</button>
+																	<button type="button" class="comment__action icon-comments">Ответить</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="comment__answers-item">
+													<div class="comment__header">
+														<div class="comment__thumb">
+															<picture>
+																<source srcset="img/1x1.webp" data-srcset="img/thumb-2.webp" type="image/webp"><img src="img/1x1.png" data-src="img/thumb-2.png" class="cover-image" alt="avatar">
+															</picture>
+														</div>
+														<div class="comment__person">
+															<div class="comment__person-name">19.ioparenko</div>
+															<div class="comment__person-time">23 января 2023 г.</div>
+														</div>
+														<button type="button" class="comment__info icon">!</button>
+													</div>
+													<blockquote class="comment__body-quote">
+														Вопрос: а что значит "оперативная память может быть расширена до 6 ГБ?" Каким образом?
+													</blockquote>
+													<div class="comment__footer">
+														<button type="button" class="comment__action icon-heart">0</button>
+														<button type="button" class="comment__action icon-comments">Ответить</button>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
@@ -1411,7 +1945,57 @@
 				</div>
 			</footer>
 		</div>
+		<!-- СHANGE PASS MODAL -->
 
+		<div id="change-modal" class="popup" role="dialog" aria-hidden="true" aria-modal="true">
+			<div class="popup__content">
+				<div class="popup__body login popup__body_sm">
+					<button type="button" data-close-modal class="popup__close icon-clear" aria-label="Закрыть модальное окно"></button>
+					<form action="#" class="login__main form">
+						<div class="login__header">
+							<button type="button" class="login__back" data-close-modal></button>
+							<h3 class="login__title title title_sm">Изменить пароль</h3>
+						</div>
+						<div class="login__body">
+							<div class="form__subtitle">
+								Придумайте новый пароль. Убедитесь, что ваш новый пароль соответсвует всем необходимым требованиям
+							</div>
+							<div class="form__rows">
+								<div class="form__row">
+									<label class="form__label">
+										<input type="password" id="psw" name="register-psw" data-required class="form__input">
+										<span class="form__label-text">Пароль</span>
+									</label>
+									<button type="button" aria-label="Показать пароль" aria-labelledby="psw" class="form__pass-btn"></button>
+								</div>
+								<div class="form__row">
+									<label class="form__label">
+										<input type="password" id="repeat-psw" name="repeat-psw" data-required class="form__input">
+										<span class="form__label-text">Повторите пароль</span>
+									</label>
+									<button type="button" aria-label="Показать пароль" aria-labelledby="repeat-psw" class="form__pass-btn"></button>
+								</div>
+							</div>
+							<div data-status="password-length" class="form__status" aria-live="assertive">
+								Минимум 8 сиволов
+							</div>
+							<div data-status="password-letters" class="form__status" aria-live="assertive">
+								Содержит заглавную и строчную букву (Aa)
+							</div>
+							<div data-status="password-coincidence" class="form__status" aria-live="assertive">
+								Пароли совпадают
+							</div>
+							<div class="form__footer">
+								<button type="submit" class="form__btn btn btn_primary btn_fullwidth">Продолжить</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- END СHANGE PASS MODAL -->
 		<!-- INPUT MODALS -->
 
 		<!-- INITIAL MODAL -->
@@ -1660,7 +2244,6 @@
 
 
 		<script src="js/app.min.js?_v=20230731155707"></script>
-
 	</body>
 
 </html>
