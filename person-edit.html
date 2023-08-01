@@ -39,8 +39,8 @@
 		<meta property="twitter:image:src" content="preview image">
 		<!-- Twitter -->
 
-		<link rel="stylesheet" href="css/reset.min.css?_v=20230731155707">
-		<link rel="stylesheet" href="css/style.min.css?_v=20230731155707">
+		<link rel="stylesheet" href="css/reset.min.css?_v=20230801154812">
+		<link rel="stylesheet" href="css/style.min.css?_v=20230801154812">
 	</head>
 
 	<body>
@@ -1127,9 +1127,9 @@
 								<meta itemprop="position" content="2">
 							</li>
 							<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-								<a class="breadcrumbs__link breadcrumbs__link_active" itemprop="item">
+								<span class="breadcrumbs__link breadcrumbs__link_active" itemprop="item">
 									<span itemprop="name">Личные данные</span>
-								</a>
+								</span>
 								<meta itemprop="position" content="3">
 							</li>
 						</ul>
@@ -1236,25 +1236,21 @@
 									<div class="person__section-body">
 										<ul class="person__section-list">
 											<li class="person__section-item">
-												<div class="person__section-spec">
-													Логин
-												</div>
-												<div class="person__section-value">
-													vladzaycev2012
-												</div>
+												<label class="form__label">
+													<input type="text" name="login" data-required class="form__input" value="vladzaycev2012">
+													<span class="form__label-text">Логин</span>
+												</label>
 											</li>
 											<li class="person__section-item">
-												<div class="person__section-spec">
-													Email
-												</div>
-												<div class="person__section-value">
-													vladzaycev@gmail.com
-												</div>
+												<label class="form__label">
+													<input type="email" name="email" data-required class="form__input" value="vladzaycev@gmail.com">
+													<span class="form__label-text">Email</span>
+												</label>
 											</li>
 										</ul>
 										<div class="person__section-footer">
 											<a href="" class="person__section-btn btn btn_primary">
-												Редактировать
+												Сохранить
 											</a>
 											<a href="#change-modal" data-modal aria-haspopup="true" class="person__section-btn btn btn_white icon-lock">
 												Изменить пароль
@@ -1653,7 +1649,7 @@
 
 
 
-		<script src="js/app.min.js?_v=20230731155707"></script>
+		<script src="js/app.min.js?_v=20230801154812"></script>
 	</body>
 
 </html>

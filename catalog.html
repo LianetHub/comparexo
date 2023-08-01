@@ -40,9 +40,9 @@
 		<meta property="twitter:image:src" content="preview image">
 		<!-- Twitter -->
 
-		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20230731155707">
-		<link rel="stylesheet" href="css/reset.min.css?_v=20230731155707">
-		<link rel="stylesheet" href="css/style.min.css?_v=20230731155707">
+		<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20230801154812">
+		<link rel="stylesheet" href="css/reset.min.css?_v=20230801154812">
+		<link rel="stylesheet" href="css/style.min.css?_v=20230801154812">
 	</head>
 
 	<body>
@@ -1075,9 +1075,9 @@
 									<meta itemprop="position" content="1">
 								</li>
 								<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-									<a class="breadcrumbs__link breadcrumbs__link_active" itemprop="item">
+									<span class="breadcrumbs__link breadcrumbs__link_active" itemprop="item">
 										<span itemprop="name">Смартфоны</span>
-									</a>
+									</span>
 									<meta itemprop="position" content="2">
 								</li>
 							</ul>
@@ -1483,17 +1483,25 @@
 															<div class="results__sidebar-body">
 																<div class="results__sidebar-range-filter range-filter">
 																	<div class="range-filter__slider"></div>
-																	<div class="range-filter__inputs">
+																	<div class="range-filter__inputs hidden" hidden>
 																		<label class="range-filter__label">
 																			<span class="range-filter__text">от</span>
-																			<input type="number" min="0" max="15" step="1" value="3" class="range-filter__input range-filter__input_start">
+																			<input type="number" min="0" max="11" step="1" value="3" class="range-filter__input range-filter__input_start">
 																			<span class="range-filter__value range-filter__value_start" data-unit=""></span>
 																		</label>
 																		<label class="range-filter__label">
 																			<span class="range-filter__text">до</span>
-																			<input type="number" min="0" max="15" step="1" value="11" class="range-filter__input range-filter__input_end">
+																			<input type="number" min="0" max="11" step="1" value="8" class="range-filter__input range-filter__input_end">
 																			<span class="range-filter__value range-filter__value_end" data-unit=""></span>
 																		</label>
+																	</div>
+																	<div class="range-filter__markers">
+																		<div class="range-filter__marker">
+																			3
+																		</div>
+																		<div class="range-filter__marker">
+																			11
+																		</div>
 																	</div>
 																</div>
 															</div>
@@ -1774,7 +1782,7 @@
 															</form>
 															<div class="results__sidebar-filters">
 																<label class="results__sidebar-filter checkbox">
-																	<input type="checkbox" name="" class="checkbox__input hidden" hidden>
+																	<input type="checkbox" name="name-1" class="checkbox__input hidden" hidden>
 																	<span class="checkbox__content">
 																		<span class="checkbox__title">
 																			Название
@@ -1785,7 +1793,7 @@
 																	</span>
 																</label>
 																<label class="results__sidebar-filter checkbox">
-																	<input type="checkbox" name="" class="checkbox__input hidden" hidden>
+																	<input type="checkbox" name="name-2" class="checkbox__input hidden" hidden>
 																	<span class="checkbox__content">
 																		<span class="checkbox__title">
 																			Название
@@ -1796,7 +1804,7 @@
 																	</span>
 																</label>
 																<label class="results__sidebar-filter checkbox">
-																	<input type="checkbox" name="" class="checkbox__input hidden" hidden>
+																	<input type="checkbox" name="name-3" class="checkbox__input hidden" hidden>
 																	<span class="checkbox__content">
 																		<span class="checkbox__title">
 																			Название
@@ -1907,7 +1915,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -1932,7 +1940,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -1945,7 +1953,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -1970,7 +1978,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -1983,7 +1991,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2008,7 +2016,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2021,7 +2029,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2046,7 +2054,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2059,7 +2067,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2084,7 +2092,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2097,7 +2105,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2122,7 +2130,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2135,7 +2143,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2160,7 +2168,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2173,7 +2181,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2198,7 +2206,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2211,7 +2219,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2236,7 +2244,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2249,7 +2257,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2274,7 +2282,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2287,7 +2295,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2312,7 +2320,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2325,7 +2333,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2350,7 +2358,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2363,7 +2371,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2388,7 +2396,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2401,7 +2409,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2426,7 +2434,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2439,7 +2447,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2464,7 +2472,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2477,7 +2485,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2502,7 +2510,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2515,7 +2523,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2540,7 +2548,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2553,7 +2561,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2578,7 +2586,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2591,7 +2599,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2616,7 +2624,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2629,7 +2637,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2654,159 +2662,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
-										</div>
-									</div>
-								</li>
-								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product results__product" id="product-17">
-
-									<div class="product__rate product__rate_green" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-										<span itemprop="ratingValue">8.8</span>
-									</div>
-
-
-									<div class="product__actions">
-										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
-											<span class="product__action-text">
-												Сравнить
-											</span>
-										</div>
-										<div class="product__action">
-											<button type="button" aria-label="Добавить в избранное" class="product__action-btn icon-star"></button>
-											<span class="product__action-text">
-												В избранное
-											</span>
-										</div>
-									</div>
-									<a href="" itemprop="url" class="product__image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-23.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/samsung-galaxy-s-23.png" alt="Смартфон Samsung Galaxy S23 Plus">
-										</picture>
-									</a>
-									<div class="product__desc">
-										<h3 itemprop="name" class="product__image-title">
-											<a href="" itemprop="url">Смартфон Samsung Galaxy S23 Plus</a>
-										</h3>
-										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
-											<div class="product__price" itemprop="price">от 32 537 ₸</div>
-											<meta itemprop="priceCurrency" content="KZT">
-											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
-										</div>
-									</div>
-								</li>
-								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product results__product" id="product-18">
-
-									<div class="product__rate product__rate_green" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-										<span itemprop="ratingValue">9.9</span>
-									</div>
-
-
-									<div class="product__actions">
-										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
-											<span class="product__action-text">
-												Сравнить
-											</span>
-										</div>
-										<div class="product__action">
-											<button type="button" aria-label="Добавить в избранное" class="product__action-btn icon-star"></button>
-											<span class="product__action-text">
-												В избранное
-											</span>
-										</div>
-									</div>
-									<a href="" itemprop="url" class="product__image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/products/asus-rog-phone-3.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/asus-rog-phone-3.png" alt="Смартфон Asus ROG Phone III">
-										</picture>
-									</a>
-									<div class="product__desc">
-										<h3 itemprop="name" class="product__image-title">
-											<a href="" itemprop="url">Смартфон Asus ROG Phone III</a>
-										</h3>
-										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
-											<div class="product__price" itemprop="price">от 32 537 ₸</div>
-											<meta itemprop="priceCurrency" content="KZT">
-											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
-										</div>
-									</div>
-								</li>
-								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product results__product" id="product-19">
-
-									<div class="product__rate product__rate_red" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-										<span itemprop="ratingValue">2.4</span>
-									</div>
-
-
-									<div class="product__actions">
-										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
-											<span class="product__action-text">
-												Сравнить
-											</span>
-										</div>
-										<div class="product__action">
-											<button type="button" aria-label="Добавить в избранное" class="product__action-btn icon-star"></button>
-											<span class="product__action-text">
-												В избранное
-											</span>
-										</div>
-									</div>
-									<a href="" itemprop="url" class="product__image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/products/asus-rog-phone-6.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/asus-rog-phone-6.png" alt="Смартфон Asus ROG Phone 6">
-										</picture>
-									</a>
-									<div class="product__desc">
-										<h3 itemprop="name" class="product__image-title">
-											<a href="" itemprop="url">Смартфон Asus ROG Phone 6</a>
-										</h3>
-										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
-											<div class="product__price" itemprop="price">от 32 537 ₸</div>
-											<meta itemprop="priceCurrency" content="KZT">
-											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
-										</div>
-									</div>
-								</li>
-								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product results__product" id="product-20">
-
-									<div class="product__rate product__rate_green" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
-										<span itemprop="ratingValue">10</span>
-									</div>
-
-
-									<div class="product__actions">
-										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
-											<span class="product__action-text">
-												Сравнить
-											</span>
-										</div>
-										<div class="product__action">
-											<button type="button" aria-label="Добавить в избранное" class="product__action-btn icon-star"></button>
-											<span class="product__action-text">
-												В избранное
-											</span>
-										</div>
-									</div>
-									<a href="" itemprop="url" class="product__image">
-										<picture>
-											<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-22.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/samsung-galaxy-s-22.png" alt="Смартфон Samsung Galaxy S22 Plus">
-										</picture>
-									</a>
-									<div class="product__desc">
-										<h3 itemprop="name" class="product__image-title">
-											<a href="" itemprop="url">Смартфон Samsung Galaxy S22 Plus</a>
-										</h3>
-										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
-											<div class="product__price" itemprop="price">от 32 537 ₸</div>
-											<meta itemprop="priceCurrency" content="KZT">
-											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2819,7 +2675,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2844,7 +2700,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2857,7 +2713,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2882,7 +2738,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2895,7 +2751,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2920,7 +2776,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2933,7 +2789,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2958,7 +2814,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -2971,7 +2827,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -2996,7 +2852,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -3009,7 +2865,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -3034,7 +2890,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -3047,7 +2903,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -3072,7 +2928,7 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -3085,7 +2941,7 @@
 
 									<div class="product__actions">
 										<div class="product__action">
-											<button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
 											<span class="product__action-text">
 												Сравнить
 											</span>
@@ -3110,7 +2966,159 @@
 											<div class="product__price" itemprop="price">от 32 537 ₸</div>
 											<meta itemprop="priceCurrency" content="KZT">
 											<meta itemprop="availability" content="http://schema.org/InStock">
-											<div class="product__comments icon-comments">(144) <span>отзывов</span></div>
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product results__product" id="product-29">
+
+									<div class="product__rate product__rate_green" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<span itemprop="ratingValue">8.8</span>
+									</div>
+
+
+									<div class="product__actions">
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+										<div class="product__action">
+											<button type="button" aria-label="Добавить в избранное" class="product__action-btn icon-star"></button>
+											<span class="product__action-text">
+												В избранное
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-23.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/samsung-galaxy-s-23.png" alt="Смартфон Samsung Galaxy S23 Plus">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Samsung Galaxy S23 Plus</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product results__product" id="product-30">
+
+									<div class="product__rate product__rate_green" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<span itemprop="ratingValue">9.9</span>
+									</div>
+
+
+									<div class="product__actions">
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+										<div class="product__action">
+											<button type="button" aria-label="Добавить в избранное" class="product__action-btn icon-star"></button>
+											<span class="product__action-text">
+												В избранное
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/asus-rog-phone-3.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/asus-rog-phone-3.png" alt="Смартфон Asus ROG Phone III">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Asus ROG Phone III</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product results__product" id="product-31">
+
+									<div class="product__rate product__rate_red" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<span itemprop="ratingValue">2.4</span>
+									</div>
+
+
+									<div class="product__actions">
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+										<div class="product__action">
+											<button type="button" aria-label="Добавить в избранное" class="product__action-btn icon-star"></button>
+											<span class="product__action-text">
+												В избранное
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/asus-rog-phone-6.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/asus-rog-phone-6.png" alt="Смартфон Asus ROG Phone 6">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Asus ROG Phone 6</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
+										</div>
+									</div>
+								</li>
+								<li itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="product results__product" id="product-32">
+
+									<div class="product__rate product__rate_green" itemprop="reviewRating" itemscope itemtype="http://schema.org/Rating">
+										<span itemprop="ratingValue">10</span>
+									</div>
+
+
+									<div class="product__actions">
+										<div class="product__action">
+											<button type="button" aria-label="Сравнить" data-tooltip="Товар добавлен к сравнению" class="product__action-btn icon-compare"></button>
+											<span class="product__action-text">
+												Сравнить
+											</span>
+										</div>
+										<div class="product__action">
+											<button type="button" aria-label="Добавить в избранное" class="product__action-btn icon-star"></button>
+											<span class="product__action-text">
+												В избранное
+											</span>
+										</div>
+									</div>
+									<a href="" itemprop="url" class="product__image">
+										<picture>
+											<source srcset="img/1x1.webp" data-srcset="img/products/samsung-galaxy-s-22.webp" type="image/webp"><img itemprop="image" src="img/1x1.png" data-src="img/products/samsung-galaxy-s-22.png" alt="Смартфон Samsung Galaxy S22 Plus">
+										</picture>
+									</a>
+									<div class="product__desc">
+										<h3 itemprop="name" class="product__image-title">
+											<a href="" itemprop="url">Смартфон Samsung Galaxy S22 Plus</a>
+										</h3>
+										<div class="product__footer" itemscope itemprop="offers" itemtype="http://schema.org/Offer">
+											<div class="product__price" itemprop="price">от 32 537 ₸</div>
+											<meta itemprop="priceCurrency" content="KZT">
+											<meta itemprop="availability" content="http://schema.org/InStock">
+											<a href="" class="product__comments icon-comments">(144) <span>отзывов</span></a>
 										</div>
 									</div>
 								</li>
@@ -3643,12 +3651,12 @@
 
 		<!-- END INPUT MODALS -->
 
-		<script src="js/libs/swiper.min.js?_v=20230731155707"></script>
+		<script src="js/libs/swiper.min.js?_v=20230801154812"></script>
 
-		<script src="js/libs/chart.min.js?_v=20230731155707"></script>
+		<script src="js/libs/chart.min.js?_v=20230801154812"></script>
 
-		<script src="js/libs/nouislider.min.js?_v=20230731155707"></script>
-		<script src="js/app.min.js?_v=20230731155707"></script>
+		<script src="js/libs/nouislider.min.js?_v=20230801154812"></script>
+		<script src="js/app.min.js?_v=20230801154812"></script>
 
 	</body>
 
