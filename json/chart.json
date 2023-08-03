@@ -131,5 +131,32 @@
                 "borderColor": "rgba(255, 199, 2)"
             }
         ]
+    },
+    {
+        "id": "benchmark-1",
+        "type": "barGrid",
+        "data": [
+            {
+                "value": "40"
+            },
+            {
+                "value": "80"
+            },
+            {
+                "value": "60"
+            },
+            {
+                "value": "47"
+            },
+            {
+                "value": "96"
+            },
+            {
+                "value": "23"
+            },
+            {
+                "value": "20"
+            }
+        ]
     }
 ]
