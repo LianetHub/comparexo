@@ -3831,7 +3831,8 @@ body._pc .tooltip__body.tooltip__body_visible {
   position: relative;
 }
 
-.tooltip-btn__text {
+.tooltip-btn__text,
+.tooltip-btn__body {
   position: absolute;
   bottom: calc(100% + 13px);
   left: 50%;
@@ -3856,7 +3857,8 @@ body._pc .tooltip__body.tooltip__body_visible {
   transition: opacity 0.2s ease 0s, visibility 0.3s ease 0s;
 }
 
-.tooltip-btn__text::after {
+.tooltip-btn__text::after,
+.tooltip-btn__body::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -3867,6 +3869,47 @@ body._pc .tooltip__body.tooltip__body_visible {
   width: 17px;
   height: 8px;
   background: url("data:image/svg+xml,%3Csvg width='17' height='8' viewBox='0 0 17 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.5 0H0.5L7.08579 6.58579C7.86684 7.36684 9.13317 7.36684 9.91421 6.58579L16.5 0Z' fill='white'/%3E%3C/svg%3E%0A") top center/17px 8px no-repeat;
+}
+
+.tooltip-btn__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  top: 100%;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  right: 0;
+  left: auto;
+  bottom: auto;
+  background: none;
+  padding: 1.125em 0.625em 0.5em;
+}
+
+.tooltip-btn__body::after {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 10px);
+  background: #fff;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.tooltip-btn__link {
+  padding: 0.34375em 0.625em;
+  border-radius: 6px;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
 
 .tooltip-popup {
@@ -3954,6 +3997,9 @@ body._pc .tooltip__body.tooltip__body_visible {
           align-items: center;
   border-radius: 10px;
   padding: 0.375em 1.25em;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
 
 .comment__product-thumb {
@@ -4022,7 +4068,8 @@ body._pc .tooltip__body.tooltip__body_visible {
   border: 1px solid currentColor;
 }
 
-.comment__info.icon-more .tooltip-btn__text {
+.comment__info.icon-more .tooltip-btn__text,
+.comment__info.icon-more .tooltip-btn__body {
   right: calc(100% + 10px);
   bottom: auto;
   height: auto;
@@ -4033,12 +4080,17 @@ body._pc .tooltip__body.tooltip__body_visible {
           transform: translateY(-50%);
 }
 
-.comment__info.icon-more .tooltip-btn__text::after {
+.comment__info.icon-more .tooltip-btn__text::after,
+.comment__info.icon-more .tooltip-btn__body::after {
   left: 100%;
   top: calc(50% - 4px);
   -webkit-transform: rotate(-90deg) translateY(calc(-50% - 1px));
       -ms-transform: rotate(-90deg) translateY(calc(-50% - 1px));
           transform: rotate(-90deg) translateY(calc(-50% - 1px));
+}
+
+.comment__info.icon-dotts {
+  border: 1.5px solid #fff;
 }
 
 .comment__stats {
@@ -8418,23 +8470,20 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .review__preview {
   margin: 0.9375em 0em 0em 0em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (80px)[3];
+  grid-template-columns: repeat(3, 80px);
+  grid-auto-rows: 80px;
+  gap: 16px;
 }
 
 .review__preview-image {
   position: relative;
-  width: 100px;
-  height: 100px;
 }
 
 .review__preview-image img {
   border-radius: 4px;
-}
-
-.review__preview-image:not(:last-child) {
-  margin: 0em 1em 0em 0em;
 }
 
 .review__preview-image-delete {
@@ -10798,6 +10847,12 @@ body._pc .tooltip__body.tooltip__body_visible {
     margin: -100% 0em 0em auto;
   }
 
+  .review__preview {
+    -ms-grid-columns: (100px)[3];
+    grid-template-columns: repeat(3, 100px);
+    grid-auto-rows: 100px;
+  }
+
   .person__section-header {
     font-size: 1.25rem;
   }
@@ -13048,9 +13103,25 @@ body._pc .tooltip__body.tooltip__body_visible {
     background: #0c6ff9;
   }
 
-  .tooltip-btn:hover .tooltip-btn__text {
+  .tooltip-btn:hover .tooltip-btn__text,
+  .tooltip-btn:hover .tooltip-btn__body {
     visibility: visible;
     opacity: 1;
+  }
+
+  .tooltip-btn__link:hover {
+    background: #edf7ff;
+  }
+
+  .comment__product:hover {
+    background-color: #e7f1ff;
+  }
+
+  .comment__info.icon-dotts:hover {
+    border-color: #c7dcf9;
+    -webkit-box-shadow: 0px 1px 24px rgba(3, 28, 64, 0.14);
+            box-shadow: 0px 1px 24px rgba(3, 28, 64, 0.14);
+    background-color: #edf7ff;
   }
 
   .comment__info:hover {
