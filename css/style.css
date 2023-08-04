@@ -155,6 +155,7 @@
 }
 
 .icon-check:before,
+.review__rate-footer-item._succes:before,
 .results__sort-item:has(.results__sort-link_up):before,
 .form__status.form__status_correct:before,
 .table__status_succes:before,
@@ -8396,7 +8397,9 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .review__rate-value {
   position: relative;
+  --rate: 0deg;
   font-family: "Montserrat";
+  color: #f14a33;
   font-size: 1.125rem;
   font-weight: 600;
   background: #fff;
@@ -8413,8 +8416,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   padding: 0.375em 0.3125em 0.3125em 0.3125em;
   margin: 0em 1rem 0em 0em;
   z-index: 1;
-  color: #f14a33;
-  background: conic-gradient(currentColor 100.8deg, #edeff2 100.8deg);
+  background: conic-gradient(currentColor var(--rate), #edeff2 var(--rate));
   width: 50px;
   height: 50px;
 }
@@ -8522,7 +8524,6 @@ body._pc .tooltip__body.tooltip__body_visible {
   width: 32px;
   height: 32px;
   border-radius: 6px;
-  background: #f5f5f8;
   color: #c2c9d3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8534,11 +8535,8 @@ body._pc .tooltip__body.tooltip__body_visible {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.25rem;
-}
-
-.review__rate-benefit_complect {
-  background: #79d145;
-  color: #fff;
+  --background: #f5f5f8;
+  background: var(--background);
 }
 
 .review__rate-footer {
@@ -8580,6 +8578,19 @@ body._pc .tooltip__body.tooltip__body_visible {
   background: #f5f5f8;
   color: #d3d8e0;
   margin: 0em 0.5rem 0em 0em;
+}
+
+.review__rate-footer-item._succes {
+  color: #0f1114;
+}
+
+.review__rate-footer-item._succes::before {
+  background: #79d145;
+  font-size: 0.75rem;
+  -webkit-transform: rotate(0);
+      -ms-transform: rotate(0);
+          transform: rotate(0);
+  color: #fff;
 }
 
 .review__btn {
