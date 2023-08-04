@@ -2179,6 +2179,26 @@ body._pc .tooltip__body.tooltip__body_visible {
   letter-spacing: 0.08px;
 }
 
+.benchmark__list-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.benchmark__list-value {
+  color: #aeb4bd;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0em 0em 0.2857142857em 0em;
+}
+
 .benchmark__list-item-progress {
   display: none;
 }
@@ -3599,6 +3619,10 @@ body._pc .tooltip__body.tooltip__body_visible {
           align-items: center;
 }
 
+.table__row img {
+  margin: 0em 0.3125em 0em 0em;
+}
+
 .range {
   position: relative;
   z-index: 1;
@@ -3866,6 +3890,37 @@ body._pc .tooltip__body.tooltip__body_visible {
 .tooltip-popup.tooltip-blue {
   background: #0c6ff9;
   color: #fff;
+}
+
+.tooltip-chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Montserrat";
+}
+
+.tooltip-chart img {
+  width: 24px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin: 0em 0.625em 0em 0em;
+}
+
+.tooltip-chart__header {
+  font-size: 14px;
+}
+
+.tooltip-chart__header span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tooltip-chart__body {
+  margin: 0.5714285714em 0em 0em 0em;
+  font-size: 14px;
 }
 
 .comment {
