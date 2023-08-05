@@ -9113,6 +9113,12 @@ body._pc .tooltip__body.tooltip__body_visible {
   color: #8e959e;
 }
 
+.person__favorites-select {
+  -webkit-transition: color 0.3s ease 0s;
+  -o-transition: color 0.3s ease 0s;
+  transition: color 0.3s ease 0s;
+}
+
 .person__favorites-actions {
   border-top: 1px solid #ebebf0;
   margin: 1em 0em 0em 0em;
@@ -14322,6 +14328,10 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   .person__favorites-reset:hover {
     color: #f14a33;
+  }
+
+  .person__favorites-select:hover {
+    color: #0c6ff9;
   }
 
   .person__section-header:hover::before {
