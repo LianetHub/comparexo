@@ -6067,6 +6067,13 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .navigation__item {
   width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .navigation__slide-link {
@@ -14201,6 +14208,7 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   .navigation__slide-link:hover {
     background-color: #edf7ff;
+    border: 1px solid #edf7ff;
   }
 
   .products__grid-item:hover .products__grid-item-image {
