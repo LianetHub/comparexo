@@ -4680,10 +4680,6 @@ body._pc .tooltip__body.tooltip__body_visible {
   margin: 0em 0.75rem 0em 0em;
 }
 
-.header {
-  overflow: hidden;
-}
-
 .header.header_transparent .header-body:not(.header-body_mobile-fixed) {
   background: none;
   color: #fff;
@@ -4970,6 +4966,7 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .menu__login {
   position: relative;
+  z-index: 3;
 }
 
 .menu__login-actions {
