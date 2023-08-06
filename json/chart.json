@@ -45,8 +45,8 @@
                     10,
                     9.5,
                     9.2,
-                    8,
-                    6,
+                    9.6,
+                    10,
                     9.8,
                     9,
                     9.4
@@ -62,7 +62,7 @@
                     8,
                     9.2,
                     8,
-                    10,
+                    8,
                     9.8,
                     3,
                     9.4
@@ -80,11 +80,11 @@
                     6,
                     2,
                     3.8,
-                    10,
+                    5,
                     8.4
                 ],
                 "backgroundColor": "rgba(34, 167, 242, 0.2)",
-                "pointBorderColor": "rgba(34, 167, 242)",
+                "pointBackgroundColor": "#fff",
                 "borderColor": "rgba(34, 167, 242)"
             },
             {
@@ -100,7 +100,7 @@
                     7.4
                 ],
                 "backgroundColor": "rgba(23, 160, 54, 0.2)",
-                "pointBorderColor": "rgba(23, 160, 54)",
+                "pointBackgroundColor": "#fff",
                 "borderColor": "rgba(23, 160, 54)"
             }
         ]
