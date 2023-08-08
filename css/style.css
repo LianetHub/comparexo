@@ -853,6 +853,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   padding: 0.5833333333em 1.0555555556em;
   border-radius: 8px;
   font-size: 1.125rem;
+  font-weight: 400;
   line-height: 1.2222222222;
 }
 
@@ -2497,12 +2498,16 @@ body._pc .tooltip__body.tooltip__body_visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 0;
   width: 100%;
   font-size: 1.5rem;
+}
+
+.modal-slider__title {
+  margin-right: auto;
 }
 
 .modal-slider__pagination {
@@ -6227,6 +6232,40 @@ body._pc .tooltip__body.tooltip__body_visible {
   margin: 0em 0.625rem 0em 0em;
 }
 
+@-webkit-keyframes trambling-animation {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  33% {
+    -webkit-transform: translateY(-0.5px);
+            transform: translateY(-0.5px);
+  }
+
+  66% {
+    -webkit-transform: translateY(0.5px);
+            transform: translateY(0.5px);
+  }
+}
+
+@keyframes trambling-animation {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  33% {
+    -webkit-transform: translateY(-0.5px);
+            transform: translateY(-0.5px);
+  }
+
+  66% {
+    -webkit-transform: translateY(0.5px);
+            transform: translateY(0.5px);
+  }
+}
+
 .products {
   padding: 2em 0em;
   background-color: #f7f7fa;
@@ -6303,12 +6342,6 @@ body._pc .tooltip__body.tooltip__body_visible {
   border-radius: 6px;
   color: #fff;
   min-height: 195px;
-}
-
-.products__grid-item:nth-child(5n+4) .products__grid-item-more,
-.products__grid-item:nth-child(5n+5) .products__grid-item-more {
-  font-family: "Montserrat";
-  font-weight: 600;
 }
 
 .products__grid-item_violet {
@@ -6474,6 +6507,8 @@ body._pc .tooltip__body.tooltip__body_visible {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Montserrat";
+  font-weight: 600;
 }
 
 .products__grid-item-more::before {
@@ -7105,6 +7140,7 @@ body._pc .tooltip__body.tooltip__body_visible {
 .product-card__actions-separator {
   height: 25px;
   width: 2px;
+  margin: 0 0.0625rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border-radius: 8px;
@@ -9744,6 +9780,9 @@ body._pc .tooltip__body.tooltip__body_visible {
       -ms-flex-align: center;
           align-items: center;
   margin: 0.25rem;
+  -webkit-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
 }
 
 .last__section-item.last__section-item_winner {
@@ -11947,14 +11986,18 @@ body._pc .tooltip__body.tooltip__body_visible {
     width: 100%;
     padding-bottom: 50%;
     height: 0;
+    text-align: center;
   }
 
   .survey__main-chart canvas {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: auto !important;
+    height: 100% !important;
   }
 
   .survey__main-side {
@@ -13224,7 +13267,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   }
 
   .navigation__slide-link {
-    border-radius: 0;
+    border-radius: 4px;
     background-color: #fff;
   }
 
@@ -14664,7 +14707,8 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   .navigation__slide-link:hover {
     background-color: #edf7ff;
-    border: 1px solid #edf7ff;
+    -webkit-animation: 0.2s ease-in-out 0s normal none running trambling-animation;
+            animation: 0.2s ease-in-out 0s normal none running trambling-animation;
   }
 
   .products__grid-item:hover .products__grid-item-image {
@@ -14851,6 +14895,10 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   .last__section-link:hover {
     color: #0c6ff9;
+  }
+
+  .last__section-item:hover {
+    background-color: #e7f1ff;
   }
 
   .compare-header__prev:hover,
