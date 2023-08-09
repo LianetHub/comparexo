@@ -7388,8 +7388,8 @@ body._pc .tooltip__body.tooltip__body_visible {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   overflow-x: auto;
-  padding: 0em 1.25em 0em 0em;
-  margin: 0em -1.25rem 0em 0em;
+  padding: 0em 1.25em;
+  margin: 0em -1.25rem;
 }
 
 .product-navbar__list::-webkit-scrollbar {
