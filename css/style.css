@@ -3657,10 +3657,6 @@ body._pc .tooltip__body.tooltip__body_visible {
   border-collapse: separate;
 }
 
-.table.table_sm {
-  overflow: hidden;
-}
-
 .table.table_sm td {
   width: auto;
 }
