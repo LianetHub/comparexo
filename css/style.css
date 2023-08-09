@@ -7736,6 +7736,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   padding: 0.7708333333em 1em;
   font-size: 1.125rem;
   line-height: normal;
+  font-weight: 600;
   font-family: "Montserrat";
 }
 
@@ -10752,8 +10753,17 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .specification__more {
-  margin: 1em 0em 0em 0em;
   text-align: center;
+}
+
+.specification__more .btn {
+  color: #0c6ff9;
+  width: 100%;
+  min-height: 56px;
+  border-radius: 0;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0;
 }
 
 .specification__table {
@@ -12083,6 +12093,20 @@ body._pc .tooltip__body.tooltip__body_visible {
   .specification__grid.specification__grid_md {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .specification__more {
+    margin: 1em 0em 0em 0em;
+  }
+
+  .specification__more .btn {
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-radius: 8px;
+    color: #0f1114;
+    width: auto;
+    min-height: auto;
   }
 
   .winner__title {
