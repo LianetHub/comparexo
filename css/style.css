@@ -3657,6 +3657,10 @@ body._pc .tooltip__body.tooltip__body_visible {
   border-collapse: separate;
 }
 
+.table.table_sm {
+  overflow: hidden;
+}
+
 .table.table_sm td {
   width: auto;
 }
@@ -7201,7 +7205,7 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .product-card__compare .product__action-text {
   width: auto;
-  padding: 0.4375rem 1.6875rem 0.4375rem 0.5rem;
+  padding: 0.4375rem 1.25rem 0.4375rem 0.5rem;
   font-size: 0.875rem;
 }
 
@@ -7708,7 +7712,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   border-radius: 10px;
   background: #fff;
   padding: 0.75em;
-  margin: 0em 0em 1.5em 0em;
+  margin: 0em 0.625em 1.5em 0.625em;
 }
 
 .reviews__rate-header {
@@ -7730,6 +7734,9 @@ body._pc .tooltip__body.tooltip__body_visible {
           align-items: center;
   border-radius: 8px 0 0 8px;
   padding: 0.7708333333em 1em;
+  font-size: 1.125rem;
+  line-height: normal;
+  font-family: "Montserrat";
 }
 
 .reviews__rate-block {
@@ -7754,11 +7761,12 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .reviews__rate-value {
-  font-size: 1.375rem;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
 .reviews__rate-unit {
+  margin: 0.375rem 0em 0em 0em;
   font-size: 0.875rem;
   font-weight: 600;
 }
@@ -10074,32 +10082,33 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .survey__benefits {
-  margin: 1em -1.25em 0em -1.25em;
+  margin: 1em 0em 0em 0em;
   background: #fff;
   padding: 0.875em 0.75em;
 }
 
 .survey__benefits-header {
   background: #e9f5ff;
-  padding: 0.4375em 0.75em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 8px;
+  padding: 0.875em 0.75em;
 }
 
 .survey__benefits-caption {
   font-size: 1.125rem;
-  font-weight: 500;
+  line-height: 1.1666666667;
+  font-weight: 600;
 }
 
 .survey__benefits-tooltip {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin: 0em 0em 0em 1em;
+  margin: 0em 0em 0em 0.375rem;
 }
 
 .survey__benefits-tooltip .tooltip__btn,
@@ -10669,20 +10678,19 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .specification {
-  padding: 2em 0em;
+  padding: 1.0625em 0em 1.5em;
 }
 
-.specification.specification_white {
-  background: #fff;
+.specification.no-gap-mobile .specification__container {
+  padding: 0;
 }
 
-.specification.specification_white .specification__title::before {
-  background: #f7f7fa;
+.specification.no-gap-mobile .specification__title {
+  padding: 0 1.25rem;
 }
 
-.specification.specification_white .specification__table {
-  border: 1px solid #ebebf0;
-  border-radius: 8px;
+.specification.no-gap-mobile .table {
+  border-radius: 0;
 }
 
 .specification__title {
@@ -10716,13 +10724,13 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .specification__grid {
-  margin: 1.375em 0em 0em 0em;
+  margin: 1.0625em 0em 0em 0em;
   display: -ms-grid;
   display: grid;
   -webkit-column-gap: 24px;
      -moz-column-gap: 24px;
           column-gap: 24px;
-  row-gap: 16px;
+  row-gap: 8px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
@@ -10737,8 +10745,6 @@ body._pc .tooltip__body.tooltip__body_visible {
 .specification__grid .specification__table {
   margin: 0;
   padding: 0;
-  overflow-y: visible;
-  overflow-x: visible;
 }
 
 .specification__grid.excerpt-hidden:not(._visible) {
@@ -10752,7 +10758,6 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .specification__table {
   margin: 1.5em -1.25em 0em 0em;
-  padding: 0em 1.25em 0em 0em;
   border-radius: 8px;
   overflow-x: auto;
   overflow-y: visible;
@@ -11085,6 +11090,10 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   .main__body {
     padding: 3.625em 1.25em;
+  }
+
+  .reviews__rate {
+    margin: 0em 1.25em 1.5em 1.25em;
   }
 
   .section-header {
@@ -11861,6 +11870,10 @@ body._pc .tooltip__body.tooltip__body_visible {
     padding: 0;
   }
 
+  .reviews__rate {
+    margin: 0em 0em 1.5em 0em;
+  }
+
   .reviews__caption {
     border-radius: 10px;
   }
@@ -12012,6 +12025,14 @@ body._pc .tooltip__body.tooltip__body_visible {
     border-left: 1px solid rgba(235, 235, 240, 0.7);
   }
 
+  .survey__benefits {
+    margin: 1em -1.25em 0em -1.25em;
+  }
+
+  .survey__benefits-tooltip {
+    margin: 0em 0em 0em 1em;
+  }
+
   .survey__benefits-more {
     font-size: 1.125rem;
   }
@@ -12023,7 +12044,38 @@ body._pc .tooltip__body.tooltip__body_visible {
     display: inline-flex;
   }
 
+  .specification {
+    padding: 2em 0em;
+  }
+
+  .specification.specification_white {
+    background: #fff;
+  }
+
+  .specification.specification_white .specification__title::before {
+    background: #f7f7fa;
+  }
+
+  .specification.specification_white .specification__table {
+    border: 1px solid #ebebf0;
+    border-radius: 8px;
+  }
+
+  .specification.no-gap-mobile .specification__container {
+    padding: 0 1.25em;
+  }
+
+  .specification.no-gap-mobile .specification__title {
+    padding: 0;
+  }
+
+  .specification.no-gap-mobile .table {
+    border-radius: 8px;
+  }
+
   .specification__grid {
+    margin: 1.375em 0em 0em 0em;
+    row-gap: 16px;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
@@ -12609,6 +12661,18 @@ body._pc .tooltip__body.tooltip__body_visible {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 340px;
             flex: 0 0 340px;
+  }
+
+  .reviews__rate-title {
+    font-size: 1.5rem;
+  }
+
+  .reviews__rate-value {
+    font-size: 1.375rem;
+  }
+
+  .reviews__rate-unit {
+    margin: 0em 0em 0em 0em;
   }
 
   .reviews__list {
@@ -13937,6 +14001,14 @@ body._pc .tooltip__body.tooltip__body_visible {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .survey__benefits-header {
+    padding: 0.4375em 0.75em;
+  }
+
+  .survey__benefits-caption {
+    font-weight: 500;
   }
 
   .rate__header {
