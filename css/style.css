@@ -503,6 +503,12 @@ body._pc .tooltip__body.tooltip__body_visible {
   margin-bottom: -4.1875em;
 }
 
+[data-src],
+[data-srcset] {
+  width: inherit;
+  height: inherit;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
