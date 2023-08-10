@@ -5658,7 +5658,6 @@ body._pc .tooltip__body.tooltip__body_visible {
 .form__status::before {
   font-family: "icons" !important;
   speak: never;
-  display: block;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -5668,6 +5667,8 @@ body._pc .tooltip__body.tooltip__body_visible {
   -moz-osx-font-smoothing: grayscale;
   width: 24px;
   height: 24px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6011,6 +6012,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 1.25em 1.5em;
 }
 
 .login__image {
@@ -6034,11 +6036,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   border-bottom: 1px solid #ebebf0;
   -webkit-box-shadow: 0px 0px 9px 0px rgba(53, 136, 255, 0.04);
           box-shadow: 0px 0px 9px 0px rgba(53, 136, 255, 0.04);
-}
-
-.login__body {
-  padding: 0em 1.25em 1.5em;
-  margin: 1.5em 0em 0em 0em;
+  margin: 0 -1.25em 1.5em;
 }
 
 .login__back::before {
@@ -11489,6 +11487,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   }
 
   .login {
+    padding: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -11524,15 +11523,11 @@ body._pc .tooltip__body.tooltip__body_visible {
   }
 
   .login__header {
+    margin: 0;
     padding: 0;
     border-bottom: 0;
     -webkit-box-shadow: none;
             box-shadow: none;
-  }
-
-  .login__body {
-    margin: 0;
-    padding: 0;
   }
 
   .login__back {

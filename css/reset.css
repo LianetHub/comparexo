@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
   padding: 0;
   margin: 0;
@@ -125,6 +127,12 @@ textarea::placeholder {
 
 input::-ms-clear {
   display: none;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px white inset;
+  /* можно изменить на любой вариант цвета */
+  -webkit-text-fill-color: #333;
 }
 
 button,
