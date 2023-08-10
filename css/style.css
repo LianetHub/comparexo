@@ -1709,6 +1709,13 @@ picture {
   padding: 1.75em 1em 1em 1em;
 }
 
+.search__bar.search__bar_open {
+  display: block;
+  position: static;
+  top: auto;
+  left: auto;
+}
+
 .search__bar::-webkit-scrollbar {
   width: 8px;
 }
@@ -1754,7 +1761,7 @@ picture {
 }
 
 .search__bar-result {
-  padding: 0.6111111111em 0em;
+  padding: 0.3888888889em 0em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1779,6 +1786,35 @@ picture {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.search__bar-thumb {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+  height: 40px;
+  text-align: center;
+  margin: 0em 0.75em 0em 0em;
+}
+
+.search__bar-thumb img {
+  height: 100%;
+  width: auto;
+}
+
+.search__bar-title {
+  font-size: 1.0625rem;
+  line-height: 1.2352941176;
+}
+
+.search__bar-stats {
+  margin: 0.25rem 0em 0em 0em;
+  color: #aeb4bd;
+  font-size: 14px;
+}
+
+.search__bar-btn {
+  margin-left: auto;
 }
 
 .search__bar-link {
@@ -2628,8 +2664,12 @@ picture {
           flex-direction: column;
 }
 
+.compare-list .popup__mobile-close::before,
+.compare-list .results__mobile-close::before {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 .compare-list__header {
-  padding: 1.0625em 1.25em;
   border-bottom: 1px solid #ebebf0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2640,6 +2680,7 @@ picture {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1.75em 1.25em 1.0625em;
 }
 
 .compare-list__title {
@@ -2680,8 +2721,21 @@ picture {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  max-height: calc(100vh - 9.75em);
+  max-height: calc(100vh - 12.5em);
   padding: 1em 1.75em 1em 1.25em;
+}
+
+.compare-list__body.compare-list__body_lg {
+  max-height: 100vh;
+}
+
+.compare-list__search {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.compare-list__search .search__bar {
+  padding: 0.375em 1em;
 }
 
 .compare-list__btn {
@@ -11445,6 +11499,10 @@ picture {
     font-size: 1.25rem;
   }
 
+  .compare-list__header {
+    padding: 1.0625em 1.25em;
+  }
+
   .compare-list__footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11468,7 +11526,7 @@ picture {
   }
 
   .compare-list__body {
-    max-height: 334px;
+    max-height: calc(100vh - 9.75em);
     -webkit-box-flex: 0;
         -ms-flex: 0 1 auto;
             flex: 0 1 auto;
