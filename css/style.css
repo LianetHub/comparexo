@@ -503,6 +503,11 @@ body._pc .tooltip__body.tooltip__body_visible {
   margin-bottom: -4.1875em;
 }
 
+picture {
+  width: inherit;
+  height: inherit;
+}
+
 [data-src],
 [data-srcset] {
   width: inherit;
