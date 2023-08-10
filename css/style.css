@@ -3511,7 +3511,6 @@ body._pc .tooltip__body.tooltip__body_visible {
 .checkbox__input:checked + .checkbox__content::before {
   font-family: "icons" !important;
   speak: never;
-  display: block;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -9370,11 +9369,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 0em 0em 2em 0em;
-}
-
-.person__header {
-  padding: 1.5em 0em 0em 0em;
+  padding: 2em 0em;
 }
 
 .person__favorites {
@@ -9409,6 +9404,11 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .person__reviews {
   margin: 0 -1.25rem;
+  padding-bottom: 0;
+}
+
+.person__reviews .reviews__title {
+  font-weight: 600;
 }
 
 .person__favorites-header {
@@ -14127,11 +14127,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   }
 
   .person__content {
-    padding: 0em 0em 4em 2em;
-  }
-
-  .person__header {
-    padding: 2em 0em 0em 0em;
+    padding: 2em 0em 4em 2em;
   }
 
   .person__favorites {
