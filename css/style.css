@@ -3716,9 +3716,18 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .table {
   width: 100%;
-  border-radius: 10px;
-  background: #fff;
   border-collapse: separate;
+  position: relative;
+  z-index: 1;
+}
+
+.table::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: #fff;
+  border-radius: 10px;
+  z-index: -1;
 }
 
 .table.table_sm td {
@@ -3803,6 +3812,18 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .table:not(.table_lg, .table_md) tbody tr:last-child::after {
   background: #fff;
+}
+
+.table tbody tr:last-child::after {
+  border-radius: 0 0 12px 12px;
+}
+
+.table tbody tr:last-child > td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.table tbody tr:last-child > td:last-child {
+  border-bottom-right-radius: 12px;
 }
 
 .table tbody tr td {
@@ -12179,9 +12200,8 @@ body._pc .tooltip__body.tooltip__body_visible {
     background: #f7f7fa;
   }
 
-  .specification.specification_white .specification__table {
+  .specification.specification_white .specification__table::before {
     border: 1px solid #ebebf0;
-    border-radius: 8px;
   }
 
   .specification.no-gap-mobile .specification__container {
@@ -13179,9 +13199,8 @@ body._pc .tooltip__body.tooltip__body_visible {
     background: #f7f7fa;
   }
 
-  .specification.specification_white-tablet .specification__table {
-    border: 1px solid #ebebf0;
-    border-radius: 8px;
+  .specification.specification_white-tablet .specification__table::before {
+    border: 1px solid #0c6ff9;
   }
 
   .specification__title::before {
