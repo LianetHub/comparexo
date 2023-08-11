@@ -3814,18 +3814,6 @@ body._pc .tooltip__body.tooltip__body_visible {
   background: #fff;
 }
 
-.table tbody tr:last-child::after {
-  border-radius: 0 0 12px 12px;
-}
-
-.table tbody tr:last-child > td:first-child {
-  border-bottom-left-radius: 12px;
-}
-
-.table tbody tr:last-child > td:last-child {
-  border-bottom-right-radius: 12px;
-}
-
 .table tbody tr td {
   position: relative;
   z-index: 2;
@@ -10314,7 +10302,7 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .markets {
   background: #fff;
-  padding: 2em 0em 0.75em;
+  padding: 2em 0em 0em;
   overflow-x: hidden;
 }
 
@@ -10901,6 +10889,9 @@ body._pc .tooltip__body.tooltip__body_visible {
   border-radius: 6px;
   font-size: 1.5rem;
   color: #0c6ff9;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(53, 136, 255, 0.04);
+          box-shadow: 0px 0px 9px 0px rgba(53, 136, 255, 0.04);
 }
 
 .specification__grid {
@@ -11770,6 +11761,18 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   .table td {
     font-size: 1.125rem;
+  }
+
+  .table tbody tr:last-child::after {
+    border-radius: 0 0 12px 12px;
+  }
+
+  .table tbody tr:last-child > td:first-child {
+    border-bottom-left-radius: 12px;
+  }
+
+  .table tbody tr:last-child > td:last-child {
+    border-bottom-right-radius: 12px;
   }
 
   .table__caption {
@@ -13201,12 +13204,6 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   .specification.specification_white-tablet .specification__table::before {
     border: 1px solid #0c6ff9;
-  }
-
-  .specification__title::before {
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 9px 0px rgba(53, 136, 255, 0.04);
-            box-shadow: 0px 0px 9px 0px rgba(53, 136, 255, 0.04);
   }
 
   .specification__table {
