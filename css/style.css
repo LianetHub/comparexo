@@ -1146,6 +1146,11 @@ body._pc .tooltip__body.tooltip__body_visible {
   font-size: 1.25rem;
 }
 
+.product__action-btn:disabled,
+.compares__item-separator:disabled {
+  opacity: 0.3;
+}
+
 .product__action-btn._active,
 ._active.compares__item-separator {
   background: var(--hover-color);
