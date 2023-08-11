@@ -1149,6 +1149,8 @@ body._pc .tooltip__body.tooltip__body_visible {
 .product__action-btn:disabled,
 .compares__item-separator:disabled {
   opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
 }
 
 .product__action-btn._active,
@@ -14796,24 +14798,25 @@ body._pc .tooltip__body.tooltip__body_visible {
     background: #edf7ff;
   }
 
-  .product__action:hover .product__action-btn,
-  .product__action:hover .compares__item-separator {
+  .product__action-delete:hover {
+    color: #0c6ff9;
+  }
+
+  .product__action-btn:hover,
+  .compares__item-separator:hover {
     background: var(--hover-color);
   }
 
-  .product__action:hover .product__action-btn::after,
-  .product__action:hover .compares__item-separator::after {
+  .product__action-btn:hover::after,
+  .compares__item-separator:hover::after {
     background-color: var(--bg-hover-color);
   }
 
-  .product__action:hover .product__action-text {
+  .product__action-btn:hover + .product__action-text,
+  .compares__item-separator:hover + .product__action-text {
     width: auto;
     padding: 0.4375rem 1.25rem 0.4375rem 0.5rem;
     font-size: 0.875rem;
-  }
-
-  .product__action-delete:hover {
-    color: #0c6ff9;
   }
 
   .product__image:hover img {
