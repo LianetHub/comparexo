@@ -2533,8 +2533,8 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .modal-slider__slide img {
+  height: 50vh;
   width: auto;
-  height: 75vh;
 }
 
 .modal-slider__footer {
@@ -11499,6 +11499,10 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   .benchmark__list-item-value {
     font-size: 1.25rem;
+  }
+
+  .modal-slider__slide img {
+    height: 75vh;
   }
 
   .compare-list__header {
