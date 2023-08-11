@@ -505,8 +505,8 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 [data-src],
 [data-srcset] {
-  width: inherit;
-  height: inherit;
+  width: 20px !important;
+  height: 20px !important;
 }
 
 @-webkit-keyframes lds-dual-ring {
@@ -6536,20 +6536,6 @@ body._pc .tooltip__body.tooltip__body_visible {
 .products__grid-versus-item picture {
   width: inherit;
   height: inherit;
-  position: relative;
-}
-
-.products__grid-versus-item picture::after {
-  content: "";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff transparent #fff transparent;
-  -webkit-animation: lds-dual-ring 1.2s linear infinite;
-          animation: lds-dual-ring 1.2s linear infinite;
 }
 
 .products__grid-versus-item.products__grid-versus-item_sm {
