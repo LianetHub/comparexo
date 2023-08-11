@@ -503,11 +503,6 @@ body._pc .tooltip__body.tooltip__body_visible {
   margin-bottom: -4.1875em;
 }
 
-picture {
-  width: inherit;
-  height: inherit;
-}
-
 [data-src],
 [data-srcset] {
   width: inherit;
@@ -1093,6 +1088,7 @@ picture {
   z-index: 2;
   width: 24px;
   margin-left: auto;
+  margin-right: auto;
   -webkit-box-ordinal-group: 0;
       -ms-flex-order: -1;
           order: -1;
@@ -6495,6 +6491,11 @@ picture {
           justify-content: center;
   width: 100px;
   height: 180px;
+}
+
+.products__grid-versus-item picture {
+  width: inherit;
+  height: inherit;
 }
 
 .products__grid-versus-item.products__grid-versus-item_sm {
