@@ -1171,6 +1171,13 @@ body._pc .tooltip__body.tooltip__body_visible {
   font-size: 1.25rem;
 }
 
+.product__action-btn[data-result]._active,
+[data-result]._active.compares__item-separator {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
+}
+
 .product__action-btn:disabled,
 .compares__item-separator:disabled {
   opacity: 0.3;
@@ -2743,6 +2750,18 @@ body._pc .tooltip__body.tooltip__body_visible {
   background: rgba(0, 0, 0, 0.1);
 }
 
+.compare-list__main.hidden {
+  display: none;
+}
+
+.compare-list__adding.hidden {
+  display: none;
+}
+
+.compare-list__adding .search__bar-result {
+  cursor: default;
+}
+
 .compare-list__header {
   border-bottom: 1px solid #ebebf0;
   display: -webkit-box;
@@ -2848,6 +2867,11 @@ body._pc .tooltip__body.tooltip__body_visible {
           align-items: center;
 }
 
+.compare-list__btn:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
 .compare-list__items {
   margin: 0.75em 0em 0em 0em;
 }
@@ -2913,6 +2937,8 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .compare-list__item-thumb {
   height: 40px;
+  width: 43px;
+  text-align: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin: 0em 0.375em 0em 0em;
