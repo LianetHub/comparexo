@@ -2712,7 +2712,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   font-size: 1.5rem;
 }
 
-.compare__quantity {
+.compare__quantity-main {
   margin: 0em 0em 0em 0.375rem;
   padding: 0.1785714286em 0.4285714286em;
   background: #fff;
@@ -2877,6 +2877,8 @@ body._pc .tooltip__body.tooltip__body_visible {
           align-items: center;
   margin: 0em 0.375rem 0em 0em;
   color: #c2c9d3;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .compare-list__item::after {
@@ -2902,6 +2904,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   color: #fff;
   font-size: 0.875rem;
   font-weight: 500;
+  margin: 0em 0.625rem 0em 0em;
 }
 
 .compare-list__item:not(:last-child) {
@@ -12543,7 +12546,7 @@ body._pc .tooltip__body.tooltip__body_visible {
     padding: 0em 0.5rem 0em 0em;
   }
 
-  .compare__quantity {
+  .compare__quantity-main {
     border: none;
     position: static;
     top: auto;
