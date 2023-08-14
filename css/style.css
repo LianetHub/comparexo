@@ -1772,6 +1772,12 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .search__bar-results li::before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
   font-family: "icons" !important;
   speak: never;
   font-style: normal;
@@ -1822,19 +1828,24 @@ body._pc .tooltip__body.tooltip__body_visible {
   line-height: 1.1666666667;
 }
 
+.search__bar-list .search__bar-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.3888888889em 0rem;
+}
+
 .search__bar-result {
   padding: 0.6875rem 1rem 0.6875rem 2.1875rem;
   cursor: pointer;
   position: relative;
+  display: block;
 }
 
 .search__bar-result::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 0;
   color: #d3d8e0;
   width: 1.3333333333em;
   height: 1.3333333333em;
@@ -1848,6 +1859,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0em 0.5rem 0em 0em;
 }
 
 .search__bar-thumb {
