@@ -1802,10 +1802,7 @@ body._pc .tooltip__body.tooltip__body_visible {
 
 .search__bar-results.searching {
   display: block;
-}
-
-.search__bar-results.searching ~ .search__bar-section {
-  display: none;
+  margin-bottom: 1rem;
 }
 
 .search__bar-header {
