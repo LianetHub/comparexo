@@ -2310,9 +2310,11 @@ body._pc .tooltip__body.tooltip__body_visible {
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
   z-index: 6;
+  pointer-events: none;
 }
 
 .popup.open {
+  pointer-events: all;
   opacity: 1;
   visibility: visible;
 }
@@ -2360,6 +2362,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   height: 92px;
   display: block;
   background-color: transparent;
+  z-index: 1;
 }
 
 .popup__mobile-close::before,
@@ -2777,6 +2780,10 @@ body._pc .tooltip__body.tooltip__body_visible {
   font-family: "Montserrat";
   font-size: 1.125rem;
   font-weight: 600;
+}
+
+.compare-list__close {
+  z-index: 2;
 }
 
 .compare-list__footer {
@@ -3823,6 +3830,24 @@ body._pc .tooltip__body.tooltip__body_visible {
   border-collapse: separate;
   position: relative;
   z-index: 1;
+}
+
+.table.fixed-columns {
+  overflow-x: scroll;
+}
+
+.table.fixed-columns td {
+  min-width: 283px;
+  max-width: 283px;
+}
+
+.table.clone {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border-collapse: separate;
 }
 
 .table.table_slider {
@@ -7603,18 +7628,18 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .product-navbar__link {
-  padding: 1.3333333333em 1.1111111111em;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   white-space: nowrap;
   color: #aeb4bd;
-  font-size: 1.125rem;
   line-height: 1.2222222222;
   letter-spacing: 0.09px;
   -webkit-transition: background-color 0.3s ease 0s;
   -o-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
+  padding: 1.1335294118em 1.1111111111em;
+  font-size: 1.0625rem;
 }
 
 .product-navbar__link._active {
@@ -11084,6 +11109,7 @@ body._pc .tooltip__body.tooltip__body_visible {
 }
 
 .specification__table {
+  position: relative;
   margin: 1.5em -1.25em 0em 0em;
   border-radius: 8px;
   overflow-x: auto;
@@ -12930,6 +12956,11 @@ body._pc .tooltip__body.tooltip__body_visible {
     text-align: center;
     padding: 0.625em 0.75em;
     border-radius: 14px;
+  }
+
+  .product-navbar__link {
+    padding: 1.3333333333em 1.1111111111em;
+    font-size: 1.125rem;
   }
 
   .info {
