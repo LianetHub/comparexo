@@ -1,0 +1,130 @@
+.error {
+  padding: 0em 0em 4em 0em;
+}
+
+.error__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.error__main {
+  position: relative;
+  z-index: 1;
+  margin: -5em 0em 0em 0em;
+}
+
+.error__status {
+  margin: 2em 0em 0em 0em;
+  max-width: 200px;
+}
+
+.error__title {
+  margin: 0.5em 0em 0em 0em;
+}
+
+.error__subtitle {
+  margin: 0.4705882353em 0em 0em 0em;
+  font-size: 1.0625rem;
+  line-height: 1.2222222222;
+  letter-spacing: 0.09px;
+}
+
+.error__btn {
+  margin: 1rem 0em 0em 0em;
+}
+
+.error__copy {
+  margin: 2rem 0em 0em 0em;
+}
+
+.error__image {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.error__footer {
+  margin: 1.625em 0em 0em 0em;
+  padding: 1.53125em 0em 0em 0em;
+  border-top: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.error__slider {
+  margin: 1.5em 0em 0em 0em;
+  overflow: visible;
+}
+
+@media (min-width: 767.98px) {
+  .error__body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .error__main {
+    padding: 1.25em 0;
+    margin: 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 390px;
+            flex: 0 0 390px;
+  }
+
+  .error__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    max-width: 100%;
+    margin: 0em 0em 0em -8%;
+  }
+}
+
+@media (min-width: 991.98px) {
+  .error__image {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .error__status {
+    max-width: 255px;
+    margin: 4em 0em 0em 0em;
+  }
+
+  .error__title {
+    margin: 1em 0em 0em 0em;
+  }
+
+  .error__subtitle {
+    margin: 0.7777777778em 0em 0em 0em;
+    font-size: 1.125rem;
+  }
+
+  .error__btn {
+    margin: 1.5rem 0em 0em 0em;
+  }
+
+  .error__copy {
+    margin: 4em 0em 0em 0em;
+  }
+}
+
+@media (min-width: 1399.98px) {
+  .error__slider {
+    overflow: hidden;
+  }
+
+  .error__slider .product {
+    width: calc(20% - 0.625em);
+  }
+}
