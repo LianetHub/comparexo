@@ -121,7 +121,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  min-height: 300px;
+  min-height: 270px;
   height: 100%;
   border-radius: 0 12px 12px 0;
   border-left-width: 0px;
@@ -1583,6 +1583,10 @@
     font-weight: 500;
     font-size: 1.125rem;
     z-index: 2;
+  }
+
+  .compare-header__btn {
+    min-height: 300px;
   }
 
   .compare-header__btn {
