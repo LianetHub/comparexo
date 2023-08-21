@@ -3985,6 +3985,7 @@ body._pc .tooltip__body.tooltip__body_visible {
   width: 174px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  margin-right: 1.25rem;
 }
 
 .range {
