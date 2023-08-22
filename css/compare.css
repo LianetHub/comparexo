@@ -4,7 +4,7 @@
   background-image: url("../img/header-bg.jpg"); }
 
 .section-header {
-  margin: -3.8125em 0em 0em 0em;
+  margin: -3.875em 0em 0em 0em;
   padding: 3.8125em 0em 2em 0em;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1085,6 +1085,11 @@
 .specification__grid .specification__table {
   margin: 0;
   padding: 0;
+}
+
+.specification__grid.excerpt-hidden._visible {
+  overflow-y: visible;
+  overflow-x: visible;
 }
 
 .specification__grid.excerpt-hidden:not(._visible) {

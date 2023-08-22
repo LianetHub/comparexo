@@ -403,7 +403,6 @@ body.search-focus .header-body_mobile-fixed::before {
 
 body.modal-lock {
   overflow: hidden;
-  position: fixed;
 }
 
 body.catalog-lock {
@@ -5735,6 +5734,8 @@ body._pc .tooltip__body.tooltip__body_visible {
 .form__status_error::before {
   background: #f14a33;
   color: #fff;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .form__footer {
@@ -5976,6 +5977,11 @@ body._pc .tooltip__body.tooltip__body_visible {
 .form__error {
   margin: 0.625em 0em 0em 0em;
   color: #f14a33;
+}
+
+.form__error::before {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .form__file {
@@ -7422,6 +7428,11 @@ body._pc .tooltip__body.tooltip__body_visible {
 @media (max-width: 991.98px) {
   body.tooltip-lock {
     overflow: hidden;
+  }
+
+  body.tooltip-lock .header-body,
+  body.tooltip-lock .product-navbar {
+    z-index: 1;
   }
 
   .compare__text span {
