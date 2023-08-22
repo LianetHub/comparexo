@@ -7431,8 +7431,9 @@ body._pc .tooltip__body.tooltip__body_visible {
   }
 
   body.tooltip-lock .header-body,
-  body.tooltip-lock .product-navbar {
-    z-index: 1;
+  body.tooltip-lock .product-navbar,
+  body.tooltip-lock .specification__table {
+    z-index: auto;
   }
 
   .compare__text span {

@@ -1852,9 +1852,11 @@
 
 .video__side-list {
   max-height: 300px;
+  overflow-y: auto;
+  background: #fff;
 }
 
-.video__side-list .simplebar-track.simplebar-vertical {
+.video__side-list::-webkit-scrollbar-track {
   background: #fff;
 }
 
