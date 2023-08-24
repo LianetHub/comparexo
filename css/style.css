@@ -7432,8 +7432,14 @@ body._pc .tooltip__body.tooltip__body_visible {
 
   body.tooltip-lock .header-body,
   body.tooltip-lock .product-navbar,
-  body.tooltip-lock .specification__table {
+  body.tooltip-lock .specification__table,
+  body.tooltip-lock .table,
+  body.tooltip-lock .table tbody tr td,
+  body.tooltip-lock .table:not(.table_lg, .table_md) tbody tr {
+    position: static;
     z-index: auto;
+    -webkit-clip-path: none;
+            clip-path: none;
   }
 
   .compare__text span {
