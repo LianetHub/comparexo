@@ -1111,7 +1111,6 @@ body._pc .tooltip__body.tooltip__body_visible {
 .catalog__btn.catalog__btn_active::before {
   font-family: "icons" !important;
   speak: never;
-  display: block;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
