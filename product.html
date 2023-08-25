@@ -40,12 +40,12 @@
 	<meta property="twitter:image:src" content="preview image">
 	<!-- Twitter -->
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap&_v=20230825183227">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap&_v=20230825184123">
 	
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20230825183227">
-	<link rel="stylesheet" href="css/reset.min.css?_v=20230825183227">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230825183227">
-	<link rel="stylesheet" href="css/product.min.css?_v=20230825183227">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20230825184123">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20230825184123">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230825184123">
+	<link rel="stylesheet" href="css/product.min.css?_v=20230825184123">
 </head>
 
 <body>
@@ -2090,7 +2090,7 @@
               </div>
               <div class="video__side-switcher">
                 <div class="video__side-switcher-item switcher">
-                  <input type="checkbox" name="toggler" id="toggler" class="switcher__input">
+                  <input type="checkbox" aria-label="Переключатель автовоспроизведения" name="toggler" id="toggler" class="switcher__input">
                 </div>
                 <div class="video__side-switcher-text">
                   Автовоспроизведение следующего видео
@@ -2245,7 +2245,7 @@
                     <th>
                       <div class="table__caption icon-benchmark">
                         Бенчмарки
-                        <a href="#benchmark-modal" data-modal aria-haspopup="true" aria-expanded="false" class="table__caption-btn icon-question"></a>
+                        <a href="#benchmark-modal" aria-label="Открыть модальное окно" data-modal aria-haspopup="true" aria-expanded="false" class="table__caption-btn icon-question"></a>
                       </div>
                     </th>
                   </tr>
@@ -2258,7 +2258,7 @@
                           <dt class="table__progress-title">
                             <picture><source srcset="img/loading.gif" data-srcset="img/icons/AnTuTu.webp"type="image/webp"><img src="img/loading.gif" data-src="img/icons/AnTuTu.png" alt="AnTuTu logo"></picture> AnTuTu v9
                           </dt>
-                          <dd class="table__progress-value">
+                          <dd class="table__progress-value" id="AnTuTu-value">
                             193 539
                             <div class="table__progress-tooltip tooltip_gray tooltip">
     <button type="button" aria-label="Показать текст-подсказку" class="tooltip__btn icon-question"></button>
@@ -2272,7 +2272,7 @@
                           </dd>
                         </dl>
                         <div class="table__progress-range range">
-                          <input type="range" class="range__input" disabled value="193539" max="200000">
+                          <input type="range" aria-labelledby="AnTuTu-value" class="range__input" disabled value="193539" max="200000">
                         </div>
                       </div>
                     </td>
@@ -2284,7 +2284,7 @@
                           <dt class="table__progress-title">
                             <picture><source srcset="img/loading.gif" data-srcset="img/icons/Geekbench.webp"type="image/webp"><img src="img/loading.gif" data-src="img/icons/Geekbench.png" alt="Geekbench logo"></picture> Geekbench 5 v9
                           </dt>
-                          <dd class="table__progress-value">
+                          <dd class="table__progress-value" id="Geekbench-value">
                             1863
                             <div class="table__progress-tooltip tooltip_gray tooltip">
     <button type="button" aria-label="Показать текст-подсказку" class="tooltip__btn icon-question"></button>
@@ -2298,7 +2298,7 @@
                           </dd>
                         </dl>
                         <div class="table__progress-range range">
-                          <input type="range" class="range__input" disabled value="1863" max="2000">
+                          <input type="range" aria-labelledby="Geekbench-value" class="range__input" disabled value="1863" max="2000">
                         </div>
                       </div>
                     </td>
@@ -2310,7 +2310,7 @@
                           <dt class="table__progress-title">
                             <picture><source srcset="img/loading.gif" data-srcset="img/icons/3DMark.webp"type="image/webp"><img src="img/loading.gif" data-src="img/icons/3DMark.png" alt="3DMark logo"></picture> 3DMark Wild Life Performance
                           </dt>
-                          <dd class="table__progress-value">
+                          <dd class="table__progress-value" id="3DMark-value">
                             9411
                             <div class="table__progress-tooltip tooltip_gray tooltip">
     <button type="button" aria-label="Показать текст-подсказку" class="tooltip__btn icon-question"></button>
@@ -2324,7 +2324,7 @@
                           </dd>
                         </dl>
                         <div class="table__progress-range range">
-                          <input type="range" class="range__input" disabled value="9411" max="10000">
+                          <input type="range" aria-labelledby="3DMark-value" class="range__input" disabled value="9411" max="10000">
                         </div>
                       </div>
                     </td>
@@ -3094,12 +3094,12 @@
                           <dt class="table__progress-title">
                             Максимальная громкость
                           </dt>
-                          <dd class="table__progress-value">
+                          <dd class="table__progress-value" id="max-volume">
                             89.5 дБ
                           </dd>
                         </dl>
                         <div class="table__progress-range range">
-                          <input type="range" class="range__input" disabled value="89.5" max="100">
+                          <input type="range" aria-labelledby="max-volume" class="range__input" disabled value="89.5" max="100">
                         </div>
                       </div>
 
@@ -3642,12 +3642,12 @@
                           <dt class="table__progress-title">
                             mAh
                           </dt>
-                          <dd class="table__progress-value">
+                          <dd class="table__progress-value" id="mah-value">
                             4500
                           </dd>
                         </dl>
                         <div class="table__progress-range range">
-                          <input type="range" class="range__input" disabled value="4500" max="5000">
+                          <input type="range" aria-labelledby="mah-value" class="range__input" disabled value="4500" max="5000">
                         </div>
                       </div>
                     </td>
@@ -3780,7 +3780,7 @@
                 </div>
                 <div class="reviews__header-bottom">
                   <a href="" class="reviews__header-btn btn btn_primary btn_fullwidth icon-comments">Добавить отзыв</a>
-                  <button type="button" class="reviews__header-share icon-share tooltip-btn" data-tooltip="Ссылка скопирована">
+                  <button type="button" aria-label="Скопировать ссылку" class="reviews__header-share icon-share tooltip-btn" data-tooltip="Ссылка скопирована">
                     <span class="tooltip-btn__text">
                       Поделиться
                     </span>
@@ -3905,8 +3905,8 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
-        <button type="button" aria-label="Прокомментировать" data-comment="form-product-1" class="comment__action icon-comments">Ответить</button>
+        <button type="button" data-like class="comment__action icon-heart">14</button>
+        <button type="button" data-comment="form-product-1" class="comment__action icon-comments">Ответить</button>
         <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-1">
@@ -3947,8 +3947,8 @@
                     Увидел твой отзыв и взял нераздумывая. Спасибо Влад)
                 </blockquote>
                 <div class="comment__footer">
-                    <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">1</button>
-                    <button type="button" aria-label="Прокомментировать" data-comment="form-subcomment-product-1" class="comment__action icon-comments">Ответить</button>
+                    <button type="button" data-like class="comment__action icon-heart">1</button>
+                    <button type="button" data-comment="form-subcomment-product-1" class="comment__action icon-comments">Ответить</button>
                 </div>
                 <form action="#" class="comment__form" id="form-subcomment-product-1">
                     <div class="comment__form-content">
@@ -4096,8 +4096,8 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
-        <button type="button" aria-label="Прокомментировать" data-comment="form-product-2" class="comment__action icon-comments">Ответить</button>
+        <button type="button" data-like class="comment__action icon-heart">14</button>
+        <button type="button" data-comment="form-product-2" class="comment__action icon-comments">Ответить</button>
         <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-2">
@@ -4162,8 +4162,8 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
-        <button type="button" aria-label="Прокомментировать" data-comment="form-product-3" class="comment__action icon-comments">Ответить</button>
+        <button type="button" data-like class="comment__action icon-heart">14</button>
+        <button type="button" data-comment="form-product-3" class="comment__action icon-comments">Ответить</button>
         <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-3">
@@ -4228,8 +4228,8 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
-        <button type="button" aria-label="Прокомментировать" data-comment="form-product-4" class="comment__action icon-comments">Ответить</button>
+        <button type="button" data-like class="comment__action icon-heart">14</button>
+        <button type="button" data-comment="form-product-4" class="comment__action icon-comments">Ответить</button>
         <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-4">
@@ -4294,8 +4294,8 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
-        <button type="button" aria-label="Прокомментировать" data-comment="form-product-5" class="comment__action icon-comments">Ответить</button>
+        <button type="button" data-like class="comment__action icon-heart">14</button>
+        <button type="button" data-comment="form-product-5" class="comment__action icon-comments">Ответить</button>
         <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-5">
@@ -4360,8 +4360,8 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
-        <button type="button" aria-label="Прокомментировать" data-comment="form-product-6" class="comment__action icon-comments">Ответить</button>
+        <button type="button" data-like class="comment__action icon-heart">14</button>
+        <button type="button" data-comment="form-product-6" class="comment__action icon-comments">Ответить</button>
         <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-6">
@@ -5384,19 +5384,19 @@
 </div>
 <!-- END INPUT MODAL -->
   
-<!-- <script src="js/libs/swiper.min.js?_v=20230825183227"></script> -->
-<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230825183227"></script>
+<!-- <script src="js/libs/swiper.min.js?_v=20230825184123"></script> -->
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230825184123"></script>
 
 
-<!-- <script src="js/libs/chart.min.js?_v=20230825183227"></script> -->
-<script defer src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230825183227"></script>
+<!-- <script src="js/libs/chart.min.js?_v=20230825184123"></script> -->
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230825184123"></script>
 
 
-<!-- <script src="js/libs/chartjs-plugin-datalabels.min.js?_v=20230825183227"></script> -->
-<script defer src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0?_v=20230825183227"></script>
+<!-- <script src="js/libs/chartjs-plugin-datalabels.min.js?_v=20230825184123"></script> -->
+<script defer src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0?_v=20230825184123"></script>
 
 
-<script src="js/app.min.js?_v=20230825183227"></script>
+<script src="js/app.min.js?_v=20230825184123"></script>
 
 </body>
 
