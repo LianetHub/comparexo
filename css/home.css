@@ -696,12 +696,6 @@
   width: 280px;
 }
 
-.videos__slide-link {
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
-
 .videos__slide-image {
   position: relative;
   height: 0;
