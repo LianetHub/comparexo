@@ -40,12 +40,12 @@
 	<meta property="twitter:image:src" content="preview image">
 	<!-- Twitter -->
 
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap&_v=20230825182119">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700&display=swap&_v=20230825182755">
 	
-	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20230825182119">
-	<link rel="stylesheet" href="css/reset.min.css?_v=20230825182119">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230825182119">
-	<link rel="stylesheet" href="css/product.min.css?_v=20230825182119">
+	<link rel="stylesheet" href="css/libs/swiper-bundle.min.css?_v=20230825182755">
+	<link rel="stylesheet" href="css/reset.min.css?_v=20230825182755">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230825182755">
+	<link rel="stylesheet" href="css/product.min.css?_v=20230825182755">
 </head>
 
 <body>
@@ -1006,14 +1006,14 @@
                   </div>
                 </div>
                 <div class="product-card__actions">
-                  <button type="button" data-tooltip="Добавлено в избранное" class="product-card__action icon-star">
+                  <button type="button" aria-label="Добавлено в избранное" data-tooltip="Добавлено в избранное" class="product-card__action icon-star">
                     <span>Добавить в избранное</span>
                   </button>
                   <span class="product-card__actions-separator"></span>
-                  <button type="button" class="product-card__action icon-comments">
+                  <button type="button" aria-label="Оставить комментарий" class="product-card__action icon-comments">
                     <span>Оценить</span>
                   </button>
-                  <button type="button" class="product-card__share icon-share" data-tooltip="Ссылка скопирована"></button>
+                  <button type="button" aria-label="Скопировать ссылку" class="product-card__share icon-share" data-tooltip="Ссылка скопирована"></button>
                   <div class="product-card__compare product__action">
                     <button type="button" aria-label="Сравнить" class="product__action-btn icon-compare"></button>
                     <span class="product__action-text">
@@ -3815,7 +3815,7 @@
             <div class="comment__person-time">23 января 2023 г.</div>
         </div>
         
-        <button type="button" class="comment__info icon-more tooltip-btn">
+        <button type="button" aria-label="Пожаловаться на комментарий" class="comment__info icon-more tooltip-btn">
             <span class="tooltip-btn__text">
                 Пожаловаться
             </span>
@@ -3905,9 +3905,9 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" data-like class="comment__action icon-heart">14</button>
-        <button type="button" data-comment="form-product-1" class="comment__action icon-comments">Ответить</button>
-        <button type="button" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
+        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
+        <button type="button" aria-label="Прокомментировать" data-comment="form-product-1" class="comment__action icon-comments">Ответить</button>
+        <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-1">
         <div class="comment__form-content">
@@ -3936,7 +3936,7 @@
                         <div class="comment__person-name">Евгений М.</div>
                         <div class="comment__person-time">23 января 2023 г.</div>
                     </div>
-                    <button type="button" class="comment__info icon-more tooltip-btn">
+                    <button type="button" aria-label="Пожаловаться на комментарий" class="comment__info icon-more tooltip-btn">
                         <span class="tooltip-btn__text">
                             Пожаловаться
                         </span>
@@ -3947,8 +3947,8 @@
                     Увидел твой отзыв и взял нераздумывая. Спасибо Влад)
                 </blockquote>
                 <div class="comment__footer">
-                    <button type="button" data-like class="comment__action icon-heart">1</button>
-                    <button type="button" data-comment="form-subcomment-product-1" class="comment__action icon-comments">Ответить</button>
+                    <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">1</button>
+                    <button type="button" aria-label="Прокомментировать" data-comment="form-subcomment-product-1" class="comment__action icon-comments">Ответить</button>
                 </div>
                 <form action="#" class="comment__form" id="form-subcomment-product-1">
                     <div class="comment__form-content">
@@ -3958,7 +3958,7 @@
                         <div class="comment__form-body">
                             <textarea name="message" class="form__textarea" placeholder="Написать ответ"></textarea>
                             <div class="comment__form-footer">
-                                <button type="button" data-comment="form-subcomment-product-1" class="comment__form-btn btn btn_gray">Отмена</button>
+                                <button type="button" aria-label="отменить отправку" data-comment="form-subcomment-product-1" class="comment__form-btn btn btn_gray">Отмена</button>
                                 <button type="submit" class="comment__form-btn btn btn_primary">Ответить</button>
                             </div>
                         </div>
@@ -4018,7 +4018,7 @@
                         <div class="comment__person-name">19.ioparenko</div>
                         <div class="comment__person-time">23 января 2023 г.</div>
                     </div>
-                    <button type="button" class="comment__info icon-more tooltip-btn">
+                    <button type="button" aria-label="Пожаловаться на комментарий" class="comment__info icon-more tooltip-btn">
                         <span class="tooltip-btn__text">
                             Пожаловаться
                         </span>
@@ -4059,7 +4059,7 @@
             <div class="comment__person-time">23 января 2023 г.</div>
         </div>
         
-        <button type="button" class="comment__info icon-more tooltip-btn">
+        <button type="button" aria-label="Пожаловаться на комментарий" class="comment__info icon-more tooltip-btn">
             <span class="tooltip-btn__text">
                 Пожаловаться
             </span>
@@ -4096,9 +4096,9 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" data-like class="comment__action icon-heart">14</button>
-        <button type="button" data-comment="form-product-2" class="comment__action icon-comments">Ответить</button>
-        <button type="button" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
+        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
+        <button type="button" aria-label="Прокомментировать" data-comment="form-product-2" class="comment__action icon-comments">Ответить</button>
+        <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-2">
         <div class="comment__form-content">
@@ -4125,7 +4125,7 @@
             <div class="comment__person-time">23 января 2023 г.</div>
         </div>
         
-        <button type="button" class="comment__info icon-more tooltip-btn">
+        <button type="button" aria-label="Пожаловаться на комментарий" class="comment__info icon-more tooltip-btn">
             <span class="tooltip-btn__text">
                 Пожаловаться
             </span>
@@ -4162,9 +4162,9 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" data-like class="comment__action icon-heart">14</button>
-        <button type="button" data-comment="form-product-3" class="comment__action icon-comments">Ответить</button>
-        <button type="button" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
+        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
+        <button type="button" aria-label="Прокомментировать" data-comment="form-product-3" class="comment__action icon-comments">Ответить</button>
+        <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-3">
         <div class="comment__form-content">
@@ -4191,7 +4191,7 @@
             <div class="comment__person-time">23 января 2023 г.</div>
         </div>
         
-        <button type="button" class="comment__info icon-more tooltip-btn">
+        <button type="button" aria-label="Пожаловаться на комментарий" class="comment__info icon-more tooltip-btn">
             <span class="tooltip-btn__text">
                 Пожаловаться
             </span>
@@ -4228,9 +4228,9 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" data-like class="comment__action icon-heart">14</button>
-        <button type="button" data-comment="form-product-4" class="comment__action icon-comments">Ответить</button>
-        <button type="button" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
+        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
+        <button type="button" aria-label="Прокомментировать" data-comment="form-product-4" class="comment__action icon-comments">Ответить</button>
+        <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-4">
         <div class="comment__form-content">
@@ -4257,7 +4257,7 @@
             <div class="comment__person-time">23 января 2023 г.</div>
         </div>
         
-        <button type="button" class="comment__info icon-more tooltip-btn">
+        <button type="button" aria-label="Пожаловаться на комментарий" class="comment__info icon-more tooltip-btn">
             <span class="tooltip-btn__text">
                 Пожаловаться
             </span>
@@ -4294,9 +4294,9 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" data-like class="comment__action icon-heart">14</button>
-        <button type="button" data-comment="form-product-5" class="comment__action icon-comments">Ответить</button>
-        <button type="button" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
+        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
+        <button type="button" aria-label="Прокомментировать" data-comment="form-product-5" class="comment__action icon-comments">Ответить</button>
+        <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-5">
         <div class="comment__form-content">
@@ -4323,7 +4323,7 @@
             <div class="comment__person-time">23 января 2023 г.</div>
         </div>
         
-        <button type="button" class="comment__info icon-more tooltip-btn">
+        <button type="button" aria-label="Пожаловаться на комментарий" class="comment__info icon-more tooltip-btn">
             <span class="tooltip-btn__text">
                 Пожаловаться
             </span>
@@ -4360,9 +4360,9 @@
         
     </div>
     <div class="comment__footer">
-        <button type="button" data-like class="comment__action icon-heart">14</button>
-        <button type="button" data-comment="form-product-6" class="comment__action icon-comments">Ответить</button>
-        <button type="button" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
+        <button type="button" aria-label="Поставить лайк" data-like class="comment__action icon-heart">14</button>
+        <button type="button" aria-label="Прокомментировать" data-comment="form-product-6" class="comment__action icon-comments">Ответить</button>
+        <button type="button" aria-label="Скопировать ссылку" data-tooltip="Ссылка скопирована" class="comment__action icon-share-arrow"><span>Поделиться</span></button>
     </div>
     <form action="#" class="comment__form" id="form-product-6">
         <div class="comment__form-content">
@@ -5384,19 +5384,19 @@
 </div>
 <!-- END INPUT MODAL -->
   
-<!-- <script src="js/libs/swiper.min.js?_v=20230825182119"></script> -->
-<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230825182119"></script>
+<!-- <script src="js/libs/swiper.min.js?_v=20230825182755"></script> -->
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js?_v=20230825182755"></script>
 
 
-<!-- <script src="js/libs/chart.min.js?_v=20230825182119"></script> -->
-<script defer src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230825182119"></script>
+<!-- <script src="js/libs/chart.min.js?_v=20230825182755"></script> -->
+<script defer src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230825182755"></script>
 
 
-<!-- <script src="js/libs/chartjs-plugin-datalabels.min.js?_v=20230825182119"></script> -->
-<script defer src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0?_v=20230825182119"></script>
+<!-- <script src="js/libs/chartjs-plugin-datalabels.min.js?_v=20230825182755"></script> -->
+<script defer src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0?_v=20230825182755"></script>
 
 
-<script src="js/app.min.js?_v=20230825182119"></script>
+<script src="js/app.min.js?_v=20230825182755"></script>
 
 </body>
 
